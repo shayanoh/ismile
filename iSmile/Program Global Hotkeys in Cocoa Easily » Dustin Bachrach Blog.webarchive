@@ -1,0 +1,1746 @@
+bplist00Ó_WebMainResource_WebSubresources_WebSubframeArchivesÕ	
+^WebResourceURL_WebResourceTextEncodingName_WebResourceMIMEType_WebResourceData_WebResourceFrameName_Lhttp://dbachrach.com/blog/2005/11/28/program-global-hotkeys-in-cocoa-easily/UUTF-8Ytext/htmlO•<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Program Global Hotkeys in Cocoa Easily Â» Dustin Bachrach Blog</title>
+<meta name="generator" content="WordPress 2.1.2"> <!-- leave this for stats -->
+<link rel="stylesheet" href="http://dbachrach.com/blog/wp-content/themes/dustin/style.css" type="text/css" media="screen">
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://dbachrach.com/blog/feed/">
+<link rel="alternate" type="text/xml" title="RSS .92" href="http://dbachrach.com/blog/feed/rss/">
+<link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://dbachrach.com/blog/feed/atom/">
+<link rel="pingback" href="http://dbachrach.com/blog/xmlrpc.php">
+<script type="text/javascript" src="http://track3.mybloglog.com/js/jsserv.php?mblID=2007011117224679"></script>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://dbachrach.com/blog/xmlrpc.php?rsd">
+<style type="text/css">.widget_mybloglog { width:165px; }table#MBL_COMM { line-height:12px; border:1px solid #FFFFFF;width:165px; font-family: Verdana, Arial, Sans-Serif;font-style:normal;font-weight:normal; background-color:#E3E3E3;}table#MBL_COMM th.mbl_h { font-size:14px;background-color:#FFFFFF;color:#ffffff;font-weight:bold;text-align:left;padding:2px 2px; text-align:left;}table#MBL_COMM td.mbl_join_img { cursor:pointer;cursor:hand;width:26px;padding:2px 2px;margin:0;background-color:#fff;}table#MBL_COMM td.mbl_join { cursor:pointer;cursor:hand;text-align:left;color:#005A94;background-color:#fff;font-size:11px;border-bottom:0;padding:2px 2px; margin:0;}table#MBL_COMM td.mbl_join a { display:block;width:105px;overflow:hidden;font-weight:normal;border:0;}table#MBL_COMM td.mbl_join a:hover { border:0;}table#MBL_COMM td.mbl_img { cursor:pointer;cursor:hand;width:26px;padding:2px 2px;margin:0;background-color:#E3E3E3;border-top:0;}table#MBL_COMM td.mbl_mem { cursor:pointer;cursor:hand;text-align:left;font-weight:bold;font-size:11px;background-color:#E3E3E3;color:#005A94;border-bottom:0;border-left:0;border-right:0;padding:2px 2px; margin:0;border-top:0;}table#MBL_COMM td.mbl_mem a { display:block;width:105px;overflow:hidden;border:0; }table#MBL_COMM td.mbl_mem a:hover { border:0; }table#MBL_COMM td.mbl_fo_hidden {cursor:hand;cursor:pointer;text-align:center;font-size:10px;background-color:#005A94;color:#ffffff;padding:2px 2px; }table#MBL_COMM a { color:#005A94;text-decoration:none;border:0;background:none }table#MBL_COMM a:hover { color:#005A94;text-decoration:none;border:0; }table#MBL_COMM a:visited { color:#005A94;text-decoration:none;border:0; }table#MBL_COMM a:visited:hover { color:#005A94;text-decoration:none;border:0; }table#MBL_COMM td.mbl_fo_hidden a { color:#ffffff; }table#MBL_COMM td.mbl_fo_hidden a:hover,table#MBL_COMM td.mbl_fo_hidden a:visited:hover { color:#ffffff;text-decoration:none;border:0; }table#MBL_COMM img {width:24px;height:24px;border:1px solid #000;z-index:999;padding:0px;float:left;position:relative}</style></head><body>
+
+<div id="header_bg">
+	<a href="http://dbachrach.com/blog"><div id="logo_img"></div></a>
+	<a href="http://dbachrach.com/blog/feed/"><span id="rss_tab"></span></a>
+<img src="http://dbachrach.com/blog/wp-content/themes/dustin/images/rss_button_hover.png" alt="RSS" style="display:none;">
+</div>
+
+<div id="navigation">
+
+	
+		<form method="get" action="http://dbachrach.com/blog">
+		<div id="search_section">
+		<input type="text" value="" name="s" id="s">
+		<input type="image" id="search_image" src="http://dbachrach.com/blog/wp-content/themes/dustin/images/search_icon.png" alt="Search">
+		</div>
+		</form>
+
+	<ul id="links_section">
+		<li class="current_location"><a href="http://dbachrach.com/blog">Blog</a></li>
+		<li><a href="http://dbachrach.com/blog/about/">About</a></li>
+		<li><a href="http://dbachrach.com/blog/archives/">Archives</a></li>
+		<li><a href="http://dbachrach.com/blog/favorite-posts/">Favorite Posts</a></li>
+		<li><a href="http://dbachrach.com/blog/contact/">Contact</a></li>
+	</ul>
+	
+</div>
+<div id="gray_bar"></div>
+
+<div id="container">
+	<div id="main_content">
+				
+			
+		
+		
+<div style="border: 1px #BBB dashed;margin-bottom: 15px; padding-left:10px; padding-right:10px;">
+<script type="text/javascript"><!--
+google_ad_client = "pub-9697276323018893";
+google_ad_width = 468;
+google_ad_height = 60;
+google_ad_format = "468x60_as";
+google_ad_type = "text";
+//2007-04-19: Blog
+google_ad_channel = "4933754116";
+google_color_border = "FFFFFF";
+google_color_bg = "FFFFFF";
+google_color_link = "0066CC";
+google_color_text = "000000";
+google_color_url = "7F7F7F";
+//-->
+</script>
+<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script><iframe name="google_ads_frame" width="468" height="60" frameborder="0" src="http://pagead2.googlesyndication.com/pagead/ads?client=ca-pub-9697276323018893&amp;dt=1195591011504&amp;format=468x60_as&amp;output=html&amp;correlator=1195591011503&amp;channel=4933754116&amp;url=http%3A%2F%2Fdbachrach.com%2Fblog%2F2005%2F11%2F28%2Fprogram-global-hotkeys-in-cocoa-easily%2F&amp;color_bg=FFFFFF&amp;color_text=000000&amp;color_link=0066CC&amp;color_url=7F7F7F&amp;color_border=FFFFFF&amp;ad_type=text&amp;ref=http%3A%2F%2Fwww.google.com%2Fsearch%3Fclient%3Dsafari%26rls%3Dfa-ir%26q%3Dos%2Bx%2Bhotkey%2Bcocoa%26ie%3DUTF-8%26oe%3DUTF-8&amp;cc=22&amp;ga_vid=392320608.1195591012&amp;ga_sid=1195591012&amp;ga_hid=957662366&amp;flash=9&amp;u_h=900&amp;u_w=1440&amp;u_ah=830&amp;u_aw=1440&amp;u_cd=24&amp;u_tz=210&amp;u_his=1&amp;u_java=true&amp;u_nplug=10&amp;u_nmime=164" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no"></iframe>
+</div>
+		<div class="post post_first post_single" id="post-24">	
+			<h2 class="title">Program Global Hotkeys in Cocoa Easily</h2>
+			<div class="by_line">November 28th, 2005 | Posted in: <a href="http://dbachrach.com/blog/category/mac/" title="View all posts in Mac" rel="category tag">Mac</a>,  <a href="http://dbachrach.com/blog/category/tutorial/" title="View all posts in Tutorial" rel="category tag">Tutorial</a>,  <a href="http://dbachrach.com/blog/category/programming/" title="View all posts in Programming" rel="category tag">Programming</a> | <a href="http://del.icio.us/post" onclick="window.open('http://del.icio.us/post?&amp;noui&amp;jump=close&amp;url='+encodeURIComponent('http://dbachrach.com/blog/2005/11/28/program-global-hotkeys-in-cocoa-easily/')+'&amp;title='+encodeURIComponent('Program Global Hotkeys in Cocoa Easily'),'delicious', 'toolbar=no,width=700,height=400'); return false;" title="Save Program Global Hotkeys in Cocoa Easily to Delicious">Save to del.icio.us</a></div>
+<script src="http://feeds.feedburner.com/~s/dbachrach?i=http://dbachrach.com/blog/2005/11/28/program-global-hotkeys-in-cocoa-easily/" type="text/javascript" charset="utf-8"></script><script type="text/javascript" charset="utf-8" src="http://feeds.feedburner.com/~d/static/site-tracker.js"></script>
+			<div><p>When I first started to program <a href="http://www.dbachrach.com/opensoft/index.php?page=QuickTunes">QuickTunes 2</a>, the number 1 feature I wanted to add was global hotkeys. I Googled it, I asked in chat rooms, I asked in forums. I never got a solid answer that worked for Panther or Tiger. So I decided to go about and use the various sources online and dig through the Carbon docs. So I now want to explain to you in a simplified version how to make multiple global hotkeys for your program.</p>
+<p><b>Whatï¿½ï¿½ï¿½s a Global Hotkey?</b></p>
+<p>A global hotkey is a key combination that can be pressed whenever a user wants. Your app does not have to be the foreground app; it just needs to be running. When the keys are pressed, your application will receive an event, and then you can carry out a method. I use this in QuickTunes to allow global access to iTunes play/pause commands. Apple uses this in the command-space hotkey to invoke Spotlight on the new Mac OS X Tiger. Other examples would be command-shift 4, for taking screenshots (Mac OS 10.3 and 10.4).</p>
+<p><b>Whatï¿½ï¿½ï¿½s on the Agenda?</b></p>
+<ul>
+<li>Register our hotkey</li>
+<li>Register a second hotkey</li>
+<li>Make them customizable</li>
+</ul>
+<p><b>Register our First Hotkey</b></p>
+<p>Let me first set out the scene. I assume you are working on a already designed Cocoa application. I also assume that you are using Objective-C. This is important because we are using C code in our hotkeys section. Objective-C is a subset of C so C code will still work. To start off, import the carbon framework by selecting your project and then going to the menu item â€œProject.â€ From there click Add to Project and select /System/Library/Frameworks/Carbon.framework. Click Add. </p>
+<p>Open up the .m file you wish to add the hotkeys to. I recommend putting it into your apps main controller class, but you can choose which class works best. We need to set up the code that will make our hotkeys. Move to the awakeFromNib: method in your class. If it does not already exist, create it. Now place this code in their.</p>
+
+<div class="wp_syntax"><table><tbody><tr><td class="line_numbers"><pre>1
+2
+3
+4
+5
+6
+</pre></td><td class="code"><pre class="objc"><span style="color: #ff0000;">//Register the Hotkeys</span>
+EventHotKeyRef gMyHotKeyRef;
+EventHotKeyID gMyHotKeyID;
+EventTypeSpec eventType;
+eventType.eventClass=kEventClassKeyboard;
+eventType.eventKind=kEventHotKeyPressed;</pre></td></tr></tbody></table></div>
+
+<p>This just creates some variables that will store some basic info about our hotkeys. EventTypeSpec is a struct and weï¿½ï¿½ï¿½ve set its eventClass to the kEventClassKeyboard and its eventKind variable to kEventHotKeyPressed. There are different options, but if you are making a global hotkey, use these.</p>
+<p>Next we want to install a handler so that our application can accept these events.</p>
+
+<div class="wp_syntax"><table><tbody><tr><td class="line_numbers"><pre>1
+</pre></td><td class="code"><pre class="objc">InstallApplicationEventHandler<span style="color: #002200;">(</span>&amp;MyHotKeyHandler,<span style="color: #0000dd;">1</span>,&amp;eventType,<span style="color: #0000ff;">NULL</span>,<span style="color: #0000ff;">NULL</span><span style="color: #002200;">)</span>;</pre></td></tr></tbody></table></div>
+
+<p>This is a very basic method. The first parameter will be a reference to a method somewhere in your class. We will write that later. Leave the next parameter as a 1. The next parameter is our eventType variable we have already declared. The next parameter I have put to NULL, but you can pass any object in there. The object will then be available to the method that is called when the hotkey is pressed. This is very useful, and I will explain how to use it properly in the later sections. And finally, pass in NULL to the last parameter.</p>
+<p>Now lets create an actual hotkey and get it working. Type this code next.</p>
+
+<div class="wp_syntax"><table><tbody><tr><td class="line_numbers"><pre>1
+2
+</pre></td><td class="code"><pre class="objc">gMyHotKeyID.signature=<span style="color: #666666;">'htk1'</span>;
+gMyHotKeyID.<span style="color: #0000ff;">id</span>=<span style="color: #0000dd;">1</span>;</pre></td></tr></tbody></table></div>
+
+<p>The first line is a string for the name of the hotkey. Name it whatever you like. This is for easy access and recognition. The second line gives the hotkey an id. Give all your hotkeys different ids. I simply use 1,2,3 etc. </p>
+<p>Our next section will actually register the hotkey itself.</p>
+
+<div class="wp_syntax"><table><tbody><tr><td class="line_numbers"><pre>1
+2
+</pre></td><td class="code"><pre class="objc">RegisterEventHotKey<span style="color: #002200;">(</span><span style="color: #0000dd;">49</span>, cmdKey+optionKey, gMyHotKeyID, 
+GetApplicationEventTarget<span style="color: #002200;">(</span><span style="color: #002200;">)</span>, <span style="color: #0000dd;">0</span>, &amp;gMyHotKeyRef<span style="color: #002200;">)</span>;</pre></td></tr></tbody></table></div>
+
+<p>This is the meat of the program, so I will detail how it all works. RegisterEventHotKey will do all the work to create the actual hotkey itself, and yes you can create multiple ones, but more on that later. The first parameter I passed, is 49. Now this is going to be different based on what your hotkey will actually be. 49 represents the space bar. The advantage of using this format is that although the ASCII value of some keys might change when you switch from English to Spanish, the keyboard reference number does not. Now I looked around on the net trying to figure out what keys I could use, but it was very difficult until I found an app called <a href="http://macupdate.com/download.php/5409/asynckeys17beta.sit">AsyncKeys</a> (The file might be down at that location. I have hosted a copy on my server. This is solely for convenience. Get it <a href="http://www.dbachrach.com/blog/downloads/async.zip">here</a>). Download this program and install it. When it opens just click the keys that you want and it will return the ASCII values as well as the Keyboard Reference Number. You can then take that keyboard ref number and place it in the place of 49 above. The next parameter is for the modifier keys of your hotkeys. Apple decided to require a hotkey to have at least one modifier key like control or command, in order to prevent key loggers. These C constants represent numbers, but you should still use the constants for future versions of OS X. The possible constants are: cmdKey, shiftKey, optionKey, and controlKey. If you wish to have multiple modifiers like my example just add the constants together. The third parameter is the hotkey name and number we just defined. All other parameters should stay as they are listed above.</p>
+<p>The final thing we need is our method that will be called once you press the hotkey. Here is the code for that:</p>
+
+<div class="wp_syntax"><table><tbody><tr><td class="line_numbers"><pre>1
+2
+3
+4
+5
+6
+</pre></td><td class="code"><pre class="objc">OSStatus MyHotKeyHandler<span style="color: #002200;">(</span>EventHandlerCallRef nextHandler,EventRef theEvent,
+<span style="color: #0000ff;">void</span> *userData<span style="color: #002200;">)</span>
+<span style="color: #002200;">{</span>
+<span style="color: #ff0000;">//Do something once the key is pressed</span>
+<span style="color: #0000ff;">return</span> noErr;
+<span style="color: #002200;">}</span></pre></td></tr></tbody></table></div>
+
+<p>The above method should be added somewhere in the same class file. It will be executed once your hotkey is pressed. Fill in the code necessary. Build and run your app, you should be able to press your hotkey and your function will activate whether or not your app is the front most.</p>
+<p><b>Register our Second Hotkey</b></p>
+<p>This section is very easy considering that we already have working hotkeys. To add a second (and as many others as you want) just add a few more line of code. This section should go right after the first RegisterEventHotkey method.</p>
+
+<div class="wp_syntax"><table><tbody><tr><td class="line_numbers"><pre>1
+2
+3
+4
+</pre></td><td class="code"><pre class="objc">gMyHotKeyID.signature=<span style="color: #666666;">'htk2'</span>;
+gMyHotKeyID.<span style="color: #0000ff;">id</span>=<span style="color: #0000dd;">2</span>;
+RegisterEventHotKey<span style="color: #002200;">(</span><span style="color: #0000dd;">124</span>, cmdKey+optionKey, gMyHotKeyID, 
+GetApplicationEventTarget<span style="color: #002200;">(</span><span style="color: #002200;">)</span>, <span style="color: #0000dd;">0</span>, &amp;gMyHotKeyRef<span style="color: #002200;">)</span>;</pre></td></tr></tbody></table></div>
+
+<p>This is pretty much exactly the same except for 3 things. The hotkey has a different signature, id, and different button (in this case the right arrow key).</p>
+<p>The final change will be inside the function we wrote to execute after the key is pressed: MyHotKeyHandler.</p>
+
+<div class="wp_syntax"><table><tbody><tr><td class="line_numbers"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+</pre></td><td class="code"><pre class="objc">OSStatus MyHotKeyHandler<span style="color: #002200;">(</span>EventHandlerCallRef nextHandler,EventRef theEvent,
+<span style="color: #0000ff;">void</span> *userData<span style="color: #002200;">)</span>
+<span style="color: #002200;">{</span>
+ EventHotKeyID hkCom;
+ GetEventParameter<span style="color: #002200;">(</span>theEvent,kEventParamDirectObject,typeEventHotKeyID,<span style="color: #0000ff;">NULL</span>,
+<span style="color: #0000dd;">sizeof</span><span style="color: #002200;">(</span>hkCom<span style="color: #002200;">)</span>,<span style="color: #0000ff;">NULL</span>,&amp;hkCom<span style="color: #002200;">)</span>;
+ <span style="color: #0000ff;">int</span> l = hkCom.<span style="color: #0000ff;">id</span>;
+Â 
+ <span style="color: #0000ff;">switch</span> <span style="color: #002200;">(</span>l<span style="color: #002200;">)</span> <span style="color: #002200;">{</span>
+  <span style="color: #0000ff;">case</span> <span style="color: #0000dd;">1</span>: <span style="color: #ff0000;">//do something</span>
+   <span style="color: #0000ff;">break</span>;
+  <span style="color: #0000ff;">case</span> <span style="color: #0000dd;">2</span>: <span style="color: #ff0000;">//do something</span>
+   <span style="color: #0000ff;">break</span>;
+ <span style="color: #002200;">}</span>
+ <span style="color: #0000ff;">return</span> noErr;
+<span style="color: #002200;">}</span></pre></td></tr></tbody></table></div>
+
+<p>This basically adds a few things. First off, we have one major difficulty. We have multiple hotkeys, but they are only calling one function. This is how we solve it. We create a EventHotKeyID called hkCom. We then call the function GetEventParameter which will help give us details about the specific event that just occurred. We then take the id variable from our event, and that means we know which hotkey was pressed. In this case, we have 2 hotkeys with ids of 1 and 2. In the integer variable l, we now have this value. We do a simple switch statement and then can execute different code based on which key was pressed. Very easy, except that took along time to figure out. An extra side note. I for one, have methods in other classes I would like to call once these hotkeys have been pressed. To solve this, pass in an object at the second to last parameter in InstallApplicationEventHandler. Then one you are in your case statement, you can do: [userData runMethod:somevalue].</p>
+<p><b>Make them customizable</b></p>
+<p>Now we get to the difficult part of the project, allowing the user to choose which hotkeys they want for the global hotkeys. This is how I do it. In our init: method I set some User Defaults.</p>
+
+<div class="wp_syntax"><table><tbody><tr><td class="line_numbers"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+</pre></td><td class="code"><pre class="objc"><span style="color: #0000ff;">NSMutableDictionary</span> *userDefaultsValuesDict = <span style="color: #002200;">[</span><span style="color: #0000ff;">NSMutableDictionary</span> 
+dictionary<span style="color: #002200;">]</span>;
+<span style="color: #002200;">[</span>userDefaultsValuesDict setObject:<span style="color: #002200;">[</span><span style="color: #0000ff;">NSNumber</span> numberWithInt:<span style="color: #0000dd;">49</span><span style="color: #002200;">]</span> 
+forKey:@<span style="color: #666666;">"hotkeyCodePlay"</span><span style="color: #002200;">]</span>;  
+<span style="color: #002200;">[</span>userDefaultsValuesDict setObject:<span style="color: #002200;">[</span><span style="color: #0000ff;">NSNumber</span> numberWithInt:cmdKey+optionKey<span style="color: #002200;">]</span> 
+forKey:@<span style="color: #666666;">"hotkeyModifiersPlay"</span><span style="color: #002200;">]</span>;   
+<span style="color: #002200;">[</span>userDefaultsValuesDict setObject:<span style="color: #002200;">[</span><span style="color: #0000ff;">NSNumber</span> numberWithInt:<span style="color: #0000dd;">124</span><span style="color: #002200;">]</span> 
+forKey:@<span style="color: #666666;">"hotkeyCodeNext"</span><span style="color: #002200;">]</span>;  
+<span style="color: #002200;">[</span>userDefaultsValuesDict setObject:<span style="color: #002200;">[</span><span style="color: #0000ff;">NSNumber</span> numberWithInt:cmdKey+optionKey<span style="color: #002200;">]</span> 
+forKey:@<span style="color: #666666;">"hotkeyModifiersNext"</span><span style="color: #002200;">]</span>;
+Â 
+<span style="color: #002200;">[</span><span style="color: #002200;">[</span><span style="color: #0000ff;">NSUserDefaults</span> standardUserDefaults<span style="color: #002200;">]</span> registerDefaults:
+userDefaultsValuesDict<span style="color: #002200;">]</span>;      <span style="color: #ff0000;">//Register the defaults</span>
+<span style="color: #002200;">[</span><span style="color: #002200;">[</span><span style="color: #0000ff;">NSUserDefaults</span> standardUserDefaults<span style="color: #002200;">]</span> synchronize<span style="color: #002200;">]</span>;  <span style="color: #ff0000;">//And sync them</span></pre></td></tr></tbody></table></div>
+
+<p>What this does is create the default values for the two hotkeys: cmd-option space (49) and cmd-option right arrow (124). Hopefully you are familiar with user defaults and understand how this all works. Our next goal is to rewrite parts of our code to allow for the userï¿½ï¿½ï¿½s choice to be inserted as the keyboard reference number rather than our specific choices. Go to the section where we were calling RegisterEventHotKey. Replace your code with:</p>
+
+<div class="wp_syntax"><table><tbody><tr><td class="line_numbers"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td><td class="code"><pre class="objc">gMyHotKeyID.signature=<span style="color: #666666;">'htk1'</span>;
+gMyHotKeyID.<span style="color: #0000ff;">id</span>=<span style="color: #0000dd;">1</span>;
+<span style="color: #0000ff;">if</span><span style="color: #002200;">(</span><span style="color: #002200;">[</span><span style="color: #002200;">[</span><span style="color: #0000ff;">NSUserDefaults</span> standardUserDefaults<span style="color: #002200;">]</span> integerForKey:@<span style="color: #666666;">"hotkeyCodePlay"</span><span style="color: #002200;">]</span>
+!=<span style="color: #0000dd;">-999</span><span style="color: #002200;">)</span> <span style="color: #002200;">{</span>
+  RegisterEventHotKey<span style="color: #002200;">(</span><span style="color: #002200;">[</span><span style="color: #002200;">[</span><span style="color: #0000ff;">NSUserDefaults</span> standardUserDefaults<span style="color: #002200;">]</span> integerForKey:
+@<span style="color: #666666;">"hotkeyCodePlay"</span><span style="color: #002200;">]</span>, <span style="color: #002200;">[</span><span style="color: #002200;">[</span><span style="color: #0000ff;">NSUserDefaults</span> standardUserDefaults<span style="color: #002200;">]</span> integerForKey:
+@<span style="color: #666666;">"hotkeyModifiersPlay"</span><span style="color: #002200;">]</span>, gMyHotKeyID, GetApplicationEventTarget<span style="color: #002200;">(</span><span style="color: #002200;">)</span>, <span style="color: #0000dd;">0</span>, 
+&amp;gMyHotKeyRef<span style="color: #002200;">)</span>;
+<span style="color: #002200;">}</span></pre></td></tr></tbody></table></div>
+
+<p>The first two lines are the same as before. The third line is an if statement that checks to make sure that the user wants us to have a global hotkey function for a specific method. I always give the users a choice as to whether have a hotkey exist. If the user does not, then I set the preferences value to ï¿½ï¿½ï¿½999. This if just checks to make sure that our user wants this hotkey and then moves into the actual declaration. As you can tell, weï¿½ï¿½ï¿½ve added a little more code. This just pulls from NSUserDefaults the values the user has chosen instead of the 49 and 124.</p>
+<p>Now you can create a simple preferences box like in QuickTunes that allows your users to pick the hotkeys themselves. Simply link up those values to the NSUserDefaults page and you are done.</p>
+<p><b>Conclusion</b></p>
+<p>I hope this was a very helpful tutorial. I wanted to give enough detail that you can figure out whatï¿½ï¿½ï¿½s going on for yourself but still not overwhelm you with code. The last part where you make the actual preference box may be overwhelming to some, it actually does take some smart coding to make it work perfectly. I am going to leave that out of this tutorial and post it in an upcoming tutorial so as to not overwhelm anyone with too much content. Please feel free to leave comments about the tutorial on this blog, on <a href="http://www.digg.com/programming/Most_Undocumented_Cocoa_Feature_Explained">digg</a>, or email me <a href="mailto:dustin@dbachrach.com">here</a>.</p>
+</div>
+			
+<!-- You can start editing here. -->
+	<h3 id="comments">10 Replies </h3>
+
+	<div id="comment_list">
+
+	
+		<div class="bubble " id="comment-6">
+			<blockquote>
+				<p></p><p>Will the hotkey keep working when playing a game (fullscreen) ?</p>
+<p></p>
+			</blockquote>
+			<cite>Anonymous on 1/4/2006 at 19:49</cite>
+		</div>
+
+	
+		<div class="bubble " id="comment-604">
+			<blockquote>
+				<p></p><p>Remember to have #include  in your header file.</p>
+<p></p>
+			</blockquote>
+			<cite><a href="http://printf.dk/" rel="external nofollow">Jesper</a> on 6/24/2006 at 07:46</cite>
+		</div>
+
+	
+		<div class="bubble " id="comment-1310">
+			<blockquote>
+				<p></p><p>Yeah, this rocks !</p>
+<p>Thanks a lot for this tutorial, it completly fullfilled my needs !</p>
+<p>A simple info to help futur visitors :</p>
+<p>in a c function, even when embedded in an objectif-c class, the self variable is not available. Therefor, you may have to pass it as the 4th parameter to the InstallApplicationEventHandler function, to get it back as userData in you event handler function.</p>
+<p>Global thanks for you work Dustin !</p>
+<p></p>
+			</blockquote>
+			<cite>Jerome on 8/25/2006 at 03:50</cite>
+		</div>
+
+	
+		<div class="bubble " id="comment-1763">
+			<blockquote>
+				<p></p><p><a href="http://wafflesoftware.net/shortcut/" rel="nofollow">http://wafflesoftware.net/shortcut/</a></p>
+<p></p>
+			</blockquote>
+			<cite><a href="http://brok3n.org" rel="external nofollow">Chris Forsythe</a> on 10/5/2006 at 17:36</cite>
+		</div>
+
+	
+		<div class="bubble " id="comment-3086">
+			<blockquote>
+				<p></p><p>Hello, Dustin!</p>
+<p>Iâ€™m really enjoy your post about global hot key. </p>
+<p>Thank you very much!</p>
+<p>Your post helps me with my job.</p>
+<p></p>
+			</blockquote>
+			<cite>Lora on 12/7/2006 at 05:07</cite>
+		</div>
+
+	
+		<div class="bubble " id="comment-3509">
+			<blockquote>
+				<p></p><p>Thank you very much! Iâ€™ve found all I wanted!</p>
+<p></p>
+			</blockquote>
+			<cite>Stepan on 12/16/2006 at 14:50</cite>
+		</div>
+
+	
+		<div class="bubble " id="comment-11943">
+			<blockquote>
+				<p></p><p>Hey, cool tutorial! Thanks a lot!</p>
+<p>To Jerome:</p>
+<p>You either pass (void*)self as a parameter, or (much simpler) you use notifications. This way all parts of your project can receive the hot key notif.</p>
+<p>Cheers,</p>
+<p>Charlie</p>
+<p></p>
+			</blockquote>
+			<cite>Charlie Monroe on 5/13/2007 at 02:33</cite>
+		</div>
+
+	
+		<div class="bubble " id="comment-12430">
+			<blockquote>
+				<p></p><p>First great write up, EXACTLY what I needed.<br>
+Hereâ€™s a question:  how to catch/trigger when the button being held down?</p>
+<p></p>
+			</blockquote>
+			<cite>Justin on 5/30/2007 at 20:19</cite>
+		</div>
+
+	
+		<div class="bubble " id="comment-15991">
+			<blockquote>
+				<p></p><p>[â€¦] their features into it. There are still certain things that can be only done in C. For instance, my tutorial on how to do global hotkeys utilizes a Carbon API. Since weâ€™re using Objective-C, itâ€™s [â€¦]</p>
+<p></p>
+			</blockquote>
+			<cite><a href="http://dbachrach.com/blog/2007/07/24/cocoa-is-for-you-indie-developers-taste-the-chocolate/" rel="external nofollow">Cocoa is for You, Indie Developers: Taste the Chocolate Â» Dustin Bachrach Blog</a> on 7/24/2007 at 18:57</cite>
+		</div>
+
+	
+		<div class="bubble " id="comment-22867">
+			<blockquote>
+				<p></p><p>Objective-C is a _superset_ of C. ;)</p>
+<p></p>
+			</blockquote>
+			<cite>Phil on 10/1/2007 at 00:19</cite>
+		</div>
+
+	
+	</div>
+
+ 
+
+
+<h3 id="respond">Have anything to say?</h3>
+
+
+<form action="http://dbachrach.com/blog/wp-comments-post.php" method="post" id="commentform">
+
+
+<p><input type="text" name="author" id="author" value="" size="22" tabindex="1">
+<label for="author"><small>Name </small></label></p>
+
+<p><input type="text" name="email" id="email" value="" size="22" tabindex="2">
+<label for="email"><small>Mail (will not be published) </small></label></p>
+
+<p><input type="text" name="url" id="url" value="" size="22" tabindex="3">
+<label for="url"><small>Website</small></label></p>
+
+
+<!--<p><small><strong>XHTML:</strong> You can use these tags: &lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;abbr title=&quot;&quot;&gt; &lt;acronym title=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote cite=&quot;&quot;&gt; &lt;code&gt; &lt;em&gt; &lt;i&gt; &lt;strike&gt; &lt;strong&gt; </small></p>-->
+
+<p><textarea name="comment" id="comment" cols="70" rows="10" tabindex="4"></textarea></p>
+
+<p><input name="submit" type="submit" id="submit" tabindex="5" value="Submit Comment">
+<input type="hidden" name="comment_post_ID" value="24">
+</p>
+
+</form>
+
+
+			<div id="more_article_links">Â« <a href="http://dbachrach.com/blog/2005/11/27/thanksgiving-trip-to-chicago/">Thanksgiving Trip To Chicago</a> | <a href="http://dbachrach.com/blog/2005/12/02/quicktunes-updated-to-210/">QuickTunes Updated to 2.1.0</a> Â»</div>
+			
+		</div>
+		
+				
+		
+		
+		
+			</div>	
+
+	<div id="sidebar_content">
+		<div id="about_section">
+	<h2>About Me</h2>
+	<p>Dustin Bachrach is a 17 year old Rice student and developer for both OS X and the web. He also deals a lot with design work and Photoshop. He blogs technology, Apple, programming, and life.<br><a href="http://dbachrach.com/blog/about/">Read more</a></p>
+</div>
+		
+<div id="twitter_section">
+    <h2>Twitter</h2>
+    <p>
+    
+
+<span id="my_twitter_status">Back in SA for the weekend.</span><br><span id="my_twitter_status_time">18 days ago</span>
+
+	</p>
+</div>
+
+<div id="blogroll_section">
+<h2>Who I Read</h2>
+<span style="color:#CCC;text-size:8px;">&gt;</span> <a href="http://paulstamatiou.com/">Paul Stamatiou</a><br>
+<span style="color:#CCC;text-size:8px;">&gt;</span> <a href="http://www.benhummel.com/">Benjamin Hummel</a><br>
+<span style="color:#CCC;text-size:8px;">&gt;</span> <a href="http://www.henryetc.com/blog/">Henry</a><br>
+<span style="color:#CCC;text-size:8px;">&gt;</span> <a href="http://www.jordanchark.com/blog/">Jordan Chark</a><br>
+<span style="color:#CCC;text-size:8px;">&gt;</span> <a href="http://connerdowney.com/">Conner Downey</a><br>
+<span style="color:#CCC;text-size:8px;">&gt;</span> <a href="http://www.wilshipley.com/">Wil Shipley</a><br>
+<span style="color:#CCC;text-size:8px;">&gt;</span> <a href="http://www.daringfireball.com/">John Gruber</a><br>
+</div>
+
+
+
+<div id="ad_section">
+<a href="http://dbachrach.com/blog/advertise">Want to advertise here?</a><br><br>
+    <a href="http://www.randomshapes.com"><img src="http://dbachrach.com/blog/wp-content/themes/dustin/images/randomshapes_ad.png" alt="RandomShapes"></a>
+    <a href="http://www.dbachrach.com/showyourself"><img src="http://dbachrach.com/blog/wp-content/themes/dustin/images/showyourself_ad.png" alt="ShowYourself"></a>
+    <a href="http://www.dbachrach.com/opensoft/index.php?page=Todos"><img src="http://dbachrach.com/blog/wp-content/themes/dustin/images/todos_ad.png" alt="Todos"></a>
+    <a href="http://www.dbachrach.com/opensoft/index.php?page=DiggUpdate"><img src="http://dbachrach.com/blog/wp-content/themes/dustin/images/diggupdate_ad.png" alt="DiggUpdate"></a>
+</div>	
+
+<div id="stats_section">
+    <a href="http://feeds.feedburner.com/dbachrach"><img src="http://feeds.feedburner.com/~fc/dbachrach?bg=4A839D&amp;fg=000000&amp;anim=0" height="26" width="88" style="border:0" alt=""></a><script src="http://widgets.technorati.com/t.js" type="text/javascript"> </script><a href="http://technorati.com/blogs/dbachrach.com/blog?sub=tr_authority_t_ns" class="tr_authority_t_js" style="color:#4261DF">View blog authority</a>
+    <p><script type="text/javascript" src="http://pub.mybloglog.com/comm2.php?mblID=2007011117224679&amp;c_width=165&amp;c_sn_opt=n&amp;c_rows=2&amp;c_img_size=h&amp;c_heading_text=&amp;c_color_heading_bg=FFFFFF&amp;c_color_heading=ffffff&amp;c_color_link_bg=E3E3E3&amp;c_color_link=005A94&amp;c_color_bottom_bg=005A94"></script></p><table cellspacing="0" cellpadding="3" id="MBL_COMM"><tbody><tr id="tr0"><td class="mbl_join_img" onclick="gU(1);"><img src="http://s3.amazonaws.com/co_img/no_pict.gif"></td><td colspan="4" class="mbl_join" onclick="gU(1);"><strong>You!</strong><br><a href="http://www.mybloglog.com/buzz/yjoin/?ref_id=2007011117224679&amp;ref=w" style="width:auto;" target="_top">Join My Community</a></td></tr><tr id="tr1"><td id="tdd11" class="mbl_img" onclick="gU(&quot;JasonStone&quot;);"><img src="http://F3.yahoofs.com/coreid/472d2616i1134zul1sp1/wo8jj_sydKuUb09DmPquYeA-/1/tn48.png?ciAMAiHBX0FksbFQ" alt="Jason S" title="Jason S"></td><td id="tdd12" class="mbl_img" onclick="gU(&quot;snowdog&quot;);"><img src="http://s3.amazonaws.com/buzz_img/2007042510125356_avatar.jpg" alt="snowdog" title="snowdog"></td><td id="tdd13" class="mbl_img" onclick="gU(&quot;computerjoe&quot;);"><img src="http://s3.amazonaws.com/buzz_img/2006022613444810_avatar.jpg" alt="computerjoe" title="computerjoe"></td><td id="tdd14" class="mbl_img" onclick="gU(&quot;zerotothe5th&quot;);"><img src="http://s3.amazonaws.com/buzz_img/2007060614314841_avatar.jpg" alt="zerotothe5th" title="zerotothe5th"></td><td id="tdd15" class="mbl_img" onclick="gU(&quot;Valery&quot;);"><img src="http://s3.amazonaws.com/buzz_img/2006042215375568_avatar.jpg" alt="Valery" title="Valery"></td></tr><tr id="tr6"><td id="tdd16" class="mbl_img" onclick="gU(&quot;geeknewsdotnet&quot;);"><img src="http://F3.yahoofs.com/coreid/4706dbf8i17a3zul3sp1/kM1ybh0.d6LnePkrA1iNKf_f/1/tn48.jpg?ciAMAiHBYpQ5QFcZ" alt="Andy" title="Andy"></td><td id="tdd17" class="mbl_img" onclick="gU(&quot;kineticstatic&quot;);"><img src="http://s3.amazonaws.com/buzz_img/2007082016060480_avatar.jpg" alt="kineticstatic" title="kineticstatic"></td><td id="tdd18" class="mbl_img" onclick="gU(&quot;nasph&quot;);"><img src="http://F3.yahoofs.com/coreid/46f95428i2684zul1sp1/7WxyTYQ_erVHff82sYA1JDl./1/tn48.jpg?ciAMAiHBeRKzg6wN" alt="nasph" title="nasph"></td><td id="tdd19" class="mbl_img" onclick="gU(&quot;mohdismail&quot;);"><img src="http://F3.yahoofs.com/coreid/4737d565i1d8azul2sp1/79b6bqU0erXmpvzCa0O1ciij/2/tn48.jpg?ciAMAiHBh9j1w.qr" alt="mohdismail" title="mohdismail"></td><td id="tdd110" class="mbl_img" onclick="gU(&quot;4exp&quot;);"><img src="http://s3.amazonaws.com/buzz_img/2007042410095642_avatar.jpg" alt="4exp" title="4exp"></td></tr><tr><td colspan="5" class="mbl_fo_hidden" onclick="gU(2);"><a href="http://www.mybloglog.com/buzz/community/DustinBachrachBlog/" target="_top">View Reader Community</a></td></tr><tr><td colspan="5" class="mbl_fo_hidden" onclick="gU(5);"><a href="http://www.mybloglog.com/buzz/yjoin/?ref_id=2007011117224679&amp;ref=w" target="_top">Join this Community</a></td></tr><tr><td colspan="5" class="mbl_fo_hidden" onclick="gU(3);"><a href="http://www.mybloglog.com/" target="_top">(provided by MyBlogLog)</a></td></tr></tbody></table><p></p>
+</div>
+
+  	</div>
+</div>
+
+
+<div id="footer_bg">
+	<div id="footer_links"><a href="http://dbachrach.com/blog">Blog</a> . <a href="http://dbachrach.com/blog/about/">About</a> . <a href="http://dbachrach.com/blog/archives/">Archives</a> . <a href="http://dbachrach.com/blog/favorite-posts/">Favorite Posts</a> . <a href="http://dbachrach.com/blog/contact/">Contact</a></div>
+	<div id="footer_credits">Dustin Bachrach Blog is proudly powered by <a href="http://wordpress.org/">WordPress</a>. <a href="http://dbachrach.com/blog/feed/">Entries (RSS)</a> and <a href="http://dbachrach.com/blog/comments/feed/">Comments (RSS)</a>. <a href="http://dbachrach.com/blog/crawlpage.html">Crawl Page</a>.</div>
+</div>
+
+<div class="hidden">
+	<img src="images/rss_button_hover.png" alt="RSS" class="hidden">
+	<img src="images/red_star.png" alt="Red Star" class="hidden">
+</div>
+
+
+<script type="text/javascript">
+  function relative_time(time_value) {
+     var parsed_date = Date.parse(time_value);
+
+     var relative_to = (arguments.length > 1) ? arguments[1] : new Date();
+     var delta = parseInt((relative_to.getTime() - parsed_date) / 1000);
+
+     if(delta < 60) {
+         return 'less than a minute ago';
+     } else if(delta < 120) {
+         return 'about a minute ago';
+     } else if(delta < (45*60)) {
+         return (parseInt(delta / 60)).toString() + ' minutes ago';
+     } else if(delta < (90*60)) {
+         return 'about an hour ago';
+     } else if(delta < (24*60*60)) {
+         return 'about ' + (parseInt(delta / 3600)).toString() + ' hours ago';
+     } else if(delta < (48*60*60)) {
+         return '1 day ago';
+     } else {
+         return (parseInt(delta / 86400)).toString() + ' days ago';
+     }
+  }
+  
+	function twitterCallback(obj) {
+		var id = obj[0].user.id;
+		document.getElementById('my_twitter_status').innerHTML = obj[0].text;
+		document.getElementById('my_twitter_status_time').innerHTML = relative_time(obj[0].created_at);
+	}
+</script>
+
+
+<script type="text/javascript" src="http://www.twitter.com/statuses/user_timeline/642113.json?callback=twitterCallback&amp;count=1"></script>
+
+
+
+<!-- Dynamic Page Served (once) in 0.949 seconds -->
+</body></html>P¯ $).26:>BGKOSW\`dhlptx|Ô_WebResourceResponse_<http://dbachrach.com/blog/wp-content/themes/dustin/style.cssOİbplist00Ô	
+X$versionT$topY$archiverX$objects † Ñ_WebResourceResponse€_NSKeyedArchiver¯&,-345KLMNOPQRSTUVWXYZ[_`U$nullİ !"#$%V$classR$3R$8S$10S$11R$5R$6R$4R$7R$2R$9R$0R$1€€€ €€€€€ Ó'()$+WNS.base[NS.relative€€ €_<http://dbachrach.com/blog/wp-content/themes/dustin/style.cssÒ./01X$classesZ$classname¢12UNSURLXNSObject#A©æù¨JH•ÈÓ6789BWNS.keysZNS.objects€¨:;<=>?@A€	€
+€€€€€€¨CDEFGHIJ€€€€€€€€]Accept-RangesVServer\Content-TypeTDate^Content-LengthTEtagZConnection]Last-ModifiedUbytesVApacheXtext/css_Tue, 20 Nov 2007 20:36:35 GMTT8658_"5308c7-21d2-46ef27bb"Uclose_Tue, 18 Sep 2007 01:19:55 GMTÒ./\]£]^2_NSMutableDictionary\NSDictionary!ÒÒ./ab£bc2_NSHTTPURLResponse]NSURLResponse     ) 2 7 : P R d ƒ ‰ ¤ « ® ± µ ¹ ¼ ¿ Â Å È Ë Î Ñ Ó Õ × Ù Û İ ß á ã å ç é ğ ø
+INWbekt}†™›¤¦¨ª¬®°²´½¿ÁÃÅÇÉËÍÛâïô!'.7W\u{› ¤ºÇÊÏÓç             d              õXtext/cssO!Ò/*  
+Theme Name: Dustin
+Theme URI: http://dbachrach.com
+Description: Theme for Dustin Bachrach BLog
+Version: 1.0
+Author: Dustin Bachrach
+Author URI: http://dbachrach.com/
+*/
+
+body {
+	font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	margin: 0px;
+	padding: 0px;
+	
+}
+p {
+	font-size: 12px;
+	line-height: 150%;
+}
+form {
+	margin: 0px;
+	padding: 0px;
+}
+a img {
+	border: 0px;
+}
+a {
+	text-decoration: none;
+	color: #06c;
+}
+a:hover {
+	color: #147;
+}
+h1, h2 {
+	font-weight: normal;
+	margin-top: 0px;
+	margin-bottom: 5px;
+}
+blockquote {
+	margin: 15px 30px 0 10px;
+	border: 1px solid #c9c2c1;
+	background-color: #F7F7F7;
+	padding: 2px 12px 5px 12px;
+}
+.hidden {
+	display: none;
+}
+
+#header_bg {
+	width: 100%;
+	height: 99px;
+	background-image: url('images/header_bg.png');
+	background-repeat: repeat-x;
+	z-index: 0;
+}
+#logo_img {
+	margin: 0px auto;
+	background-image: url('images/logo.png');
+	width: 345px;
+	height: 99px;
+}
+a #rss_tab {
+	position: absolute;
+	top: 0px;
+	right: 100px;
+	width: 78px;
+	height: 34px;
+	background-image: url('images/rss_button.png');
+}
+a:hover #rss_tab {
+	background-image: url('images/rss_button_hover.png');
+}
+
+#navigation {
+	clear: both;
+	margin: 0px auto;
+	width: 796px;
+	border-top: 2px solid #333;
+	padding-top: 5px;
+	margin-top: 5px;
+}
+#navigation #search_section {
+	float: right;
+	padding: 0px;
+	margin-bottom: 0px;
+}
+#navigation #search_section input {
+	vertical-align:middle;
+	display:inline;
+}
+#navigation #search_section #search_image {
+	margin-left: -15px;
+}
+#navigation ul#links_section {
+	float: left;
+	padding: 0px;
+	margin: 0px;
+	white-space: nowrap;
+	list-style-type: none;
+	font-size: 16px;
+}
+#navigation ul#links_section li {
+	display: inline;
+	margin-right: 20px;
+	vertical-align: middle;
+}
+#navigation ul#links_section li.current_location {
+	font-weight: bold;
+}
+#gray_bar {
+	clear: both;
+	width: 796px;
+	padding-bottom: 5px;
+	margin-bottom: 5px;
+	margin-left: auto;
+	margin-right: auto;
+	border-bottom: 1px solid #CCC;
+}
+
+#container {
+	width: 796px;
+	margin-left:  auto;
+	margin-right: auto;
+	margin-top: 20px;
+}
+#main_content {
+	width: 610px;
+	float: right;
+}
+#sidebar_content {
+	width: 165px;
+	float: left;
+	font-size: 12px;
+	text-align: left;
+}
+#sidebar_content h2 {
+	color: #326B85;
+	font-size: 18px;
+	margin-top: 0px;
+	margin-bottom: 5px;
+}
+#sidebar_content p {
+	margin-top: 0px;
+}
+#sidebar_content #twitter_section {
+	margin-top: 30px;
+}
+#sidebar_content #twitter_section #my_twitter_status_time {
+	color: #333;
+	font-size: 10px;
+}
+#sidebar_content #ad_section {
+	margin-top: 30px;
+}
+#sidebar_content #ad_section a img {
+	margin-bottom: 4px;
+}
+#sidebar_content #stats_section {
+	margin-top: 10px;
+}
+
+.post {
+	text-align: justify;
+	padding: 10px;
+	font-size: 12px;
+	margin-bottom: 5px;
+	
+}
+.post_first {
+	margin-top: -10px;
+}
+.post_alt {
+	border: 1px solid #E2E2E2;
+	background-color: #FBFBFB;
+}
+.post_single {
+	text-align: left;
+	font-size: 13px;
+}
+.post h2{
+	padding-top: 0px;
+	margin:0px;
+	font-size: 20px;
+}
+.post h2 a  {
+	background-image: url('images/blue_star.png');
+	background-repeat: no-repeat;
+	background-position: left center;
+	color: #000;
+	padding-left: 20px;
+}
+.post h2 a:hover  {
+	background-image: url('images/red_star.png');
+	color: #06c
+}
+
+.post .by_line {
+	margin-top: 3px;
+	color:#999999;
+	font-size: 11px;
+}
+.post .image {
+	float: left;
+	height: 60px;
+	width: 60px;
+	margin-left: 20px;
+	margin-top: 10px;
+
+}
+.post_alt .image {
+	border: 1px solid #E2E2E2;
+}
+.post .excerpt {
+	width: 490px;
+	padding-top: 0px;
+	float: right;
+}
+
+.floorer {
+	clear: both;
+}
+
+
+.more_article_links {
+	font-size: 10px;
+	margin-bottom: 10px;
+	border: 1px solid #E2E2E2;
+	background-color: #FBFBFB;
+	padding: 2px;
+	margin-top: 20px;
+	color: #666;
+}
+.float_left {
+	float: left;
+}
+.float_right {
+	float: right;
+}
+
+h3#comments, h3#respond, h3#top_fives_title {
+	margin-top: 35px;
+	text-align: center;
+	font-size: 20px;
+	font-weight: normal;
+	color: #333;
+}
+
+#comment_list {
+	margin-bottom: 20px;
+}
+div.bubble {
+	width: auto;
+	font-size: 12px;
+	margin-bottom: 24px;
+}
+
+div.bubble blockquote {
+	font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	margin: 0px;
+	padding: 0px;
+	border: 1px solid #c9c2c1;
+	background-color: #F7F7F7;
+}
+
+div.bubble blockquote p {
+	margin: 12px;
+	padding: 0px;
+}
+
+div.bubble cite {
+	position: relative;
+	margin: 0px;
+	padding: 7px 0px 0px 15px;
+	top: 6px;
+	background: transparent url('images/tip.gif') no-repeat 20px 0;
+	font-style: normal;
+}
+
+
+div.bubble_dustin blockquote {
+	background-color: #E0EFFF;
+	border: 1px solid #06c;
+}
+
+div.bubble_dustin cite {
+	background: transparent url('images/tip_dustin.gif') no-repeat 20px 0;
+}
+
+#footer_bg {
+	width: 100%;
+	height: 90px;
+	background-image: url('images/footer_bg.png');
+	background-repeat: repeat-x;
+	clear: both;
+	text-align: center;
+	font-size: 11px;
+	
+}
+#footer_links {
+	padding-top: 50px;
+	margin-bottom: 4px;
+}
+
+#technorati_rank {
+	font-size: 10px;
+	margin-top: -10px;
+}
+#posts_by_months_div {
+	float: left;
+	width:50%;
+}
+#posts_by_cats_div {
+	float: right;
+	width:50%;
+}
+#posts_by_months {
+	list-style-type: none;
+	margin-left: -15px;
+}
+#posts_by_months li {
+	color: #666;
+	font-size: 12px;
+	margin-bottom: 3px;
+}
+#posts_by_months li a {
+	color: #06c;
+	font-size: 14px;
+}
+#posts_by_months li a:hover {
+	color: #147;
+}
+
+#posts_by_cats_div ul {
+	list-style-type: none;
+	margin-left: -15px;
+}
+#posts_by_cats_div ul li {
+	color: #666;
+	font-size: 12px;
+	margin-bottom: 3px;
+}
+#posts_by_cats_div ul li a {
+	color: #06c;
+	font-size: 14px;
+}
+#posts_by_cats_div ul li a:hover {
+	color: #147;
+}
+
+#list_all_posts_ul {
+	list-style-type: none;
+	margin-left: -15px;
+}
+#list_all_posts_ul li {
+	color: #666;
+	font-size: 12px;
+	margin-bottom: 3px;
+}
+#list_all_posts_ul li a {
+	color: #06c;
+	font-size: 14px;
+}
+#list_all_posts_ul li a:hover {
+	color: #147;
+}
+
+ul.top_five {
+	list-style-type: none;
+	margin-left: -30px;
+	margin-top: -10px;
+}
+ul.top_five li {
+color: #666;
+	font-size: 12px;
+	margin-bottom: 3px;
+}
+ul.top_five li a {
+	color: #06c;
+	font-size: 14px;
+}
+ul.top_five li a:hover {
+	color: #147;
+}
+
+dl#favorite_posts {
+	list-style-type: none;
+	margin-left: 20px;
+	margin-top: -10px;
+}
+dl#favorite_posts dt {
+	margin-bottom: 3px;
+}
+dl#favorite_posts dt a {
+	color: #06c;
+	font-size: 14px;
+}
+dl#favorite_posts dt a:hover {
+	color: #147;
+}
+dl#favorite_posts dd {
+	color:#666;
+	font-size: 12px;
+}
+
+h3.not_bold, h4.not_bold {
+	font-weight: normal;
+
+}
+
+/*Pagination*/
+div.pagination {
+        text-align:center;
+        margin: 0px;
+        padding: 7px;
+}
+div.pagination a {
+        padding: 2px 5px 2px 5px; 
+              margin: 2px;
+        border: 1px solid #06c; /*#AAA */
+        text-decoration: none;
+        color: #06c;
+}
+div.pagination a:hover, div.pagination a:active {
+        border: 1px solid #147;
+        color: #147;
+}
+div.pagination span.current {
+        padding: 2px 5px 2px 5px; 
+              margin: 2px;
+        border: 1px solid #AAA;
+                font-weight: bold;
+                /*background-color: #CCC;*/
+                color: #AAA;
+} 
+div.pagination span.disabled {
+                padding: 2px 5px 2px 5px; 
+              margin: 2px;
+                border: 1px solid #EEE;
+                color: #AAA; 
+}
+h2.with_underline {
+display: block;
+margin-top: 20px; 
+padding-bottom:3px;
+width: 100%;
+color: #333;
+border-bottom: 1px #BBB solid;
+clear:both;
+}
+h3.after_underline {
+color: #333;
+}
+
+    .wp_syntax {
+      color: #100;
+      background-color: #f9f9f9;
+      border: 1px solid silver;
+      margin: 0 0 1.5em 0;
+      overflow: auto;
+    }
+
+    /* IE FIX */
+    .wp_syntax {
+      overflow-x: auto;
+      overflow-y: hidden;
+      padding-bottom: expression(this.scrollWidth > this.offsetWidth ? 15 : 0);
+      width: 100%;
+    }
+
+    .wp_syntax table {
+      border-collapse: collapse;
+    }
+
+    .wp_syntax div, .wp_syntax td {
+      vertical-align: top;
+      padding: 2px 4px;
+    }
+
+    .wp_syntax .line_numbers {
+      text-align: right;
+      background-color: #def;
+      color: gray;
+      overflow: visible;
+    }
+
+    /* potential overrides for other styles */
+    .wp_syntax pre {
+      margin: 0;
+      width: auto;
+      float: none;
+      clear: none;
+      overflow: visible;
+    }Õ_@http://track3.mybloglog.com/js/jsserv.php?mblID=2007011117224679Uutf-8Oæbplist00Ô	
+X$versionT$topY$archiverX$objects † Ñ_WebResourceResponse€_NSKeyedArchiver¯&,-345IJKLMNOPQRSTUVW[\U$nullİ !"#$%V$classR$3R$8S$10S$11R$5R$6R$4R$7R$2R$9R$0R$1€€€ €€€€€ Ó'()$+WNS.base[NS.relative€€ €_@http://track3.mybloglog.com/js/jsserv.php?mblID=2007011117224679Ò./01X$classesZ$classname¢12UNSURLXNSObject#A©æù½'’ÈÓ6789AWNS.keysZNS.objects€§:;<=>?@€	€
+€€€€€§BCDEFGH€€€€€€€SP3pWExpires_Transfer-Encoding\Content-TypeTDateZConnectionZSet-Cookie_Ìpolicyref="http://p3p.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM DEV TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE GOV"_Wed, 21 Nov 2007 20:36:45 GMTXIdentity_text/html; charset=utf-8_Tue, 20 Nov 2007 20:36:45 GMTUclose__BX=1o7264l3k6hat&b=3&s=03; expires=Tue, 02-Jun-2037 20:00:00 GMT; path=/; domain=.mybloglog.comÒ./XY£YZ2_NSMutableDictionary\NSDictionarypÒ./]^£^_2_NSHTTPURLResponse]NSURLResponse     ) 2 7 : P R d  ‡ ¢ © ¬ ¯ ³ · º ½ À Ã Æ É Ì Ï Ñ Ó Õ × Ù Û İ ß á ã å ç î öKPYdgmvˆ›¥§©«­¯±³»½¿ÁÃÅÇÉÍÕéöûà 	$DJ¬±µËØÛàäø             `              Op
+<!--
+if(typeof(mbl_jsserv_loaded) == 'undefined') {
+var mbl_jsserv_loaded = true;
+
+function m_r_e(obj, w, f) { 
+  if(window.addEventListener){ obj.addEventListener(w, f, false); }else if(window.attachEvent){ obj.attachEvent('on'+w, f); }else{}
+}
+function m_rm_e(obj, w, f) {
+  if(window.addEventListener){ obj.removeEventListener(w, f, false); }else if(window.attachEvent){ obj.detachEvent('on'+w, f); }else{}
+}
+function m_i_eu(url){
+  if(!url){return false;}
+  if(typeof(url)!='string'){return true;}
+  url=url.toLowerCase();
+  if(url.indexOf('https://')==0){url=url.substring(8);}
+  else if(url.indexOf('http://')==0){url=url.substring(7);}
+  else if(url.indexOf('ftp://')==0){url = url.substring(6);}
+  else if(url.indexOf('ssl://')==0){url = url.substring(6);}
+  else if(url.indexOf('mailto:')==0){return true;}
+  else{return false;}
+  if(url.indexOf('www.')==0){url=url.substring(4);}
+  var hn=document.location.hostname.toLowerCase();
+  if(hn.indexOf('www.')==0){hn=hn.substring(4);}
+  if(hn==''){return true;}
+  if(url.indexOf(hn)!=0){return true;}
+  return false;
+}
+
+	var cs_mbl_isAOL_V8 = false;
+	if(navigator.userAgent.indexOf('AOL 8.0') > 0){ cs_mbl_isAOL_V8 = true; }	
+	var cs_mblID='2007011117224679', cs_url_trker='http://track3.mybloglog.com/tr/urltrk.php', mbl_isi='N2007112012364571', mblco_on='', mblco_pu='', mblco_n='', mblco_e='', mblco_u='', mblco_c='';
+	function m_p_c(obj, flag){
+	  for(var j=0;j<=5;j++){if(flag==1){if(obj&&obj.nodeName.toUpperCase()=='A'){return obj;}}if(flag==2){if(obj&&obj.nodeName.toUpperCase()!='BODY'&&obj.onclick){return obj;}}if(!obj.parentNode){return null;}obj=obj.parentNode;}
+	  return null;
+	}
+	function m_is_u(s){
+    if(!s){return false;}
+		var regexp = /(http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?/i
+		return regexp.test(s);
+	}
+  function m_trim(str, ch){
+    while(str.substring(0,1)==ch){str=str.substring(1, str.length);}
+    while(str.substring(str.length-1, str.length)==ch){str = str.substring(0, str.length-1);}
+    return str;
+  }
+	function m_ctx_c(e){
+	  var tg = null;if(e){tg=e.target;}else{tg=window.event.srcElement;}m_d_t(tg, false);
+	}
+	function m_oclk(e){var tg=null;if(e){tg=e.target;}else{tg=window.event.srcElement;}m_d_t(tg, true);}
+	function m_d_t(tg, delay){
+	  var url=null, text=null, co_qstr='';
+	  try{
+	    if(tg){
+	      tgP=m_p_c(tg, 1);
+	      if(tgP&&tgP.nodeName.toUpperCase()=='A'){tg=tgP;}
+	      if(tg.nodeName.toUpperCase()=='A'){url=tg.href;if(tg.innerHTML){text=tg.innerHTML;}else if(tg.innerText){text=tg.innerText;}else if(tg.text){text=tg.text;}else{}}
+        else if(tg.nodeName.toUpperCase()=='AREA'){url=tg.href;text=tg.getAttribute('alt') ? tg.getAttribute('alt') : tg.getAttribute('id');if(text==null||text==''){text=url;}}
+        else if(tg.nodeName.toUpperCase()=='INPUT'&&tg.type.toUpperCase()=='SUBMIT'){url=m_trim(tg.form.action,'/');url=m_trim(url,' ');text=tg.value;
+						var co_name='', co_email='', co_url='', co_text='';
+						//if(m_is_u(mblco_pu)&&url.toUpperCase()==mblco_pu.toUpperCase()){
+            if(url.toLowerCase().indexOf('comment') > 0){
+					    //if(mblco_n&&tg.form.elements[mblco_n]){co_name=tg.form.elements[mblco_n].value;}if(mblco_e&&tg.form.elements[mblco_e]){co_email=tg.form.elements[mblco_e].value;}if(mblco_u&&tg.form.elements[mblco_u]){co_url=tg.form.elements[mblco_u].value;}if(mblco_c&&tg.form.elements[mblco_c]){co_text=tg.form.elements[mblco_c].value;}
+					    if(tg.form.elements['author']){co_name=tg.form.elements['author'].value;}if(tg.form.elements['email']){co_email=tg.form.elements['email'].value;}if(tg.form.elements['url']){co_url=tg.form.elements['url'].value;}if(tg.form.elements['comment']){co_text=tg.form.elements['comment'].value;}else if(tg.form.elements['text']){co_text=tg.form.elements['text'].value;}else{}					
+						}					
+						if(co_text != '') {
+						  co_qstr = '&co_n='+escape(co_name)+'&co_e='+escape(co_email)+'&co_u='+escape(co_url)+'&co_c='+escape(co_text) + '&co_pt=' + escape(document.title);
+						}
+	      }else{}
+	      if(url==null||text==null){return true;} 
+	      if(co_qstr!=''||m_i_eu(url)){if(cs_mbl_isAOL_V8 && (tg.target=='_new'||tg.target=='_blank')){return true;}url=escape(url);text=escape(text);m_trk(text, url, co_qstr, delay);}
+	    }
+	  }catch(err){}
+	}
+	function m_trk(text, url, co_qstr, delay){      
+	  try{
+	    var now=new Date();var trackURL=cs_url_trker+'?t=2&u='+url+'&te='+text+'&i='+cs_mblID+'&now='+now.valueOf()+'&d=20071120'+'&db='+'&v='+mbl_isi+co_qstr;var x=document.createElement('IMG');x.src=trackURL;if(delay){m_pse(900);}
+	  }catch(err){}
+	}		
+	function m_t_ol(){
+	  try{
+	    var now = new Date();
+	    var url = escape(document.location.href);
+	    var ext_referrer=document.referrer;
+	    if(ext_referrer!=''&&m_i_eu(ext_referrer)){
+	      var ext_referrer_para='&eref='+escape(ext_referrer);
+	    }else{var ext_referrer_para='';}
+	    var trackURL = cs_url_trker + '?i=' + cs_mblID + '&t=1&u=' + url + '&a=' + escape(navigator.userAgent) + '&d=20071120' + ext_referrer_para + '&db=' + '&now=' + now.valueOf() + '&v=' + mbl_isi;
+	    var x=document.createElement('IMG');x.src=trackURL;	
+	  }catch(err){ }
+	  return true;
+	}
+	function m_pse(numberMillis){var now=new Date();var exitTime=now.getTime()+numberMillis;while(true){now=new Date();if(now.getTime()>exitTime){return;}}}
+
+  //start IFrame ad tracking
+  //from http://www.digitalmediaminute.com/article/1715/adsense-click-pepper
+	var m_px=0,m_py=0,m_as_frms=new Array(),is_ie=document.all?true:false;
+	function m_as_init() {
+		var ad=document.getElementsByTagName('iframe');
+		for(var i=0;i<ad.length;i++) {
+      if(ad[i].src.indexOf('googlesyndication.com')>-1){
+        m_as_frms[m_as_frms.length]=new Array(ad[i], 'http://pagead2.googlesyndication.com', 'Google AdSense');
+        if(is_ie){ad[i].onfocus=m_trk_as;}
+      } else if(ad[i].src.indexOf('ypn-js.overture.com') > -1) {
+        m_as_frms[m_as_frms.length]=new Array(ad[i], 'http://ypn-js.overture.com', 'Yahoo! Publisher Network');
+        if(is_ie){ad[i].onfocus=m_trk_as;}
+      } else {}
+    }
+    if(m_as_frms.length>0&&!is_ie){m_r_e(window, 'beforeunload', m_as_ul);m_r_e(document, 'mousemove', m_gm);}
+	}
+	function m_gm(e) {
+		if(!e){var e=window.event;}
+		if(e.pageX||e.pageY){m_px=e.pageX;m_py=e.pageY;}
+		else if(e.clientX||e.clientY){ m_px=e.clientX+document.body.scrollLeft+document.documentElement.scrollLeft;m_py=e.clientY+document.body.scrollTop+document.documentElement.scrollTop;}
+	}
+	function m_gpos(obj) {
+		var curleft = curtop = 0;
+		if(obj.offsetParent) {
+			curleft=obj.offsetLeft;
+			curtop=obj.offsetTop;
+			while(obj=obj.offsetParent){curleft+=obj.offsetLeft;curtop+=obj.offsetTop;}
+		}
+		return [curleft,curtop];
+	}
+	function m_as_ul(e) {
+    try{
+      var m_as_size='';
+			for(var i=0;i<m_as_frms.length;i++) {
+        var ad_pos=m_gpos(m_as_frms[i][0]);
+				var a_fx=(m_px>(ad_pos[0]-10)&&m_px<(parseInt(ad_pos[0])+parseInt(m_as_frms[i][0].width)+15));
+				var a_fy=(m_py>(ad_pos[1]-10)&&m_py<(parseInt(ad_pos[1])+parseInt(m_as_frms[i][0].height)+10));
+				if(a_fx&&a_fy){m_trk_as(m_as_frms[i][0]);break;}
+			}
+		}catch(err){}
+	}
+	function m_trk_as(f){
+    try{
+	    if(!f&&window.event.srcElement){var f=window.event.srcElement;}
+	    for(var i=0;i<m_as_frms.length;i++) {
+	      if(m_as_frms[i][0]==f) {
+	        var a_si = m_as_frms[i][0].width + 'x' + m_as_frms[i][0].height;
+	        m_trk(escape(m_as_frms[i][2]+' ('+a_si+')'), escape(m_as_frms[i][1]+'#'+a_si), '', true);break;
+	      }
+	    }
+	    if(is_ie){window.focus();}
+		}catch(err){}
+	}
+  //end IFrame ad tracking
+
+	if(document.body){//if the script is inside the body tag - which it should be
+	  document.body.onclick = m_oclk;
+	  document.body.oncontextmenu = m_ctx_c;
+	}else if(document){//script is outside the body tag - works in some browsers
+	  document.onclick = m_oclk;
+	  document.oncontextmenu = m_ctx_c;  
+	}else{}  
+	m_t_ol();
+  m_r_e(window, 'load', m_as_init);
+    
+}
+// --><!-- g3w3.mbl.sp1.yahoo.com uncompressed/chunked Tue Nov 20 12:36:45 PST 2007 -->
+Ô_Nhttp://dbachrach.com/blog/wp-content/themes/dustin/images/rss_button_hover.pngOğbplist00Ô	
+X$versionT$topY$archiverX$objects † Ñ_WebResourceResponse€_NSKeyedArchiver¯&,-345KLMNOPQRSTUVWXYZ[_`U$nullİ !"#$%V$classR$3R$8S$10S$11R$5R$6R$4R$7R$2R$9R$0R$1€€€ €€€€€ Ó'()$+WNS.base[NS.relative€€ €_Nhttp://dbachrach.com/blog/wp-content/themes/dustin/images/rss_button_hover.pngÒ./01X$classesZ$classname¢12UNSURLXNSObject#A©æùË kÈÓ6789BWNS.keysZNS.objects€¨:;<=>?@A€	€
+€€€€€€¨CDEFGHIJ€€€€€€€€]Accept-RangesVServer\Content-TypeTDate^Content-LengthTEtagZConnection]Last-ModifiedUbytesVApacheYimage/png_Tue, 20 Nov 2007 20:36:52 GMTT1973_"3312725-7b5-460af23f"Uclose_Wed, 28 Mar 2007 22:54:55 GMTÒ./\]£]^2_NSMutableDictionary\NSDictionaryµÒ./ab£bc2_NSHTTPURLResponse]NSURLResponse     ) 2 7 : P R d ƒ ‰ ¤ « ® ± µ ¹ ¼ ¿ Â Å È Ë Î Ñ Ó Õ × Ù Û İ ß á ã å ç é ğ ø
+[`itw}†‘˜ «­¶¸º¼¾ÀÂÄÆÏÑÓÕ×ÙÛİßíô%39@Jjoˆ®³·ÍÚİâæú             d              Yimage/pngOµ‰PNG
+
+   IHDR   N   "   ÆB   gAMA  ÖØÔOX2   tEXtSoftware Adobe ImageReadyqÉe<   PLTEö§Uœœœão#îƒ,ÌÌÌæ}4‰‰‰ät3şòçfff¼['ó+ûœ5ó‚ì›V½h6}}}PPPô‰%Çp.ıÒ¥­­­HHHù–1;;;Ûz+zzz›››„„„k]T555‚‚‚Õr4³³³>>>BBBÇÇÇrrr   NNN‰X9Âj,’’’ıııù"º]+Év4xxxÑu5ş¤@Ğr5SSS§§§ÉÉÉkkk}aOFFFuuuÒy6Ån-¿g-½b,Öw4ßßßíííYYYaaaEEEÕÕÕÊÊÊììì```^^^]]]___êêêèèèWWW\\\ZZZ[[[XXXéééäääåååÖÖÖÔÔÔUUUæææTTTŞŞŞVVV...ÂÂÂ×××àààôôô½½½áááÒÒÒÜÜÜØØØ¢¢¢000ÙÙÙõõõâââÃÃÃËËËiiiÛÛÛìëìëêëÏÏÏLLLããã999———@@@ëêêíy%ùéßäåäòççèùÿà¾ë˜iî»„Üa"éw'ıôìû8ø»~ûíâªªªû =ë}(óBâq)®f1år%ëz'ê|'Öy5ìŠ>Ó9ğ”9Ø`,ÿøïê”EøåØë¨dlllö‡ñ‰™a:ùŠòÉ¢ûøôååæë»’õ½‰ääåìëëêéêêééåäå¥j@^^_àd)î°mÿœ(üÊ–÷åÕğ¯}Ïm0í¢Rö…ôÚÀç„&ºp:ğ†(òÀŠ¹¹¹ái!èççèèçñ‘@øåääêëëö‘6ì³{õÏ´â uöœ>é¨uë’2ßj)åiï›dúÕ´ıüúø–9ıàÂúàËµ[,ëììùñæì}/ÁÁÁæt#ø›8û›=çèçüœ8î²r½b)åæåÃm-î‹+ù‘(ı¡:é{(õ8€€€Ñn2¿¿¿ÿû÷ûñéüóêêµ†şÿÿò›Eõš@ó“8å§{ğ—<ì‚Øz3Õ|6øêÚúš7™™™És0×z-ïˆ0çççëëëïïïîîîbbbÿÿÿ---¿ÜêÍ  ;IDATxÚäÕg|ÓFà+1!Œ˜c“&q$@!˜„²m+©¥“,ÙòˆW<âìÅİ--İ“–î½÷nÓÒ½÷Ş{ï½hí6çŞWúÍ&ùÖÿ‡“,KïŞ÷ô3HŒiÀÿŠÛŒ‡*‘c‡G–«0´,Ã£Æ3zÎ£ÁĞ2 â±ÜGËA_9†D°­*‰eR_,úùm‹/Z´bÅ¯g^·4Ga%U+†‚2RÁ9v>ÍM-,ôAŸ¾ğV}ıwwçÊñö9Ä)mä 6si®b÷ãç>vëÓfü¾ãã'öOİ}oÈíV,Á·ÔÅ£Š}˜áÆş^wã3«‰Ó:ÈAŸmmÅ¸¿š‡&;cÒ	õß§8¾‰ò–^7;/›_¯cƒFÖºÙ‘Õ§¸T¤˜.^ÅkãwN¹äR4}Ç¤w~Ø“¼Æµ ³$W"m)úÌ.AˆZdh/â³¥ƒÒ	•xu„İhKoÍ'O¾tÅO·ÿ†n¾xşĞÊä5Ø‚$V¢ıjqáY)‚ş`XÍ–Î¶‘(:/ˆ•¦W›ôÖ|ó<š zõK0¹àƒg_^ñËŒõ—Ã:„ÂeLvr©µ–Æ@ÌIŠØ­J÷öŒGŠÏºgŞÙ'‡;ôôÚ§CF¥G’|uÔ[ÂËEm™l_Uİ¤¡Î°^FWÛ”Ş/ó/Åï~ûâ]·³sÜªh@çC–…¢¡°¼Í3;‚J²“k¢k}ÿ>àˆt'ãêoæG¡#~¾s9zv÷{NDÍ,ˆµğ¸•ò¤£¿ÏàÊÑ=œÆÀaujÉy•O¢ŞÌÃoüzúäG›òÌÁGnŸ˜ál¶Jt £ìgØ-H	%L‘Ñoc’šä#¯Bë´ÎEwr¢) y¼Ş?ozğÍ.úë´SoØµ Û
+ƒ\©Û-ÔÈP«p®”‡ºÔÄ.Ì	xzJúQí‘8½èÃâiC'¾qòÓÛwMœËĞpŸÄÚ}È™eÑ#BŞ.‹ nËòœä¡/DB‰'' Ap¸¢½ W™%nÖ){ö]Y[»jõê/ÏÅÑ@›ÒÚmf›Ÿ“#$_Ifİ#	)êrØ&\ıöCz©\­òˆ²lÎ12ªJ]NÕT_yØ5ë·x<îğöu%½D«f«¾)çè·jZ“Ïiºú¼LN°ºÂ5šÑüEhjÂ.«@¸«ÖY,ßˆ±šß{íújãµÖõË+ë€'.ÄœşNzï0µ®ÓïŒ	q"Q.éõ´wiİùQİmW{OF³ ×/º6Ô¾A1p`Plh­âºY’NŠ3YâVï&cGOgÈİœsÜ¡Îã&¯5Ò2ö«×Ù6æ•pŸÓ‹[šÖLàŸt’b,Ï$­’åh"mÉ#øvÓì¿Üü=¦ùW€ ¨7ê‚}Â3    IEND®B`‚Ô!"#_Ihttp://dbachrach.com/blog/wp-content/themes/dustin/images/search_icon.pngOëbplist00Ô	
+X$versionT$topY$archiverX$objects † Ñ_WebResourceResponse€_NSKeyedArchiver¯&,-345KLMNOPQRSTUVWXYZ[_`U$nullİ !"#$%V$classR$3R$8S$10S$11R$5R$6R$4R$7R$2R$9R$0R$1€€€ €€€€€ Ó'()$+WNS.base[NS.relative€€ €_Ihttp://dbachrach.com/blog/wp-content/themes/dustin/images/search_icon.pngÒ./01X$classesZ$classname¢12UNSURLXNSObject#A©æùĞçá¹ÈÓ6789BWNS.keysZNS.objects€¨:;<=>?@A€	€
+€€€€€€¨CDEFGHIJ€€€€€€€€]Accept-RangesVServer\Content-TypeTDate^Content-LengthTEtagZConnection]Last-ModifiedUbytesVApacheYimage/png_Tue, 20 Nov 2007 20:36:55 GMTT1169_"3312727-491-460af241"Uclose_Wed, 28 Mar 2007 22:54:57 GMTÒ./\]£]^2_NSMutableDictionary\NSDictionary‘Ò./ab£bc2_NSHTTPURLResponse]NSURLResponse     ) 2 7 : P R d ƒ ‰ ¤ « ® ± µ ¹ ¼ ¿ Â Å È Ë Î Ñ Ó Õ × Ù Û İ ß á ã å ç é ğ ø
+V[dorxŠŒ“›¦¨±³µ·¹»½¿ÁÊÌÎĞÒÔÖØÚèïü .4;Eejƒ‰©®²ÈÕØİáõ             d              O‘‰PNG
+
+   IHDR         rP6Ì   gAMA  ÖØÔOX2   tEXtSoftware Adobe ImageReadyqÉe<  #IDAT8ËU”ëRZg†÷%´{ı—+èïN¯ IÓI¦Mlš“šÆh4ZxET‚¨¨xÀóV­!Q#ŠŠGä(º÷Ûµ¾ÄÖ2³fo¾g½k½k}€¯.ãB–¿‘Å|xõÍ.bö¡·¨mëÇK­¥FZz&1:ëMol‡·“©³«g9¤Aò­h"é_ğoœÔ[•œj*L½P[Pßî¶Ãƒ:ëªZİ¨4÷)CÓïÒ¡ğ¡ïüBvüv~qñÓQ$º>8½tV¬ïBÖê67Ô¯ µ¢@:û0ôç(½ –~#¥òjpwç,}Ş%`‰ÔYf$šèôÌ,§_68WgŠ>+@¡Î‰üú
+;•k'«¦ßôR:HÀ	y3´¿Ê‰Jö¶"¥MİÈRµ¡ÄĞr‚½jìDœ·XYâà8ŠÍŒÍ­•%úN4ÒSCÀ¾ÉÅt4‘¼à¾É5û%ÍBAA
+u:Ñ=ö"±8EAøèTdYÆÊÚtÃBa#•¬jéÅûPHêSÊš]¸WdÀsúå@nÍkÔ‹¡ğ1b‰$Aç¡w }`K>
+àØì
+©wŠrK¨Mç’ŠJÊ­±â×b£x2ğQ™ÆÎQ:¤`Á·.áÑ¨0õ€«ˆDã¢dî#ÃêÛ‡ĞÜ=é.)Ê$ĞÃ²êY+²i$2_5ÁØ5şÏ¼CVe«0ƒk¬Ø=8=dÑ@%—6¹ ı£Æ”šI‘	¿W¶á—BÊ›{K¦î’Ã"	÷ÒêŠ½d
+ÃÃĞÚ<¢ßÒı£PòI‰Ş¸™­F•ÙH¡nmk.cÎ%ÆpË<6ÒĞÌ±rIeîÅÓJnçë„£·r4xAJ>îìP<y†ÓXB¼³¢İıc¸ÈeTÕÒkÿH.r*_cÅõ'ªOåQ“·ÃGâ°F ˆJ+£æÈ1”¼†›U1„Çƒ›úûCB
+îöÚúßìeäj¨¼Z±:\Şûõmáêõ¬jJ¢‰ØñÇå-x®n§9ìIŠ¬¶bïğÄ/ÑMñb#´ï&7No>­¥¾™Åšğê|Ÿ­Áo6ãIÅN?«¥ñQ[EÃóhŒxsæ}ëGÄi”èÊ¹F‹±èß˜(¨·§n¡¬ä©`+dE¼nÌ®²ˆï¼r#³Ş8íåœ¬È_ó­Áñ%]A·ıë4œÑŒ?4ÔÃJÜùl
+|H£ÃeŞ¥’ï‘û|ŒÏû’±DjÎËœKÇÜC§gÆ_¨µ‰µbÀÏà'÷ŠGÀÒ7…ÀÖŞv*}n¢3ß]2®Â8®Qä…#ÕCÓK+tŸ)JMøñY€UµöÁ=¹(¯÷6(6úï«çÿ©øQ41^Ùh    IEND®B`‚Õ%&'(_7http://pagead2.googlesyndication.com/pagead/show_ads.jsO¨bplist00Ô	
+X$versionT$topY$archiverX$objects † Ñ_WebResourceResponse€_NSKeyedArchiver¯&,-345MNOPQRSTUVWXYZ[\]^_cdU$nullİ !"#$%V$classR$3R$8S$10S$11R$5R$6R$4R$7R$2R$9R$0R$1€€€ €€€€€ Ó'()$+WNS.base[NS.relative€€ €_7http://pagead2.googlesyndication.com/pagead/show_ads.jsÒ./01X$classesZ$classname¢12UNSURLXNSObject#A©æ˜È™oDÈÓ6789CWNS.keysZNS.objects€©:;<=>?@AB€	€
+€€€€€€€©DEFGHIJKL€€€€€€€€€SP3p]Cache-ControlWExpires_Content-Encoding\Content-TypeVServer^Content-LengthTDate]Last-Modified_lpolicyref="http://www.googleadservices.com/pagead/p3p.xml", CP="NOI DEV PSA PSD IVA PVD OTP OUR OTR IND OTC"_)public, max-age=86400, x-gzip-ok="public"_Wed, 21 Nov 2007 17:09:55 GMTTgzip_text/javascript; charset=UTF-8TcafeT5492_Tue, 20 Nov 2007 17:09:55 GMT_Wed, 14 Nov 2007 19:07:03 GMTÒ./`a£ab2_NSMutableDictionary\NSDictionary=§Ò./ef£fg2_NSHTTPURLResponse]NSURLResponse     ) 2 7 : P R d … ‹ ¦ ­ ° ³ · » ¾ Á Ä Ç Ê Í Ğ Ó Õ × Ù Û İ ß á ã å ç é ë ò ú
+FKT_bhqz|ƒ‹–˜¢¤¦¨ª¬®°²´¾ÀÂÄÆÈÊÌÎĞÔâêı
+ %3¢Îîó>^cg}Š’–ª             h              ¸_text/javascriptO=§(function(){
+var J={google_ad_channel:"channel",google_ad_host:"host",google_ad_region:"region",google_ad_section:"region",google_ad_type:"ad_type",google_adtest:"adtest",google_alternate_ad_url:"alternate_ad_url",google_alternate_color:"alt_color",google_bid:"bid",google_city:"gcs",google_color_bg:"color_bg",google_color_border:"color_border",google_color_line:"color_line",google_color_link:"color_link",google_color_text:"color_text",google_color_url:"color_url",google_contents:"contents",google_country:"gl",
+google_cust_age:"cust_age",google_cust_ch:"cust_ch",google_cust_gender:"cust_gender",google_cust_id:"cust_id",google_cust_interests:"cust_interests",google_cust_job:"cust_job",google_cust_l:"cust_l",google_cust_lh:"cust_lh",google_cust_u_url:"cust_u_url",google_disable_video_autoplay:"disable_video_autoplay",google_ed:"ed",google_encoding:"oe",google_feedback:"feedback_link",google_flash_version:"flash",google_gl:"gl",google_hints:"hints",google_kw:"kw",google_kw_type:"kw_type",google_language:"hl",
+google_referrer_url:"ref",google_region:"gr",google_reuse_colors:"reuse_colors",google_safe:"adsafe",google_targeting:"targeting",google_ui_features:"ui"},E={google_ad_format:"format",google_ad_output:"output",google_ad_override:"google_ad_override",google_ad_slot:"slotname",google_analytics_webpropids:"ga_wpids",google_correlator:"correlator",google_cpa_choice:"cpa_choice",google_image_size:"image_size",google_last_modified_time:"lmt",google_max_num_ads:"num_ads",google_max_radlink_len:"max_radlink_len",
+google_num_radlinks:"num_radlinks",google_num_radlinks_per_unit:"num_radlinks_per_unit",google_only_ads_with_video:"only_ads_with_video",google_page_location:"loc",google_page_url:"url",google_rl_dest_url:"rl_dest_url",google_rl_filtering:"rl_filtering",google_rl_mode:"rl_mode",google_rt:"rt",google_skip:"skip"};function C(b){return J[b]||E[b]||null}var R=document;function U(){var b=R.cookie,a=Math.round((new Date).getTime()/1000),d=b.indexOf("__utma=")>-1,f=b.indexOf("__utmb=")>-1,c=b.indexOf("__utmc=")>
+-1,e,g={};if(d){e=b.split("__utma=")[1].split(";")[0].split(".");g.sid=(!f||!c?a:e[4])+"";g.vid=e[1]+"."+e[2];g.from_cookie=true}else{g.sid=window&&window.gaGlobal&&window.gaGlobal.sid?window.gaGlobal.sid:a+"";g.vid=window&&window.gaGlobal&&window.gaGlobal.vid?window.gaGlobal.vid:Math.round(Math.random()*2147483647)+"."+a;g.from_cookie=false}g.hid=window&&window.gaGlobal&&window.gaGlobal.hid?window.gaGlobal.hid:Math.round(Math.random()*2147483647);window.gaGlobal=g;return g}(function(){function b(){}
+b.prototype.l=function(f){var c=f.indexOf("#")+1;return c?f.substr(c):""};b.prototype.n=function(f){return/[&<>\"]/.test(f)?f.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/\"/g,"&quot;"):f};b.prototype.b=function(f){var c="<iframe";for(var e in f){c+=" "+e+'="'+this.n(f[e])+'"'}return c+"></iframe>"};b.prototype.m=function(f,c){try{return f.frames[c]}catch(e){return null}};b.prototype.e=function(f){var c=document.createElement("iframe");for(var e in f){c.setAttribute(e,
+f[e])}return c};b.prototype.i=function(f,c){var e=this;setTimeout(function(){document.body.appendChild(e.e({id:f,name:f,src:c,width:0,height:0,frameBorder:0}))},0)};b.prototype.r=function(f,c){var e=this;document.write(e.b({id:f,name:f,src:c,width:0,height:0,frameBorder:0}))};b.prototype.g=function(f,c){var e=[],g=f.length,l=0;while(l<g){var j=f.substr(l,c),k=j.length;if(l+k<g){for(var i=1;i<3;++i){if(j.charAt(k-i)=="%"){j=j.substr(0,k-=i)}}}e.push(j);l+=k}return e};b.prototype.a=function(f,c,e){if(!window[f]){var g=
+window[f]=new c;for(var l=0;l<e.length;++l){g[e[l][0]]=e[l][1]}}};var a=b.prototype,d=[["getHash",a.l],["htmlEscape",a.n],["makeIframeTag",a.b],["getIframe",a.m],["makeIframeNode",a.e],["appendHiddenIframe",a.i],["writeHiddenIframe",a.r],["splitURIComponent",a.g],["exportSingleton",a.a],["MAX_URL_LENGTH",4095],["IDI_DEFAULT_POLLING_INTERVAL",1000]];b.prototype.a("IDICommon",b,d)})();(function(){function b(c,e){for(var g in e){c[g]=e[g]}}function a(){var c=this;c.s=window.location.href.replace(/([^:\/])\/.*$/,
+"$1/robots.txt");c.t="";c.k={};c.c={};c.f={};c.u={};c.o={}}a.prototype.w=function(c,e){var g=this,l=g.c[c];if(isNaN(l)){throw new Error("Invalid module id");}else{var j=g.d(g.u[c]),k=encodeURIComponent(e)+"$",i=IDICommon.MAX_URL_LENGTH-1-j.length,p=IDICommon.g(k,i),n=p.length;for(var q=0;q<n;++q){IDICommon.i(c+"_"+(l+q),j+"#"+p[q])}g.c[c]+=n}};a.prototype.p=function(c,e,g){var l=this;l.h(c);l.o[c]=window.setInterval(function(){l.v(c,e)},typeof g=="object"&&g.pollingInterval||IDICommon.IDI_DEFAULT_POLLING_INTERVAL)};
+a.prototype.h=function(c){var e=this;window.clearInterval(e.o[c]);e.o[c]=0};a.prototype.x=function(c){this.s=c};a.prototype.q=function(c){this.t=c};a.prototype.d=function(c){return this.t||c.replace(/([^:\/]\/).*$/,"$1ig/idi_relay")};a.prototype.v=function(c,e){var g=this,l=window.frames[c];if(l){var j;while(j=IDICommon.m(l,c+"_"+g.k[c])){try{if(j.location.href=="about:blank"){break}}catch(k){break}g.f[c]+=IDICommon.l(j.location.href);++g.k[c]}var i=g.f[c].split("$"),p=i.length-1;if(p>0){g.f[c]=i[p];
+for(var n=0;n<p;++n){e(decodeURIComponent(i[n]),c)}}}};a.prototype.j=function(c,e,g,l,j){var k=this,i={frameBorder:0,scrolling:"no"},p,n,q,z,s;if(typeof j=="object"){p=j.iframeAttrs;n=j.callback;q=j.userPrefs;z=j.pollingInterval;s=j.parentDivId}if(typeof p=="object"){b(i,p)}b(i,{id:e,name:e,src:c,width:g,height:l});k.k[e]=0;k.c[e]=0;k.f[e]="";k.u[e]=c;var t=[];if(typeof q=="object"){for(var r in q){t.push(encodeURIComponent(r)+"="+encodeURIComponent(q[r]))}}if(typeof n=="function"){t.push("idi_hr="+
+encodeURIComponent(k.s));k.p(e,n,j)}if(t.length){var u=t.join("&");if(i.src.length+1+u.length>IDICommon.MAX_URL_LENGTH){u+="$";var F=k.d(c),O=IDICommon.MAX_URL_LENGTH-1-F.length,G=IDICommon.g(u,O),H=G.length;for(var r=0;r<H;++r){var B=e+"_"+r,I=F+"#"+G[r];if(s){var y=document.getElementById(s);y.innerHTML=y.innerHTML+k.e({id:B,name:B,src:I,width:0,height:0,frameBorder:0})}else{IDICommon.r(B,I)}}k.c[e]+=H;u=""}i.src+="#"+u}if(s){var y=document.getElementById(s);y.innerHTML=y.innerHTML+IDICommon.b(i)}else{document.write(IDICommon.b(i))}};
+var d=a.prototype,f=[["setHostRelayUrl",d.x],["setModuleRelayUrl",d.q],["getModuleRelayUrl",d.d],["createModule",d.j],["postMessageToModule",d.w],["registerListener",d.p],["unregisterListener",d.h]];IDICommon.a("IDIHost",a,f)})();function w(b){return b!=null?'"'+b+'"':'""'}function S(b){if(typeof encodeURIComponent=="function"){return encodeURIComponent(b)}else{return escape(b)}}function m(b,a){if(b&&a){window.google_ad_url+="&"+b+"="+a}}function h(b){var a=window,d=C(b),f=a[b];m(d,f)}function v(b,
+a){if(a){m(b,S(a))}}function o(b){var a=window,d=C(b),f=a[b];v(d,f)}function x(b,a){var d=window,f=C(b),c=d[b];if(f&&c&&typeof c=="object"){c=c[a%c.length]}m(f,c)}function V(b,a){var d=b.screen,f=navigator.javaEnabled(),c=-a.getTimezoneOffset();if(d){m("u_h",d.height);m("u_w",d.width);m("u_ah",d.availHeight);m("u_aw",d.availWidth);m("u_cd",d.colorDepth)}m("u_tz",c);m("u_his",history.length);m("u_java",f);if(navigator.plugins){m("u_nplug",navigator.plugins.length)}if(navigator.mimeTypes){m("u_nmime",
+navigator.mimeTypes.length)}}function D(b){if(b){b=b.toLowerCase();if(b.substring(0,3)!="ca-"){b="ca-"+b}}return b}function ba(b,a){var d=document.getElementById(b);d.style.height=a+"px"}function W(b,a,d){window.clearTimeout(d);var f=/^google_resize_flash_ad_idi\((\d+)\)/,c=b.match(f);if(c){ba(a,c[1])}}function ca(b,a,d,f){d=d.substring(0,2000);d=d.replace(/%\w?$/,"");if(b.google_ad_output=="js"&&(b.google_ad_request_done||b.google_radlink_request_done)){a.write('<script language="JavaScript1.1" src='+
+w(d)+"><\/script>")}else if(b.google_ad_output=="html"){if(b.name!="google_ads_frame"){if(f!=null){a.write('<div id="'+f+'">')}if(X(b.google_ad_output,b.google_ad_client)){IDIHost.q("http://pagead2.googlesyndication.com/pagead/idi_relay.html");var c="google_inline_div"+b.google_num_ad_slots,e="<div id="+w(c)+' style="position:relative;"></div><div style="position:relative;width:'+b.google_ad_width+"px;height:"+b.google_ad_height+'px;z-index:-1"></div>';a.write(e);var g="google_frame"+b.google_num_ad_slots,
+l=b.setTimeout(function(){IDIHost.h(g)},5000);IDIHost.j(d,g,b.google_ad_width,b.google_ad_height,{callback:function(j,k){W(j,k,l)},pollingInterval:500,iframeAttrs:{style:"position: absolute;left:0px",marginWidth:"0",marginHeight:"0",vspace:"0",hspace:"0",allowTransparency:"true"},parentDivId:c})}else{a.write('<iframe name="google_ads_frame" width='+w(b.google_ad_width)+" height="+w(b.google_ad_height)+" frameborder="+w(b.google_ad_frameborder)+" src="+w(d)+' marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no">');
+a.write("</iframe>")}if(f!=null){a.write("</div>")}}}else if(b.google_ad_output=="textlink"){a.write('<script language="JavaScript1.1" src='+w(d)+"><\/script>")}}function aa(b){for(var a in J){b[a]=null}for(var a in E){b[a]=null}}function P(){var b=null,a=window,d=document,f=new Date,c=f.getTime(),e=a.google_ad_format;if(a.google_cpa_choice!=b){a.google_ad_url="http://pagead2.googlesyndication.com/cpa/ads?";a.google_ad_url+="client="+escape(D(a.google_ad_client));a.google_ad_region="_google_cpa_region_";
+h("google_cpa_choice");if(typeof d.characterSet!="undefined"){v("oe",d.characterSet)}else if(typeof d.charset!="undefined"){v("oe",d.charset)}}else{a.google_ad_url="http://pagead2.googlesyndication.com/pagead/ads?";a.google_ad_url+="client="+escape(D(a.google_ad_client))}h("google_ad_host");var g=a.google_num_slots_by_client,l=a.google_num_slots_by_channel,j=a.google_prev_ad_formats_by_region,k=a.google_prev_ad_slotnames_by_region;if(a.google_ad_region==b&&a.google_ad_section!=b){a.google_ad_region=
+a.google_ad_section}var i=a.google_ad_region==b?"":a.google_ad_region,p=false;if(e){p=e.indexOf("_0ads")>0}else if(a.google_ad_output!="html"&&a.google_num_radlinks>0){p=true}if(p){if(a.google_num_0ad_slots){a.google_num_0ad_slots=a.google_num_0ad_slots+1}else{a.google_num_0ad_slots=1}if(a.google_num_0ad_slots>3){return false}}else if(a.google_cpa_choice==b){if(a.google_num_ad_slots){a.google_num_ad_slots=a.google_num_ad_slots+1}else{a.google_num_ad_slots=1}if(a.google_num_slots_to_rotate){j[i]=b;
+k[i]=b;if(a.google_num_slot_to_show==b){a.google_num_slot_to_show=c%a.google_num_slots_to_rotate+1}if(a.google_num_slot_to_show!=a.google_num_ad_slots){return false}}else if(a.google_num_ad_slots>6&&i==""){return false}}m("dt",f.getTime());h("google_language");if(a.google_country){h("google_country")}else{h("google_gl")}h("google_region");o("google_city");o("google_hints");h("google_safe");h("google_encoding");h("google_last_modified_time");o("google_alternate_ad_url");h("google_alternate_color");
+h("google_skip");h("google_targeting");var n=a.google_ad_client;if(!g[n]){g[n]=1;g.length+=1}else{g[n]+=1}if(j[i]){v("prev_fmts",j[i].toLowerCase());if(g.length>1){m("slot",g[n])}}if(k[i]){v("prev_slotnames",k[i].toLowerCase())}if(e&&!a.google_ad_slot){v("format",e.toLowerCase());if(j[i]){j[i]=j[i]+","+e}else{j[i]=e}}if(a.google_ad_slot){if(k[i]){k[i]=k[i]+","+a.google_ad_slot}else{k[i]=a.google_ad_slot}}h("google_max_num_ads");m("output",a.google_ad_output);h("google_adtest");h("google_ad_slot");
+o("google_correlator");if(a.google_ad_channel){o("google_ad_channel");var q="",z=a.google_ad_channel.split("+");for(var s=0;s<z.length;s++){var t=z[s];if(!l[t]){l[t]=1}else{q+=t+"+"}}v("pv_ch",q)}o("google_page_url");x("google_color_bg",c);x("google_color_text",c);x("google_color_link",c);x("google_color_url",c);x("google_color_border",c);x("google_color_line",c);if(a.google_reuse_colors)m("reuse_colors",1);else m("reuse_colors",0);h("google_kw_type");o("google_kw");o("google_contents");h("google_num_radlinks");
+h("google_max_radlink_len");h("google_rl_filtering");h("google_rl_mode");h("google_rt");o("google_rl_dest_url");h("google_num_radlinks_per_unit");h("google_ad_type");h("google_image_size");h("google_ad_region");h("google_feedback");o("google_referrer_url");o("google_page_location");h("google_bid");h("google_cust_age");h("google_cust_gender");h("google_cust_interests");h("google_cust_id");h("google_cust_job");h("google_cust_u_url");h("google_cust_l");h("google_cust_lh");h("google_cust_ch");h("google_ed");
+o("google_ui_features");o("google_only_ads_with_video");o("google_disable_video_autoplay");if(L(a,d)&&d.body){var r=d.body.scrollHeight,u=d.body.clientHeight;if(u&&r){v("cc",Math.round(u*100/r))}}U();m("ga_vid",a.gaGlobal.vid);m("ga_sid",a.gaGlobal.sid);m("ga_hid",a.gaGlobal.hid);m("ga_fc",a.gaGlobal.from_cookie);o("google_analytics_webpropids");h("google_ad_override");h("google_flash_version");V(a,f);return true}function M(){var b=window,a=document;if(!P()){return}ca(b,a,b.google_ad_url,null);aa(b)}
+function T(b,a,d){M();return true}function L(b,a){return b.top.location==a.location}function K(b,a){var d=a.documentElement;if(L(b,a))return false;if(b.google_ad_width&&b.google_ad_height){var f=1,c=1;if(b.innerHeight){f=b.innerWidth;c=b.innerHeight}else if(d&&d.clientHeight){f=d.clientWidth;c=d.clientHeight}else if(a.body){f=a.body.clientWidth;c=a.body.clientHeight}if(c>2*b.google_ad_height||f>2*b.google_ad_width){return false}}return true}function Y(b){var a=window,d=document,f=d.location,c=d.referrer,
+e=null,g=a.onerror;a.onerror=b;if(a.google_ad_frameborder==e){a.google_ad_frameborder=0}if(a.google_ad_output==e){a.google_ad_output="html"}if(a.google_ad_format==e&&a.google_ad_output=="html"){a.google_ad_format=a.google_ad_width+"x"+a.google_ad_height}if(a.google_page_url==e){a.google_page_url=c;if(!K(a,d)){a.google_page_url=f;a.google_last_modified_time=Date.parse(d.lastModified)/1000;a.google_referrer_url=c}}else{a.google_page_location=c;if(!K(a,d)){a.google_page_location=f}}if(a.google_num_slots_by_channel==
+e){a.google_num_slots_by_channel=[]}if(a.google_num_slots_by_client==e){a.google_num_slots_by_client=[]}if(a.google_prev_ad_formats_by_region==e){a.google_prev_ad_formats_by_region=[]}if(a.google_prev_ad_slotnames_by_region==e){a.google_prev_ad_slotnames_by_region=[]}if(a.google_correlator==e){a.google_correlator=(new Date).getTime()}if(a.google_adslot_loaded==e){a.google_adslot_loaded={}}if(a.google_adContentsBySlot==e){a.google_adContentsBySlot={}}if(a.google_flash_version==e){a.google_flash_version=
+Q().toString()}a.onerror=g}function N(b){if(b in A){return A[b]}return A[b]=navigator.userAgent.toLowerCase().indexOf(b)!=-1}var A={};function X(b,a){if(b!="html"){return false}var d={};d["ca-pub-7027491298716603"]=true;d["ca-pub-8344185808443527"]=true;return d[D(a)]!=null}function $(b){var a={},d=b.split("?"),f=d[d.length-1].split("&");for(var c=0;c<f.length;c++){var e=f[c].split("=");if(e[0]){try{a[e[0].toLowerCase()]=e.length>1?(window.decodeURIComponent?decodeURIComponent(e[1].replace(/\+/g,
+" ")):unescape(e[1])):""}catch(g){}}}return a}function Z(){var b=window,a=$(document.URL);if(a.google_ad_override){b.google_ad_override=a.google_ad_override}}function Q(){var b=0;if(navigator.plugins&&navigator.mimeTypes.length){var a=navigator.plugins["Shockwave Flash"];if(a&&a.description){b=a.description.replace(/([a-zA-Z]|\s)+/,"").split(".")[0]}}else if(navigator.userAgent&&navigator.userAgent.indexOf("Windows CE")>=0){b=3;var d=1;while(d){try{d=new ActiveXObject("ShockwaveFlash.ShockwaveFlash."+
+(b+1));b++}catch(f){d=null}}}else if(N("msie")&&!window.opera){try{var d=new ActiveXObject("ShockwaveFlash.ShockwaveFlash.7")}catch(f){try{var d=new ActiveXObject("ShockwaveFlash.ShockwaveFlash.6");b=6;d.AllowScriptAccess="always"}catch(f){if(b==6){return b}}try{d=new ActiveXObject("ShockwaveFlash.ShockwaveFlash")}catch(f){}}if(d!=null){b=d.GetVariable("$version").split(" ")[1].split(",")[0]}}return b}Z();Y(T);M();
+})()Õ*+,-_whttp://feeds.feedburner.com/~s/dbachrach?i=http://dbachrach.com/blog/2005/11/28/program-global-hotkeys-in-cocoa-easily/O.bplist00Ô	
+X$versionT$topY$archiverX$objects † Ñ_WebResourceResponse€_NSKeyedArchiver¯&,-345KLMNOPQRSTUVWXYLZ^_U$nullİ !"#$%V$classR$3R$8S$10S$11R$5R$6R$4R$7R$2R$9R$0R$1€€€ €€€€€ Ó'()$+WNS.base[NS.relative€€ €_whttp://feeds.feedburner.com/~s/dbachrach?i=http://dbachrach.com/blog/2005/11/28/program-global-hotkeys-in-cocoa-easily/Ò./01X$classesZ$classname¢12UNSURLXNSObject#A©æù×ıwÙÈÓ6789BWNS.keysZNS.objects€¨:;<=>?@A€	€
+€€€€€€¨CDEFGHIJ€€€€€€€€SP3pZKeep-AliveVServerYX-Fb-HostTDate^Content-Length\Content-TypeZConnection_ CP="ALL DSP COR NID CUR OUR NOR"[timeout=300VApache_app15.feedburner.com_Tue, 20 Nov 2007 20:36:59 GMTS271_&application/x-javascript;charset=UTF-8Ò./[\£\]2_NSMutableDictionary\NSDictionaryÒ./`a£ab2_NSHTTPURLResponse]NSURLResponse     ) 2 7 : P R d ƒ ‰ ¤ « ® ± µ ¹ ¼ ¿ Â Å È Ë Î Ñ Ó Õ × Ù Û İ ß á ã å ç é ğ ø
+„‰’ ¦¯¸ºÁÉÔÖßáãåçéëíïøúüş (-<ITwƒŠ¡ÁÅîó÷"&:             c              H_application/x-javascriptO
+if( typeof(FBSiteTrackerUri) == "undefined" || typeof(FBSiteTrackerURI) == "unknown" ) {
+ var FBSiteTrackerUri = "dbachrach";
+ document.write('<script type="text/javascript" charset="utf-8" src="http://feeds.feedburner.com/~d/static/site-tracker.js"></script>');
+}
+    	Ô/0'1_5http://feeds.feedburner.com/~d/static/site-tracker.jsOYbplist00Ô	
+X$versionT$topY$archiverX$objects † Ñ_WebResourceResponse€_NSKeyedArchiver¯ &,-345OPQRSTUVWXYZ[\]^_`abcghU$nullİ !"#$%V$classR$3R$8S$10S$11R$5R$6R$4R$7R$2R$9R$0R$1€€€ €€€€€ Ó'()$+WNS.base[NS.relative€€ €_5http://feeds.feedburner.com/~d/static/site-tracker.jsÒ./01X$classesZ$classname¢12UNSURLXNSObject#A©æw«êÉóÈÓ6789DWNS.keysZNS.objects€ª:;<=>?@ABC€	€
+€€€€€€€€ªEFGHIJKLMN€€€€€€€€€€SP3p]Last-ModifiedZKeep-AliveYX-Fb-Host\Content-TypeVServer^Content-LengthTDateTEtagZConnection_ CP="ALL DSP COR NID CUR OUR NOR"_Tue, 13 Nov 2007 04:27:20 GMT_timeout=30, max=100_app23.feedburner.com_text/javascriptVApacheT3833_Tue, 20 Nov 2007 15:59:16 GMT_W/"3833-1194928040000"Zkeep-aliveÒ./de£ef2_NSMutableDictionary\NSDictionaryùÒ./ij£jk2_NSHTTPURLResponse]NSURLResponse     ) 2 7 : P R d ‡  ¨ ¯ ² µ ¹ ½ À Ã Æ É Ì Ï Ò Õ × Ù Û İ ß á ã å ç é ë í ô ü
+FKT_bhqz|ƒ‹–˜£¥§©«­¯±³µ·ÂÄÆÈÊÌÎĞÒÔÖÚèóı
+ %*5Xx¥·¾Ããü&36;?S             l              aOùvar FBSiteTracker =
+{
+	initialize:function(id)
+	{
+	    FBSiteTracker.img = new Image();
+		FBSiteTracker.id = id;
+		FBSiteTracker.home = (typeof(fbbbhome)!="undefined"&&typeof(fbbbhome)!="unknown"?fbbbhome:"http://feeds.feedburner.com/~bb/");
+		FBSiteTracker.url = document.location.href;
+		
+		FBSiteTracker.initCookies();
+		FBSiteTracker.doView();
+	},
+
+	regEvent: function(el, evt, hdlr)
+	{
+		if ( el.attachEvent )
+		{
+			el.attachEvent("on"+evt, hdlr);
+		}
+		else
+		{
+			el.addEventListener(evt, hdlr, false);
+		}
+	},
+
+	getCookie: function(name)
+	{
+		var parts = document.cookie.split(";");
+	    for(var x = 0; x < parts.length; x++)
+	    {
+	    	if (parts[x].indexOf(name,0) != -1) return parts[x].slice(parts[x].indexOf("=")+1);
+	    }
+	    return "";
+	},
+
+	setCookie: function(name, val, ext)
+	{
+		document.cookie = name + "=" + escape(val) 
+			+ ";path=/;"
+			+ (ext != null ? ext : "");
+	},
+
+	makeUniqueId : function(x)
+	{
+		return (Math.floor(Math.random()*2147483647) - 31337 + Math.floor(Math.random()*2147483647));
+	},
+	
+	encode : function(x)
+	{
+		return encodeURIComponent(x);
+	},
+	
+	initCookies : function()
+	{
+		var d = new Date();
+		var val = FBSiteTracker.getCookie("fbbb_");
+		var sep = ".";
+		
+		if ( val == "" )
+		{
+			FBSiteTracker.uid = FBSiteTracker.makeUniqueId();
+			FBSiteTracker.lastVisit = d.getTime();
+			FBSiteTracker.repeat = "0";
+			FBSiteTracker.visit = "1";
+			FBSiteTracker.numVisits = "1";
+		}
+		else
+		{
+			var parts = val.split(sep);
+			FBSiteTracker.uid = parts[0];
+			FBSiteTracker.lastVisit = (parts.length==2?parts[1]:parts[2]);
+			FBSiteTracker.numVisits = parseInt(parts.length==2?0:parts[1]);
+			FBSiteTracker.repeat = "1";
+			FBSiteTracker.visitLen = parseInt(d.getTime())-parseInt(FBSiteTracker.lastVisit);
+			FBSiteTracker.visit = ((FBSiteTracker.visitLen/(1000*60))>30)?"1":"0";
+			FBSiteTracker.numVisits = parseInt(FBSiteTracker.numVisits) + parseInt(FBSiteTracker.visit);
+		}
+		
+		val = FBSiteTracker.uid + sep + FBSiteTracker.numVisits + sep + d.getTime();
+		FBSiteTracker.setCookie("fbbb_", val, "expires=Sun, 08 Dec 2030 12:49:33 GMT;");
+	},
+	
+	notify : function(p)
+	{
+		var d = new Date();
+	    
+	    FBSiteTracker.img.src = FBSiteTracker.home + FBSiteTracker.id + "?" +
+		    "p=" + FBSiteTracker.encode(FBSiteTracker.url) + 
+		    "&pt=" + FBSiteTracker.encode(document.title) +
+		    "&u=" + FBSiteTracker.uid + "&s=" + FBSiteTracker.sid + "&ur=" + FBSiteTracker.repeat + "&v=" + FBSiteTracker.visit +
+		    "&nv=" + FBSiteTracker.numVisits + "&vl=" + FBSiteTracker.visitLen + 
+			(document.referrer != "" ? "&r=" + FBSiteTracker.encode(document.referrer) : "") + 
+			"&sw=" + screen.width + "&sh=" + screen.height + 
+			(p != null ? p : "");
+	},
+
+	hookClick:function()
+	{
+	    for(var x = 0; x < document.links.length; x++)
+		{
+			FBSiteTracker.regEvent(document.links[x], "click", FBSiteTracker.doClick);
+		}
+	},
+
+	doClick : function(e)
+	{
+		if (!e) e = window.event;
+		var obj = typeof(e.srcElement)=="undefined"?e.target:e.srcElement;
+		var txt = typeof(obj.innerText)=="undefined"?obj.text:obj.innerText;
+		var href = typeof(e.currentTarget)!="undefined"?e.currentTarget:obj.href;
+
+		if ( obj.tagName=="IMG" )
+		{
+			txt = obj.alt?obj.alt:obj.title?obj.title:obj.src;
+			if (typeof(obj.parentElement)!="undefined") href = obj.parentElement.href;
+		}
+
+	    if( href ) FBSiteTracker.notify("&n=" + FBSiteTracker.encode(txt) + "&l=" + FBSiteTracker.encode(href));
+	},
+	
+	hookUnload : function(e)
+	{
+		FBSiteTracker.notify("&n=" + FBSiteTracker.encode("unload") + "&l=" + FBSiteTracker.encode("unload"));
+	},
+	
+	doView: function()
+	{
+		FBSiteTracker.regEvent(window, "load", FBSiteTracker.hookClick);
+		FBSiteTracker.regEvent(window, "unload", FBSiteTracker.hookUnload);
+		FBSiteTracker.notify();
+		FBSiteTracker.repeat = 1;
+	}
+}
+
+FBSiteTracker.initialize(FBSiteTrackerUri);
+Ô345_Mhttp://dbachrach.com/blog/wp-content/themes/dustin/images/randomshapes_ad.pngOïbplist00Ô	
+X$versionT$topY$archiverX$objects † Ñ_WebResourceResponse€_NSKeyedArchiver¯&,-345KLMNOPQRSTUVWXYZ[_`U$nullİ !"#$%V$classR$3R$8S$10S$11R$5R$6R$4R$7R$2R$9R$0R$1€€€ €€€€€ Ó'()$+WNS.base[NS.relative€€ €_Mhttp://dbachrach.com/blog/wp-content/themes/dustin/images/randomshapes_ad.pngÒ./01X$classesZ$classname¢12UNSURLXNSObject#A©æùã4Ğ5ÈÓ6789BWNS.keysZNS.objects€¨:;<=>?@A€	€
+€€€€€€¨CDEFGHIJ€€€€€€€€]Accept-RangesVServer\Content-TypeTDate^Content-LengthTEtagZConnection]Last-ModifiedUbytesVApacheYimage/png_Tue, 20 Nov 2007 20:37:03 GMTT1173_"2569306-495-460af23e"Uclose_Wed, 28 Mar 2007 22:54:54 GMTÒ./\]£]^2_NSMutableDictionary\NSDictionary•Ò./ab£bc2_NSHTTPURLResponse]NSURLResponse     ) 2 7 : P R d ƒ ‰ ¤ « ® ± µ ¹ ¼ ¿ Â Å È Ë Î Ñ Ó Õ × Ù Û İ ß á ã å ç é ğ ø
+Z_hsv|…—Ÿª¬µ·¹»½¿ÁÃÅÎĞÒÔÖØÚÜŞìó $28?Iin‡­²¶ÌÙÜáåù             d              O•‰PNG
+
+   IHDR   ¥      gıæ   gAMA  ÖØÔOX2   tEXtSoftware Adobe ImageReadyqÉe<   ŞPLTE333»ÍÊ™™™ÒñïACBfffrxw¶½ÒæãÌÌÌİòğ„LOOà÷õÜöô¥³±­»¹ŞøöäûùÊİÛy‚†£°®°À¾ŞôñÔèæµÓÖ|ƒƒÌÿÿº×ÚæüúÂŞàçşû™ÌÌ“¸¿·ÇÄ«ËĞäüùÑêêÊäå•ºÁæıúâûø³ÑÕÈãäÇáãèşü×îîàöõåûùİ÷õÍçèãûùÓìì¯ÎÓæşûäúøçıûÏèèÒëëÄßáÓñï¾ÚÜŞõôãúøÜóòåüú±ĞÔåıú¹ÖÙãûøN…vèÿü_¥<.  =IDATxÚì—iSÛ0†WkÉñUb°‹P7…Bïû¾@ÿÿõ•e;¶ã„ò!3eÚcË>~w%º¹F7úï·ûDéºÙ¨c2N–;ò²	Ÿ×F©ã®¿ÍşrG÷Ï&¦Ó…/ë³­º½^I©Øõ53pÙNŒˆ›Á6Ë<ĞzÀÛóËÛc=ÚÎà=ˆ­ôœÅz¬jvöÑqœÍˆ'ûõŞÆ¬n›åğÛw“Ùäâa‹Ò[åFä‚R•Z²_äÏRt\}À@fw®[¶Ò6ÚyVÇÚë]ïÜJù¡wm¬÷³•ñ"¿ãÌ´’£E‰6ªuâØ´ÑrÊ©cc;õ¬Ÿ#øÓ[(_YH¬œÕ)¹Ú+&íšltÍ’b%±Y’d<®:yÚQ ƒùFJ˜“yïÈqªèÎ¯’ê‰8\Mù¸„æd½'Ñ†S_É9Ëc]I9‡ÄÒ7k¥œ6ÂÏ
+Ê+K0[Ey|]·İµR~kjùÂ
+¬ ÜiPÎju	ëwœ—bql¨İSMkRÚ±İj[\.§<lPîW”‘ŠhS-õ‚¢ˆXû4¼SÊmÂÎ+nçîZ
+ˆí1{è±0já7Rx‚\äş…g&™YAÂSÖ×¾qè.Î¯£š˜Î#İR©÷åÎu‰˜’V*4WR ÖB"¹Ú“¡Jµ–Q$#Pşn¤”Ô…S¨d Ct†2­”Û„îµ5ê¤¼lìñ­¥"“Â!Ğq0O7ã.E=xš8 !È7bNsK¢pÀ2ÌX©|o!åÓù)T…¿Zz]tŸ—‚d(æKe(ó¸?¦4qWµ!R
+MåÃÖËy‚R©í+Ju;åyÂ{T.÷œw¾{2Ì¨Í(G,)û9¥*u³M	#gIiÏb(õ4Š7_oS^YŞİo@§Ñ†S·ò=^¼}zŸtƒ2EÎ”–©0qCÃ¦¡ôEšr¤!j×xŒì‚¬BsHÅŠ}JSêüàÛ{Ğ¶ÄŞûÉ÷Éóæ7‘G ‰H÷%ˆF‹¨uH‚JîS€¦ƒ£È+ö8zÖívfB’¼¦¯àÿÿ÷üS”÷Á~0 ¨¶˜H9-^Š    IEND®B`‚Ô789_Mhttp://dbachrach.com/blog/wp-content/themes/dustin/images/showyourself_ad.pngOïbplist00Ô	
+X$versionT$topY$archiverX$objects † Ñ_WebResourceResponse€_NSKeyedArchiver¯&,-345KLMNOPQRSTUVWXYZ[_`U$nullİ !"#$%V$classR$3R$8S$10S$11R$5R$6R$4R$7R$2R$9R$0R$1€€€ €€€€€ Ó'()$+WNS.base[NS.relative€€ €_Mhttp://dbachrach.com/blog/wp-content/themes/dustin/images/showyourself_ad.pngÒ./01X$classesZ$classname¢12UNSURLXNSObject#A©æùã5ÚÈÓ6789BWNS.keysZNS.objects€¨:;<=>?@A€	€
+€€€€€€¨CDEFGHIJ€€€€€€€€]Accept-RangesVServer\Content-TypeTDate^Content-LengthTEtagZConnection]Last-ModifiedUbytesVApacheYimage/png_Tue, 20 Nov 2007 20:37:03 GMTT3984_"3312729-f90-460af242"Uclose_Wed, 28 Mar 2007 22:54:58 GMTÒ./\]£]^2_NSMutableDictionary\NSDictionaryÒ./ab£bc2_NSHTTPURLResponse]NSURLResponse     ) 2 7 : P R d ƒ ‰ ¤ « ® ± µ ¹ ¼ ¿ Â Å È Ë Î Ñ Ó Õ × Ù Û İ ß á ã å ç é ğ ø
+Z_hsv|…—Ÿª¬µ·¹»½¿ÁÃÅÎĞÒÔÖØÚÜŞìó $28?Iin‡­²¶ÌÙÜáåù             d              O‰PNG
+
+   IHDR   ¥   Z   î1f$   gAMA  ÖØÔOX2   tEXtSoftware Adobe ImageReadyqÉe<  şPLTEÜÖ±™™fôäŠKJBÌÌ™fff¶±”ØÒ®øî²åÖzãÒuïèÀûâXîßŠ”‘zÿÿÌôße¡„ÿÌ ÿÿ™öë¬ğâ“ñßzèâ»ıñ¬ÿÌ3üÙUSIòåš333ÖĞ¬¹´–ñà~şì…™™™çÛ–êä¼ÿÿÿ~kíÕRıò±óâ€ÌÌfàÚ´øÔìæ¾úèƒòâ†æà¹„nöÒùğ¸óàvÿÌfôé£êÙzíÜ‚İ×²âÜ¶ıûæîŞ…ùé²­‘øí¯íÕK­¨îàıì‰ôã€ìÛ|˜”}õå†õÓëÙtúäkàÕ•öéıáCäĞa~{iõÛL¾¹šúÖœ˜€Š†râÔƒüåbåß¸éÔ[üë|ùŞIùê•äŞ·ñêÂúì—÷æ‚ıß7øè‰¤ †ìÜ~éÖjONEéŞ êÛ‚şésßÓŒ[YNæÓoşèmúïµüò·»µ˜şô¹ôßm{xgğßƒõÚGñ×HXVKQPGa_RúéøéâÏgóç _]QıÜ ıë…óìÃüê„øæ‚òëÃğéÁùçƒõäöåîİ}ïŞ~îç¿íÜ}ğêÁÓÎ¬ëå½ßØ¯çß±øãq÷è‹ñçªõçàĞwçØèØ¯«şó·şà<ïáóã…éÕbôäƒöå‚†ƒoêã½ûé…şë€üëèÒWï×Søç…ÌÌ3ÿí†îï•  IDATxÚÔ›ëCUÀ“f&Ó6…1	5¦%$SJH“B+¥‰l-Úú¬-¬¬JÌjE->ª°®ÕÉ› Ÿ¸ººÚë#ÿåŞ÷Ü;3iUÏf&3w~sî9ç{îÅñÛŸA¿5şˆ¢iwö‡¤Ô
+•ÜZ®RĞöRƒ¢ë º.ª¤MÑ+‘Í±®®Z¼¢w–bÕë©T¥RÌ­©NÆLVÁa±XI¥ê ¹]^=·tF…rf=§w†Rt)ˆ6‰DÖk›S£]P¾ëE¯NÕÖ#‘8èB Û’U+¬-©T–Š£ÔS¹\JÛ_1WGÖ7§Æºzoõô¨ÍätÏ™Şg7k‘xõî¬À"ãcÜƒK˜P&loNæ˜´XÉU#‘ÚT×á[Íá,ÒÓûİÙÍuÈZ„V íVh5UŒ×zùŞ,ÊõÁíŸŸÙÜ>0©·å@ƒkñÈæÙÃgSw#§{z/ŒA+€v¬˜-´gĞ-‘õë½¦›{QŸÊÁgNù|ÁÁß<Pie×X»~áÖî yÙßÓÛ{Zíf­ìyj|ö~ëmß0å!‘ın:LÁÇNuõö¨÷Sª`J
+é6S¦¦×+kñõ©ïÎœ¶m©”ÍïfU)/äì	s“‘Í®[ûí		E’”t`¯@¿ª‹”¾‘”tsm¬·™z2Ê¸ì
+…\«^Gvo(«˜(_OY77·ÃRFrD,óiv=ßQà5‘òëÜU5©8CœxÉåòœ"mí¨H;–./ˆ”¿læêZ›ˆªº!¹xÈ¹ü‰cf9tnW>¯¶xy]¤üÛàöT®Ğ"èVI`Íë²3¹½c1Ì”H<ÿÌàà(—·ç–EJÚSYx"—vÆ‡D?|4lù±"RBĞÁÁ_¶ÓnvZ„”Ù/È•6vé¹`”’å×¢…tû§É¶lÈàsº%I*³_d^³Â‡Í¦%açXJÈ¤”Öøğ«f¥ôWÚÁ¼J!-ßî´×	²Ë%‡ÓÆybsC°³»ÁYBi}ğe;J_P™mÓÒmqnÂË¯X5I½M¦ZÈ¦%·SN ~ şå¦\±¾ê[J_ğÉtKuö›ÍÑˆõè:TQ)xèåŒaÃ¶Ú«+ğd1:>1ëm[ü§=¥ïÔ«}™¤İÀ\NÒ·J›ÏAîãQË%ìõJs„½›s5Ü1rÀ?EWì)?hB	Ôy£OI˜\à“@âÓ‡o'°y{ÉVoFî“™%#“·’ÂºvŸH$¦Ë¶¨©.çñW%G€‹{³Štãà©óÁ¼àã«Š%B1J¢ŸrçY°g27¾'Äk9tÓÆ{Ì‘èßÏù|O©Ü$9 h6H<"z^c@\a%“,YÜÇ=çQìqã¢¶ùºs+d‘²•òW3å[úqzü†¤8ÒoIzGÚ‰±†—g¤¾D,/ºÙ
+İôPæCÓğ0ıhoH™)ûéˆÉ“¿yğÍ qş~Œ<|'é+C%Ş}8¹¯…ƒÌô3ôK¶°òmÑ;3å„ú–¯•°1şŠÀâò*[&cè¢?W˜ÖæËÔ¢è'¹hB•nÙüºe„ü˜ü}Ú?ñ÷àÇv/˜œ™ã¼J‚q‡UUu ıä™‚cì1jèĞGô;lÑ‹Z£™ûyôyÎD}Ğ<äˆšúö\€·¶qpx‡Qeæ¼bİôhÜJi÷p¢;¦úŸãLôÈêÛyÉÜBÂ¤N7
+¦y|’%ş)½x€Gã¢—@ü>Ú7Ö@4 7§|ã'¼ô]û é$Àí\^6RM<Ò ¡/Moƒy	ß$bøeGÒ,ÅHºBÖâ¥FsJ†xêÏß2ù¸M¦@İ†Á"&¿Å1¡_r÷ay…ùLÒš½£·¢ÄˆmÊC†ï¢Ş])ç¶q6‡0¤FÙ liö»Rî‘9Å|Ö;Y¢ÀakL¸"&Ÿ4mÔ¯İ2øùg©^fŒÄ}<$(‹	2­Úp°*«-åƒ; &–¹±¹Hê<bc‚SİdSÊ±ò'	'Ï4ûŒ‘qfVİ¥øµÆİ)G2í4“œ%ƒb2-ø8v‰èn'øõ[ÊS]í4ä”%%3˜KK²è»B9’£·ïMwõñ M¯æó%Ñ@¾±:ãõzeË¬Ì~Ë¶‘¥=yH\hŸrV"I¼%äÌ9lº3e¶wLEiÛ™îÁà!£<HÀYJrÑy.›¼ÎÛå»µÖ”¯ñùr Ú//Œ¬šÉ›2·NAª_´¡Ë‘˜yB(•h•à¢eNËÄ©vL¾*´¦¼ü÷ Jeæ‡’²]*=m¸M´£©Ö”>~d,hFûÔZŠ*ƒ‰›t[í¬œ®ê­)G<ü#G‘ÉuÔ;ZÊ¾TkÊ PÔ@Z¶/Qİ«dç	»Zá~Q™€2hÅ|MxdÆ6İêˆ„eY6<ÒÃª_û*¦±ç•òa±-<uíAÏº9&ŒzÒÅ‹ÉMâ‘rÀÆ0Ë6UÎ(³¥RÒÜÍ9¦±¹İÊée}Äj˜I›*s©˜CêK:OIRu;Ém, ”Ú¥ÌY›’*¥œùîê7¦Ôn#­dò»£ì'FI‚ïÂ¿€ÏvDT¨2Ÿ~ÃŞ}J©‘º¤šßš?]w-›€+¼t[	j˜«gPùÈËL«·(ìÔÑã´ü¢ÒIøãÉ¦”}¬B€7ö.ã[ĞÔ!àP¤¡ô+«r¬Ê›å9”0çJ×Éº°Ÿˆuùëû®ÃœkJÙ-V<¤ÖoI@˜^cÀ*üŠvzĞÀÆ^òDè0ÜSöŸ¥Ë¥Õ÷(o¹	%—­u³÷Ìá[ÊÄÒ\¨&ôY Í$™€Ñ\)Û)İì%ıÈSYİãpEã(ëÒT}™zùPJ^¾…–¾¥çy5/“YîM– óš“Æûe¹ß+Q×RÂ^‰Õ=œSËÄ$#¹¢AQê'é¢îdá|tâµ&”eRŠ¢W<8”xæID!i	éÅ[›ÆÎ–A ‹ç0¥$è’—39Û›Eóıˆş=õŸ¬=eÔVœe?vP™}­méç"r­a¡8‡ïö°—Èæ(LSşHbQğ¬ş+ÖßŸmâ=+ İLb,“%Ü+Ù|˜²eùĞê6Ï6ÆÙ
+ÀQ‚G6[Z„©WB¤ìYÓÊâÑàI]#Ê<u¡	å"œ„•7Æi¾6j
+›exø@ºxsfYF—ÊWbùU~…˜sŞá^EÖlªVì«”¹Ç‰.¿Çt-¢dOé@K‰Ê*­ABz’$|ï†Pö*CyÃç\†’%J6²M&xå4FY¥”ÕF£@‚Ñ/Ó8^âŠş«2SG·©ı•7Ï¼BÈ
+r–ÔÚQ‘Rå/—
+ÌÇkÇ	e±Ñ Ãú‰ÏL”lÄ&Ë
+.£”ËgŸ²P$có2^ -‡Ló$D‰otŞ´İI¦@ˆ2õõeLù/’.¿Î'ÉøÊ\ NK NŞ:Ø°SW¨‘ÑÊÓFSRæf¤Ö"Íen”8Ï%h…GÈj~ó"£ÛéŒíIN'7sK’;½UÆõ9KFô<õ¯.H~d»G!G)ã¯SDû‰¨—ŞUÊØm˜h@†&õIılQş¨b%,1‹`¥b¸êrÕ:7ÇkmºõŠ¡“äôõ§vC)¹ú§Ë\ZërqÛàì~U
+w/sÎ0Ÿ ÍXrÔ)åzF~D”ÅU¿zOÂ—ûİ¦u¬YFå:óI»š¢¤Ã8Ñ%M>~©é÷ˆu™ LÃ×ÜÂÌ_±ì4`ùePĞ¥ö1Ì¯S{ÄT3Qç²ìä£`Æ	œí6ŒİwLAHh¼Ôâd!»D«AÚåÆÄÀ1îğÚ“øÅ^¾&)ë£Ç¹pÉEÌã5`¹š/)£BÙİ¦
+?Aç“ÅAıÄ%’SÃ¨Â+şo÷²,I¢»™
+(~š¹éµó¤Ã‹tó%Í7âÂ{«Naâë¶ƒD»êÏM€i^tn»Ö
+Å\î>qŞ¶_K”céÚlş›z€N¶sõµ©ƒƒ£Å†ÿ~)”­SøùªN(0j	,‚ú<°=øáÏWÑu¿ÿ¡oïâ€ßT¤”K\-î‡ ±óCà[×ŠÜ3~ ïî¥ıKÅZ[Â»H®s”t¤ò¹íøoçê»~ £ÜGb8W%.DÈgë-ÿdÂï'Ğ;fƒpÜª£-ec+î_ÜÎ–bğ‚şƒÚnşCÉßBÚo	ÕÜŞÃ%êògùm;q­ñ»
+ª¹=Xãm\Còü£ßòÏ ÿ` £w¼KÀ    IEND®B`‚Ô;<=_Fhttp://dbachrach.com/blog/wp-content/themes/dustin/images/todos_ad.pngOébplist00Ô	
+X$versionT$topY$archiverX$objects † Ñ_WebResourceResponse€_NSKeyedArchiver¯&,-345KLMNOPQRSTUVWXYZ[_`U$nullİ !"#$%V$classR$3R$8S$10S$11R$5R$6R$4R$7R$2R$9R$0R$1€€€ €€€€€ Ó'()$+WNS.base[NS.relative€€ €_Fhttp://dbachrach.com/blog/wp-content/themes/dustin/images/todos_ad.pngÒ./01X$classesZ$classname¢12UNSURLXNSObject#A©æùİâ¸ÈÓ6789BWNS.keysZNS.objects€¨:;<=>?@A€	€
+€€€€€€¨CDEFGHIJ€€€€€€€€]Accept-RangesVServer\Content-TypeTDate^Content-LengthTEtagZConnection]Last-ModifiedUbytesVApacheYimage/png_Tue, 20 Nov 2007 20:37:01 GMTT6119_"331272b-17e7-460af243"Uclose_Wed, 28 Mar 2007 22:54:59 GMTÒ./\]£]^2_NSMutableDictionary\NSDictionaryçÒ./ab£bc2_NSHTTPURLResponse]NSURLResponse     ) 2 7 : P R d ƒ ‰ ¤ « ® ± µ ¹ ¼ ¿ Â Å È Ë Î Ñ Ó Õ × Ù Û İ ß á ã å ç é ğ ø
+SXalou~‡‰˜£¥®°²´¶¸º¼¾ÇÉËÍÏÑÓÕ×åìùş+18Bbg‡§¬°ÆÓÖÛßó             d              Oç‰PNG
+
+   IHDR   ¥   Z   î1f$   gAMA  ÖØÔOX2   tEXtSoftware Adobe ImageReadyqÉe<   PLTE^s˜Î¹¨®k4Œ‘äÃv-Œrl“°ØìÖ¼çÕuÕvW–d,¯ƒO¹^=„MîÙÁ®˜iVé‡eÉ£wéÏ±æÈ¦‰[M÷ª…sTIoC5A&Û¹”q®ˆ”§tow…<&ëÒ¶ÕÁ«ÒiÍÍÒìÕºèÌ¬äÄŸ wlÖ‹Pp6"º‘aç˜tåÆ¢êĞ³¬Í§Ş¥,×Ç´Ö‹eçËªÏª€õ¤~–‚}r˜Ì‹@%·¤•©XGâÌ³ğŞÊ¯Ãİ½c@r™åÇ¤öèŠ×•vçÊ©©X8é·u¥…y¤¼Ö²‹îÍRîã{Ã¬—ª£s¹º¹ä“hêÑ´ßËuZÉ}fZïÜÆëÓ¸{¬Î÷Ò(Û¥xÁ™l”¥iéÎ¯ç¥x\…²êÒ¸·­¡æ§ˆ£u?UJPÅx[·¥†ÅˆjîÚÃµ‰YP•éÈ´ Ú™g…}…“K3Ï‰Æ¥ŠÄ›u¨¥ªçÜ~…G7õ¸–ä¹¥R3'\'¥iIİ¾—òÇª~9é³—ã†`—U>İ±s®.-M]ku¥î¦‘µ–Û¢læÉ§»·˜Ù¦’ÎÀ³¥u]¿¶ªáªpÍcš¥§³­¡¦ƒlõØƒ¬»—#)RÉwöÏ„©–k5êÍ…e\ÁiIU¤Ô¬2GkY î¿†k_cğĞ¶4xÆÁªhé°¸yaÍ³l¢³…‰R?àÉ®dœòïyİ¾sİÆ­ªµÂÄÁ§KèÍ®íÄªêÜÕí¡a°†x¦ ‡’À‰ÓİËé¿j¶X!´±‡Ş›{ÏO³jOG`•""äÏ¸L:=íØÀœO&âª˜íÒ¸åÏ´£DAêñğèĞ´àÀÒoëÕ½´¯²ßĞÌäÂºïÀ|’[ßÌ¶ãË¯ïÍ³ÆÁÂçÕÄİ^í×¾âl½½¡`ïÀ¤Ôz9M/îÓ²íÕ·ËqPìŒiæÍ±èÑ¸êÒµçË«åÅ¡ğİÈáÃ¡h'ÑÑº³f(Û½¢İÃ¨îØµÛèáîÎ§×İßm¹ïË­ĞºtëÔãÇ¯éÓ»íÈ®îÒ»g¯Ú½x2Ï¸éÑµzA ãÂœ‡hÚ  mIDATxÚÔš}\“eÛÇYƒñrÉœÌñêÍÜÀ×x1Â„)B:ßf!^¨-E§¼8ÅDâëÓ,ç*Í‘BZ¡™J‰šŞˆT >BOJ‰’úÜOŞİz›uí9Îëc›ÓàûØÇÏ‡}Ü—ßï<ó8Î.ÄB¸nnnÚVyk”DTVÔ‘'òv.b—¼l7É˜Ü¯wÆ 'Q4£ğ@1ŒŠ)–xşùŸşùˆ#F‚xâ Äß nÜ (İ¢är¿NJÑ­“”Şóoş5È)#º…i¡t³ˆIjy@ãëeıyGÆÇ!ôù<‚|ÅÒ†qdB'e%&©eŸ³ZÎnë·ÒJéæ'oµPæåe;)¥÷»ıï6@vQjåòì(¥ÜYJï5“ûİí[JSnY—"¹³Şñ'»|’ÍÏävBBII%Y¢‚‚Dy"çµ\ÿS¿»6”d5"9›âŞ±5woö±Û¯Ú0vBÚRºŠ1µÚ¼ §õÎ|·=ìöˆ'YRâkK‰ÄDg;‹»cşäşv»Ä××Ò-[ŞZf÷Î‡áyë±æÉıì¶¯#%T#?¨ê­±=+ˆ kbZ¡¾ºiC_½Ø¿nCÄÙQ¢Òäöä'5¬ÑëRİF®ÈÍ­CşÒàÁƒ/m~ı·'ÜHJ¨FQwå’âÎ¯Vë6$EÊ"è<Q‡¶eğKçÅ“w{ÊÓ¸ˆ²Ã­ÃŠ$oi»ÑR.¯ÉÏ®•F7¸»tq‘É²²²x¢š—£â\|±ÙAÈ“}ãvœ…’
+ÄÚ½QPƒrà;uêÔ'Su´]*,Ú¸Á=I¶2c%#+ĞÈ­)I1IĞ¥ï5÷ƒÛa@™——×‘gAíĞfg“ˆ`{ìs;°GÚ(­›-vtJÁ¨ÖÛ+kyÊîÖĞ}ˆÒÊyué{Ïê6ÙÛqaaˆò Š¼y(tÀÒ½oŸº};?­	9"iÔ$­]`äéétÆÚZ>Ÿ]^jK	œïõ¹Ûa6”Tä¹i³cå~§àá—³V˜%MÄùnn|>_¤Õ3tUîî²Œ\°H§£ksùk÷ÌµsğÒ>rÛQşŠDÙ­Ş;¼.{"g¿ÂµB)=€^Äæ£ñƒ„İİßŠtÙ’Ëg3¤R†’õñû^²Á¼ÚÜÇnSíˆ2OÄo-¬@2vP~Ù{ªuº€¤t%ÏÂ©o0kkk¹lCXœ3wn}‹-åâ‹ıàvX{;¢Œ©¹æå5$ôòº|Í"¥_”Iè³0©Ê=‰nDA|· ı¥ÑîÈt0ÛÄ-_¿µ¾>-ÌNÌ«mpx$¢¤ø€â²×5¿Îˆ*¬N¯ªªšEb¢4ânœY¼Ú<‘)şX}}}Kè>RLª¶İn[(½¬HåVJ¿l½ÏĞKI°Ë)J¨úì…£Go²E¹{ö…¢ØÚE¹´ù¯¹Ğ½íí!v”HÊS]”…úêôKtÈÀ´ìNáÆK…\}üîc #(i¡|iğb~q Cµôö³Ñ’[]Ö°ùÌ£´Då_]œ(Œß½k×ªTÌÁƒÿùŒnßèÙí;Jä÷ñÂBSvT”…ÒÄ-.KIÙ cğD|M'e†q…9 ¹ííé-6˜‹ÿÚ˜ød!C´ôòªárM&…©Ñ˜Ø>))t^®ÈÚ`ùÌµLÎØï¾Û¶é_ÓW‘˜¤–ïõ“ÛS®_«×s¹\“†Jr‰§¤7lX¨ìòÛ„áê+A”cÆ¼½å8Éyµ¿Ü†pµ¥¼ì5W(e°•Jn!¥f”†g4JutØiøTwdÀp¦øƒE›<·mÛ40§‡Röè/·C\]í(½ÖK¥R=#0PÉÖQ›ŒFc6¶ajù yå·EcÆŒ¿iÓ¶mo­§æÒ~sÛÕ‘²t2d®–J ×Èã)<n> Ü´ùL5@z.Z4bò}™è‹ê7·)×Óéº ©T–æBg‹,–›¸<Àd›LÙ¤ãõ•>œ¸(=Ó0wÍCKóş‰Ñmß'
+é@Y””HLKÓIE”å~A.—	UÈ"óGd¸2A.òôô?f¼çØ±¯½”Ë‚K›Nô“Û”YşşIîtú½I“Üé¹–šIbBÖs5Z*É±ßÆŒ·PBL\·
+vÉYÁÉÑ´ğ¦g>èÑmWW³Ù†r«¿¿$PF¾óû¡\mçd2)ANhß(ÌÜs‘ç¢ñˆsâDÏï å±Ñ>E‰éááıâ6@ÚRú¤MŠœ {(uµVJĞ‘Í0)Jí©õş‰‘Û¿íß¿ìw»_;–ãCo„VTÚ4¥Ü6ÛQ^Óø§¥ÿï¿¿3U—¡¥,‡ˆËVfe.yheF=—Ú2wÕş‰:û÷¸nÅØİó¶Iá¯PòyÒRÚ°¾wÛ2ŸN÷O›45) (ïéø"2Ç³ó¹ d`–Pæ"Ì¨ØÔ–ˆˆy«>Ü¿iâŠë^[U?·¸¨ÑÈ«EÍ|QíÏ>wÛÒ$Ì’¥¥MMº÷û½{ştŠR‡JÊüei“¾„¯=Ş’šÚ²<"b¸jÅ‘±ëÖduQ"Ã˜‘››K°¸å—2göµÛv”;‚ØY.iş÷üïİ»G—òµäw|lE2 œô‘Kí>/èx*">çÅÏİSXÎV€’Ïf³}ÒÃÿìc·í(åZ. ¹È I–Åæ“õRËç)]üÓü#ßøhÒÎ-|ÍğÔÔÏR[ R#"V¥¶Äo-//odc‹Ïc««‹¢KƒëêˆbëAHÊk°Ï@*Ê²d Ù¨ÔRßQ‰2ŒF—´´H üèË-Jñ‘#GÆYvúô,ˆc³^›5Ay#Ç”Xc#[ÙX½qaYxİ³Œ‰=AZ)åQ04²•Æ@<*ÅåÊ/ÓÒ&ä[_n©¥'Ÿøñáÿ¾>ÀãÇæ)_??hĞÅß/] xcãŒíYº…U)¥£ÊíNÏn[(¯!)³JSÈå*Q°¡†“Zj<cÆÎ÷ßxãŞzËeKF@tSó û¼)¸øÑíGÌíÛ=$ÍÊZØRŞö4nãx/BviKA™L&HàÄAQ~­Ù±…VÊI‘²Fİ¡ğæó'NxØ¶iá4õíG®l×­NÑÑéô…e)¥•ƒêœwÃz…$)ALË÷ÎQÈg ï”XÌk—½ò¹<ŠrRdR€1pazğ‰&Zf¥]+YZÆ¼=D½¾°ªªA§Ó¥—•†_p>·Ã,GH³ÙÜ­–;,½ETP‰)gÌ8tH¼µåúõ³c¸@ùşû“Òd:NÎŒö‰~0¬«KUš¾ç¹G¸T·!%¥,=Ş\açö­s› ÂzÒº.‘”è{³(¿ÂrñöísV¯N“:pàå=z^í—ï¿Ÿæ ó)òIÏ¤%û$J¥E™•£X; ÀTçç7ê¦§”––Ò‚+/´Ù
+y%èñt…è’Òr‡_PZ‡­Ş;¶Îü1ãèêËælÏ9¶0gsù@é"£'VûD§'GWõpŞ`í€FÑÊŠÕåÅ‘ÙÁ•mönsI•\B®=¹m¥ŒÕúµÊÑ©àÀ–5´»´	{7üñŞÖ\˜5&£@JçÎ‰ö©
+õĞ¿+•‰É•uĞÌ3á´äÙ••mG@8¡è¡’s‚Ó$¢\²dşDx"bÍ¥oÙ»wuéĞÍ3ö^”××(]Ò²¤Õ{Ô>ÅE dÌYlïJFQò¦™ĞŸM•÷+h™`ö«i#`,‚ 0©àpaö•\(-Œøõ“(_~ùêu2 iëéKß|¾yïæÒO_8|˜FR.Ÿ-ÌÊÊªŞ3[â:êMgƒ¾úJÃÕ3¤>hg¬]ÚŸ`4úg™ÀÁ¨K,‰ï9ÑX)ÆX¦
+a%‰(¡Ş‰[Ñ8&S-±£HÅzÚĞ_ÿññŞ½¥Ÿ~~øpJùÚeÀÜ3ÛkyXf"×tö+ˆw¿:”EÑÉ÷{f€Of1¾¾ĞÏá¨	Ò² ^ÇÄNf¡T£·q88Ab)pÉŒáVÊ›ŸtB\Ÿ9ôË?şôó—m¥^¼¼~Ï¯åŸıÏ	}ß}÷Í³1Âò"ŸäŠ?{=ği ğß’Xø9X”a˜kHUIWE	’ª ‹Ífœ$´IQŞ¼ùo+ååè¡¿şıóÍ‡WŸD”s—[ØgCíj\­Èï¿ÿşÍ7Ïê²²®÷V’Ep|K|Ï±œÊÆŒk	YÊ!Å	¬H‚S@*Ç,FúKì×åÍ›»(çúë7›g½ÿËæ½é[/[^^¾|àØ=Î?ÈÔ“ˆ²‘XœL«ëíx·DA`·/hU@BÆ)U{0SUŒ& µ1Â`3§{ÊĞ.JÚ·ß|“<cÂ’»G.è¤Lıì³ö‡°uk*A†ƒãgcØÂâhÚ…^wUêdŠ%·UDA;¼¨"ıF†%ü)Lp9èe\aOù°KË­§iß~›<a‚‚¶zÎüˆåËCCg-»úÏÿûšÜ·Ï?‚ç dŒ^Ïh,*Î¬èup`@ƒeFAÆaĞ1-E2D… «Ye¥,`QÎ‹í8åd«–—¯9½dÉ‚	Ğ2£ä¬Øµ«Íc˜Íå•ÉBÑW ¤~ObbQQqòİºŞZIQÆ‡,_² ©	IJlq;() +©ÙÌì¬@œUĞi=É)è¤œ<ù¡•òúå–Y§—-˜p(3<%%=yuÁÛÿ:èaÓŞÈĞhôza¢ÏÆèäääà¶^ÆDDç‹V3,,D€x{HP² gd¹¡(	rÚ@¨¬6È"¦°R¾¾ÏJÙÒrìôÚêÍ—†®Ú¼qóêı›Âêlüê‚¤\½°È'šV|÷`]/c"I‡„aA'aíTÎd)5pŠ²ğ£_wu)&UŸHÊó$åõë¡³/ùäÛÿıKJJÊèÜ“èºCz¾}×¦K›2³‚ÖP$•nL§…ŸEnÚ½´’eÓr‘/@™]À²<©hEZv(ŠÉ,à01Ë;(Ë)-g]]¶ìêÅ‹èkøMeU«ªÜ§&É²èWÆyšÏØ¥¡•¥û$ÓššFUÀ¦İëñ.$(o˜ğ±,œcéÒdİfá°™j=¢§T¶àd+Ì]ërÀÕO>y8 ™º)prØıLèĞ6'İ»'[Ø8nÜşJû¿¶`èÏ‚+.´râP mŒLKb;I8‹µ5h;$İy/d€õ:ÃÉçÑsTŞIsY¹Rùâ4OÚö~mÁM99&*È}»×1±Ç@”·€Î¦«‹åÎÆ§Kv<ğBöÕ³”]°Ì«™åô4 ÜRûâ´is~v8ğÑ6¨Ï€’Ò
+9à¦úQ~£L¶rç–ŒGÓ¦m¯›Ò?~OMi{èÎğGÇ‡ÜÎ”AKDÙöã”~9ğ{ZJÛ6wç>úaÈçØeFmîí§}PùØwÇ9¸Ø"¤²‚.!s$d^à¤S9Oi¨¢ ‡Ég³M¹_ e°£Û¨IP“·0 Änu¹ÍaIJ|ã$,E˜nã–ÑJ‡;_?­˜_`1­Ù"‘üÅq¿İµw»NA–ä[Èn\õ·*ÜÖmœ•ERíŒÛjË6îåc7ü†)æığÃ/¼åòVMö£áã~«œi¼=«ŠE¨`I
+ˆ[7n°8¶¹}mÏT3Ù$tD€*œ¦´»»rşÖªÏ†ïû…¼0ÿø¼ıTØç¶„`Täİ¸¡"ìÓæeÂÚaQÀ¸-AˆíbW…«Ãì6è„hgZš¦e‰J˜jE·”l.(V¥ÿáø±55³‡¯Ú/8cŸÛ8!n;( HBãgŸÛ¨ñ-ÀX“×®V#JfV3Ç3‹ 	,Sİ$@‹dãÀ
+5†YFH’ò±ûœ3ïì^5/bøñã³××Ï[÷Ç]{HàcªÕĞ/HFrÉsÓ¾’—À§‡aqju;C”*‰Û@Ša´e2ÁvÈ"èœÄ Ê°Ğ’À34¡á-»¹©Ôvg÷tàŒˆ¨Ÿ®¸Óf_ÉÑ„‡‰o©ñœ¸• "rì*9|z‰šPÀª”à0#*`IâÌü±dF­0&†<—˜12‡˜‡Cå<<Åm…·P:\¹˜ra‰bÖôøøøców*ì+ù+KuIB=#n0	‰]%‡îœ	Í8J¦*ÄÌÂ ıa1Í˜Á1%Xr!ª€Ë@²Áÿ¤¢R\,»¹§ÛÛ»£î
+N¯Ü©t<Ì'$Ôvƒa@y.IäØïÛ`6íà3˜š@ï”LHËÒ²Á/	).@ÑpÆ¡†s5‹èZ—İßª»÷àÎÊŠ:‡-Q‚[€ÄXF¨@KÜnßnJĞ’…Xßf9€©Í˜£áLu§ó@‰£C°˜‰ê’ŠEÂ	TÂ2å“.ØüYwæLÛ™Í…àVµo°„hÄaù«âlüÄ³]‚…T·Ë"Ä®3.q ´>%Sa`¡:Å$ÌL’ƒ‘Í»ØlKù,w¾J$#K Åp
+ëÒÚÛ­e
+zÏ%[ 1[†pdò“ªzŸİŞ}ÂèÄh]ì‰”}u{÷Ù[I'(ûô>ç³µ’ân~zœ²onï>›ÛNö—ÿ	ñÿ }ûëÁ6    IEND®B`‚Ô?@A_Khttp://dbachrach.com/blog/wp-content/themes/dustin/images/diggupdate_ad.pngOîbplist00Ô	
+X$versionT$topY$archiverX$objects † Ñ_WebResourceResponse€_NSKeyedArchiver¯&,-345KLMNOPQRSTUVWXYZ[_`U$nullİ !"#$%V$classR$3R$8S$10S$11R$5R$6R$4R$7R$2R$9R$0R$1€€€ €€€€€ Ó'()$+WNS.base[NS.relative€€ €_Khttp://dbachrach.com/blog/wp-content/themes/dustin/images/diggupdate_ad.pngÒ./01X$classesZ$classname¢12UNSURLXNSObject#A©æùà sÈÓ6789BWNS.keysZNS.objects€¨:;<=>?@A€	€
+€€€€€€¨CDEFGHIJ€€€€€€€€]Accept-RangesVServer\Content-TypeTDate^Content-LengthTEtagZConnection]Last-ModifiedUbytesVApacheYimage/png_Tue, 20 Nov 2007 20:37:03 GMTT4719_"25692fc-126f-460af236"Uclose_Wed, 28 Mar 2007 22:54:46 GMTÒ./\]£]^2_NSMutableDictionary\NSDictionaryoÒ./ab£bc2_NSHTTPURLResponse]NSURLResponse     ) 2 7 : P R d ƒ ‰ ¤ « ® ± µ ¹ ¼ ¿ Â Å È Ë Î Ñ Ó Õ × Ù Û İ ß á ã å ç é ğ ø
+X]fqtzƒŒ•¨ª³µ·¹»½¿ÁÃÌÎĞÒÔÖØÚÜêñş"06=Ggl†Œ¬±µËØÛàäø             d              Oo‰PNG
+
+   IHDR   ¥   Z   î1f$   gAMA  ÖØÔOX2   tEXtSoftware Adobe ImageReadyqÉe<   PLTEşòvöøÈjX.öèlH4É¸IôäSúò˜•¬O¦˜T¾Ğ„ÕÅSúêZcc_yysTUSæÕNİäÖ¢™üó‹…vD8¬4´*ÿúãÚ‰«ÉVığjüëjûëbøí„¦¥—åÖZÅºm•å×eéòã÷í…éáæç¼ôãJâì×xh9şó‚øï”³ÏfõåYìå¥ÅLüëSõäN“…Nùô²ËÂx·ÑlÒÅkøïyf(‡u0ÓÈ}ôâGøó«ôâEÿÿ¢¤’:ûîsøî‹öêx¼ÖtøîÅÚˆ<'õæaôãMöéq÷íˆ÷èd´¤HÒĞ»õí–åÙvİÓ…—…5)p\ ÉÛ•¼´müùİ¸ªZöìõæ\òûêøî”÷êu“Ñƒ™ŠQnni^K$ÃÊ¾ûï~ïêµ´É|úö»’ÍkDFD©ºk´¢<öô¯÷ï’oÃcöçf÷ì~Òãšùñ¤÷ì‚İÛÄüô›ÄÈg¶®f|¥œ¬dşğ]ıöœÿø•R?ÙÒuöë}øï™¥¹`éæÎôñ×«Âh¶¼²ùğO®-†œ7ÿÿªñäj×Ù£ªM}‰e887$ÿøƒ÷æPŠ’hÅĞ®¶¿¬ñöİöâAóæqçïÛïé“ÔÛÅşö”ØÖ'¤#÷ğ•óê”ªïì½ÛÎkôé€2	ÿâP‰JõñºùöÛ˜ŸvìêĞØÏøğŸæãÊñâfúôš›š±¶¤Á±=ƒ’Uôê„ÙÖ¿áŞÆşö÷ï—z	 ñáVğèÏÇ~ ’Tutm­¶¡^³-°Í_¿?óã^ôãPÍË´öá?¡¤‘•^`\åèÊ¼º©„ˆ…„{Ğ×Ê„ª¯¥ÇÅ²±¯Ÿ÷ëzîİLğâbüó˜ûò“õãIïç‘ÍÚ°÷è_ÄÉ¶ÁÓ}ğå€¤µ‡ÔÜÍíŞZ¿Î1ìà|ùôœüóùèPëŞlÃÎCŸµRÀ±VàÏLøèXIK  }’9_q%–gõâJóè„··ôâA{Ì‚ûô•óé~¬]øğ˜MMM+++°Ğ•ÿüàöÿï¦Ğ‚  õIDATxÚì›\S×Çiˆ 7òØÂ3ÕBÆÂCŠb]´ã#-Nó`Zæ,t†R©šˆ•Õqqë\];è\f[­+³X:İ†sixùèŠsnëÖ¢k•=ØÃÒëşÿ{î	7„ˆŸñ¡ŸíGrï9ÿsî9ßû?çüï#ğñ'Aßšúú?å'†rë]›?Åjóá/İîúÆdQn|?îáo³úø•²¤¤„ÛPå½Ÿ™,Ê­<ùÓ9w¨opE²ÿ\üùI£¼ëá'ÿô§Ÿ~{Îæ¸Ş¿øöôOÿ)õz}"ìa?!ÊÍÙÿ½ïíÿãæø_,^ü_£Lt:áû	QÎ™óç“'ÿüHŞ¡ÅÿEJ®×é´Oò?üá–¢Cƒ\×}£Yú¼Y›ÿ”uN§„¥íèè åœ9ÿŠ;48˜<J&[n¹ä¾äÁ>Ş>Hª ¥ö÷ûMÙ1QºQn;”Œ½ö±Èh˜ä@“y{r2Ü•ı§¤œÎ;¤|¸âş¨Á+23fff&'C.™µa¾Ò˜ËD%grJ\1n$
+è *w:#Ğ`·Û»ÉrŠĞÚyuañ Ü·˜åY±â`FæÅY/f\ÅL&ü]Í¸†«+xF7©¯Í7%¬•é¹¥éVwƒ³ 5p^Z<ôHÿàYTæÙ«·‹­JÓºY™=›™q}‘IiçLÃüÁY9ÅnÊ¹~õl²oÊp§³<‘$®Û=•“ÀDRŞ-z´,((è,|2.«mj¥ÚF›¦e %cš˜¶©!o]’q0èêu¥æ¥¦­!A™»}RÂ’é"É-Ï°ÉyYhuí	NBİ*¶©‹·M;Y¬¦M³2Àp]L«s¶m[¤¤ÕÛŒ˜µrRZ­´xÖÕñ(í®¡ƒ@Tî¾Ô;8Zh.Ü-£(?—„œÆ%4sÃ˜a¼š£¦×ƒÒ3ÑêuF£ñ¤’6½™ôæ¬ë³àƒm=
+Gù¦„¡«óDZ»Ó˜x
+-JÔ7Åà#¤Œ!V›8¨4FX—štÃ¸™zã|C9´z	Ö‡rdè(nìíüRwy9‚ó¡Ğ2š²4½ØV¡!Uz#h]Îº7KÛX(
+QÚrBK¡?P ¦‹Koà©ù¤ìq
+ÏÀs,ŞËB‹€tÙ¸Düåx£1şr¨Ñx¹4<$”-+5Ñ¦w/—Åß-¦•!FL¦¿ì‹†®adìõe¸§—íœ—…–Ñ”¥EÅ´øg±ïN;°dÚÏŒ—.…êhåİñPTP_L[!YJ2‹hp:¦
+J}RFŒ8eT r[ âe¡E@Y½k¢uñ«LjZ­ÖŒ-*(*0©ÅïÆÃ¾ ˆuk<¤@±!Vp,¦‹Æ¡„¡£<Ç¾nÂ)Aqw+éœu´M©´B,\[Qô¶˜Ö½]TQTQQËçÃXLÅæĞôØ¢"<¨À'åÈ‚ĞˆÂ9/-Ê@–Òª«•KBB>ÌQ«­!±o+2a*XJ#I¢+ßÇd`EÁ—}QJˆ_ê·ˆwFê€€Ø€¸E°†ãâ¾”ßÃ²À<Ö—l2 I@ Q‘OÊ‘¡ëäÆ÷®GØ)÷nP"È=VµzÛ}Ş5pê=y_Qªu…ÍEYHÊ8ÊŠñ(G}Ç­u1÷cŞ‰"e!P*Õâky………à/›õÃ€@?×ò
+Ñ‚Éc‹V©m‹X#|}RÂøJ\÷munK]E¤DÂÍ¡E@¹	úÌ»PßÄ@-±[7‰hÀÆü¦¼ÚzO¦ µ! —OÊDìÑı¾mdÊõÚGJ:Æ°Œ¦\º	ôMR¢
+56@)ƒ0$€µ,Õ¡[aç"&µØšŸ»ÓçqaØñˆ€òÂRPÊ:›õHÙ&H]À?r€VoHa× J]ÀZ)¬tNÙR^›&F9òˆ–È{Y`Rîº 
+˜m¥‘%e˜6--+;WïF,j< ¦g°©€,S ±s–NŒ²Ã=ì4x·(¿TY¹kWee™È¦ü°1¥,¥1Š¨]•)"XD`hjñ{e»*Á¤ Õ³/@
+ÙUyab”½®Îß'-BÊ¤ÊÊ•»R(mÊÓGÖ,P¨mº—UVâğ¢aƒ	©w ÙF¸¶I©äµk‚óÒm¥PcYFSŞ›´ƒUJ‰ØF+ÅVšÖ­Ia”h€ÇŒ²4$|Wl¿—°ƒÓ„ß¹usÏ–½ác[FS®Lb•Ğ¸&L§I,­pYWê6¤$°òß‰¯%$ñÚ1yo	åÊ¤•+WFF~÷‰Oü½ W¢’Z#ß[°`M~+$Ñ’ôÚk\	ùL&e~>ô›ŸüüÈÈHÈ¶Ö®lmeM‘‘ïDòåPœïJ³šLÊòG)rÃŒÖE
+ì£5©”ğÔ¾Z…®6+ªu_>)ÉßÇÙGÕ{ â”‚—­áúpß”Ûz¨öÙÜ(ÑÍ‡Z¸¯öfmí³`xv=»}5ï€RpÙéûu×]÷¦nA§¸ıüÂg«EY@9»úæ¯fˆ4%%7ßùH”U=»öx”Hó£wØJÙ/1aÊnÁM¤İ©÷MÙ¶8S·§â'µ¶D9 °*¤QŠ\8KGgå†-ë¦N¤+¤\-öˆÔ‰Sê7‘åŞ#Ü)w§655¥¦â758X4[#I¢.™ªs£•š`qI®\©9.şQıü¨æàT¬økÚ¾Õ¥ŞN^cà«ÀNî…_"¾ ÄL9{‰ÑSh¥ B\|ìuXÊVŒğFÙÔÔÖÔ½Â÷¹ø¾éi¤¼Ït©ªF‘µÖ]•+Ê:,ÖÍˆ–"\[[jnà¬|QvğOzœ…x]¡À’(iÀ¤Á¡¬kh@^gCG8ÖKD§ğ¥P¡Úào¨©&Z¼¶F:)g›ª†¤Š¬ù&y•T1PJ§´®	n"µ±z“/JÊÙK–I"Ş‘G
+nÊµ„½Î­†k
+„ó·HcQUÉMó]¾”WU‰4Ñâèš\Ñ€tµtm”2ºÆ­®oJ;ÿ^$|ç€{Ñ{Ü)D)@¦k§OJLìV(r¥:¤|Ùtºş¸U#…İZ«æ¸©¹^~ö›²ûÇO5vŞL·@DÈ}ÿ¬©÷íË¡šùb…Â*ª‡5^"Öé”šúÙbI©y_g0Eí†±nó‹’¯ª½åî@@F6œ]Tv°S *–“wÖİãPÕœŠÒœ*©š?;XzŸf~T–4÷>Í)EV½\£8İüJÛêææÕm~Pº²»İ<|«¼\¢ØS`§ °FèYİr¨FZ#•î–æF+äõRSõj‘¼>W÷‘´_*•öµ5>Ü¼z¨¿ªª¿¿*Øeÿ:£÷–ËNŞÃìÈÖñâ½.ÏÚ]”.Ø`n«3itº¹ı"Sì‚‰}õáKs/5ËŸxì±ÇxÈ¥{ jàŞ¸Ù=<ì^ƒ[Ü„5ÜËïk_òÌUò,Å@tMÕ\h ºŸ37Ï•Ï½$lï½{÷îü`æSãP&b0ä:G‹ó[‡íàCPJÈŠ#K<Â_JĞûÒ÷aŒ‡úsk¤Uœ©íğ\¹<úÊ•´˜˜˜´ì+[¦v,ÊD-û#é&o@ä•ÿ«Á½Îb{Ë]}Szd‚=v8àùÜ£WÒÒÚçÍ‹‰Y¶|ú[ã_Çëîğ7Hß¾ô"ğèçšùÅ=;÷\ÉioÏ~tú3ãRvxx½MÊ—>S‡åÑÑÏí­®.©>°Ë²ö´´eî—’ºÃ_JYÊ­»½,ïjÊçæÏêøñS%û—g§e§=ºç[ãQ’+áRöû+ôåñS§ÖÊ_’¯­Ş¹¼=;{ÙòßMÆsÏ7¾ó¿õÂÖ^`w[_øÌÚ	‹(-mùÎ“Aù–ß:¦ú§:Ã±ß<ıµ™iíííËNÎ¿Íº}=ó“¯ÿúëO(cb–øè×§eø_ölÙ{eæƒÛçe?8sæ–?ìÿİÔ£ÜØ}4ûÓÏÏ‹™ÇiYûK§ebøÓûÛŸüÓgñÌ™ö´WÿÌôågÃr0ŸÎ3gb²_Õ‡oÄÕ3<ÅT^Ş°¿ıqp.ûkC9˜€’™RzñÅõÇ¿œƒ˜g–íÿÇ	§åúõÌúco¼Äb¦•±S’’Yo~ãoÌ{<fú/O[?%)É°›_ÿÚË>xÉ@ §(%óâ‰×_ş·×9H¤tà¾Eæª1Ì¨¨1–©pk¦†ÃÎÁ!Ãa†qH$Ø€%Œñ§b7„·`ŸÃp¨
+—µŠl¹Jp´,âÄÏ_úù[/2.J	»S)BÙ#cTèÊr¾‹a$†7 5ÌøÓ ¡”9,p‚Êbèb¡İ¶%œö	Ã	)µè	Š£lÑvW°	Æ¡¥ÂTEiÏ¹QbF&cy´çÏC*3æ­³–Òšİ(áxÈw9Î;ˆÑ<²e,?öãS|3@	Îoi‘Ês¸;!	‹Äb‘¨TZ‹ÁáAiÑ:xJ™Vëps ×d=Ì9•%Õea¨0Õƒ‡ô0®-;õd,%Ifò¼a¸…¢ØfH×*j$Á@A‹¤ËÃ—f#50qzò”^°tIz”Ì¹.†:ÇXğ(Ò6×vGv%–²ç¼Y&ã(=Œ™m›$ÌÈ 2ãw_=¸vØ³Ô2­'¥×T*t‹Û¼<Ç8ºĞYf‰ëH~Æô8`Â"Ifp^Z8°CÙB±ÓÓÕ%Q1Ú–÷Õ†S‡Ñj%ç0£írëÅkf[‡¥*Œ’ …áÏ“ß²ë_ÆR’i†—f3¿À,*Æb`àüáDÍƒYRÜ×¸A…ŞÁ%ÃæH™ŠñÑ€Eev_ãg/|¬ÕÂo1ğÇC™qLÒÌXQ]§Ö~KO— ù%ïPşöóZ™VÅ53æµ‡;}•Á£k³ÿ½xmÀq×3ëp¶™)z…¥OåğÔ×ÿÿG×ÿ å'Aÿ` àstÇ4T    IEND®B`‚ÔCDEF_Dhttp://feeds.feedburner.com/~fc/dbachrach?bg=4A839D&fg=000000&anim=0OVbplist00Ô	
+X$versionT$topY$archiverX$objects † Ñ_WebResourceResponse€_NSKeyedArchiver¯ &,-345OPQRSTUVWXYZ[\]^_`abcghU$nullİ !"#$%V$classR$3R$8S$10S$11R$5R$6R$4R$7R$2R$9R$0R$1€€€ €€€€€ Ó'()$+WNS.base[NS.relative€€ €_Dhttp://feeds.feedburner.com/~fc/dbachrach?bg=4A839D&fg=000000&anim=0Ò./01X$classesZ$classname¢12UNSURLXNSObject#A©æùÛÏ@ÈÓ6789DWNS.keysZNS.objects€ª:;<=>?@ABC€	€
+€€€€€€€€ªEFGHIJKLMN€€€€€€€€€€SP3pWExpires]Cache-ControlZKeep-AliveVServerYX-Fb-HostTDate^Content-Length\Content-TypeZConnection_ CP="ALL DSP COR NID CUR OUR NOR"_Tue, 20 Nov 2007 22:37:01 GMT\max-age=7200_timeout=30, max=100VApache_app37.feedburner.com_Tue, 20 Nov 2007 20:37:01 GMTS427Yimage/gifZkeep-aliveÒ./de£ef2_NSMutableDictionary\NSDictionary«Ò./ij£jk2_NSHTTPURLResponse]NSURLResponse     ) 2 7 : P R d ‡  ¨ ¯ ² µ ¹ ½ À Ã Æ É Ì Ï Ò Õ × Ù Û İ ß á ã å ç é ë í ô ü
+UZcnqw€‰‹’š¥§²´¶¸º¼¾ÀÂÄÆÑÓÕ×ÙÛİßáãåéñÿ
+ /<GjŠ—­´Ëëïù	#038<P             l              ^Yimage/gifO«GIF89aX  ó  i»àJƒ3[ms‡¥ÁÎëÿÿ     fff                     !ù   ,    X   şÈI«½8ëÍwø`(dihZ
+À7¼p,Ïtıªx².áÿÀ pH,è*^`@l:›F¤tÕZ>¯ØèôcØ*™ØŸa4 ÇfŸvÛ~Ã¾4AN‹Õ[P[ú†Ÿítwk]mhzcˆ‰‡Œ\‹ }~sv•bhxˆ\z"…{…¡T=”thr‚„Š‹¨¨Ÿ!‘’U`p©‚šœ½œ£{¾³"“X±»q©«¬­®Â;¶”ÖƒyÙÆ×YÚy_âãäåæçèkßGJëîïµğòî,ö÷øùúûüışÿ ûH° Áƒ*\È°¡C" 8!ÄŠ.RŒ8PcGYC~Ä˜‘âFŒ%ŠIÒ`Ë—.EVD¹ræÆš1KJiRaÊŸ mfä)t(É‰HO*Í	ÓgÎ=…ÒÔYòèG¨,¦ÄªÕeĞ¯(yUIuªÑ¨Óª]ËVm ;ÔHIJ_"http://widgets.technorati.com/t.jsO{bplist00Ô	
+X$versionT$topY$archiverX$objects † Ñ_WebResourceResponse€_NSKeyedArchiver­"()/012:;<@U$nullÛ !V$classR$3R$8R$5R$6R$4R$7R$2R$9R$0R$1€€€€€€ Ó#$%&'WNS.base[NS.relative€€ €_"http://widgets.technorati.com/t.jsÒ*+,-X$classesZ$classname¢-.UNSURLXNSObject#A©æùã4¼“Ó34568WNS.keysZNS.objects€¡7€	¡9€
+ZConnectionUcloseÒ*+=>£>?._NSMutableDictionary\NSDictionaryÒ*+AB£BC._NSHTTPURLResponse]NSURLResponse     ) 2 7 : P R d r x  – ™ œ Ÿ ¢ ¥ ¨ « ® ± ´ ¶ ¸ º ¼ ¾ À Â Ä Æ È Ï × ã å ç é'*09BDGNVacegikv|…›¨­±Å             D              ÓOÀ<html><head><title>FILTER(1)</title></head><body><div align="center"><table border="0" width="468" id="table1" align="center" cellspacing="0" cellpadding="0" dir="rtl" height="212">
+
+<tr><td width="468" colspan="2" bgcolor="#EFEFEF"><h1 style="COLOR: #000080; font-style:normal; font-variant:normal; line-height:15pt; font-size:18pt; font-family:Arial" align="center">
+
+<br>The requested page is Forbidden</h1></td></tr>
+
+<tr><td height="99" width="468" colspan="2"><img border="0" src="http://www.datak-telecom.com/filter/error.jpg" width="468" height="99"></td></tr></table>
+
+<form action="http://www.datak-telecom.com/filter/getURL.php" method="post">
+
+<table border="0" cellpadding="8" cellspacing="8" summary="feedback form" height="78" width="200"><tr><td colspan="2">
+
+<input type="text" size="35"  name="comments"></td></tr><tr><td align="center" colspan="2"><input type="submit" value="Send URL" /><br /></td></tr></table></form></div></body></html>
+
+ÕLMN_ëhttp://pub.mybloglog.com/comm2.php?mblID=2007011117224679&c_width=165&c_sn_opt=n&c_rows=2&c_img_size=h&c_heading_text=&c_color_heading_bg=FFFFFF&c_color_heading=ffffff&c_color_link_bg=E3E3E3&c_color_link=005A94&c_color_bottom_bg=005A94O÷bplist00Ô	
+X$versionT$topY$archiverX$objects † Ñ_WebResourceResponse€_NSKeyedArchiver¯&,-345KLMNOPQRSTUVWXYZ[_`U$nullİ !"#$%V$classR$3R$8S$10S$11R$5R$6R$4R$7R$2R$9R$0R$1€€€ €€€€€ Ó'()$+WNS.base[NS.relative€€ €_ëhttp://pub.mybloglog.com/comm2.php?mblID=2007011117224679&c_width=165&c_sn_opt=n&c_rows=2&c_img_size=h&c_heading_text=&c_color_heading_bg=FFFFFF&c_color_heading=ffffff&c_color_link_bg=E3E3E3&c_color_link=005A94&c_color_bottom_bg=005A94Ò./01X$classesZ$classname¢12UNSURLXNSObject#A©æùù#ÅÈÓ6789BWNS.keysZNS.objects€¨:;<=>?@A€	€
+€€€€€€¨CDEFGHIJ€€€€€€€€SP3p]Cache-Control_Transfer-Encoding_Content-Encoding\Content-TypeTDateZConnectionZSet-Cookie_%policyref="http://p3p.yahoo.com/w3c/p3p.xml", CP="CAO DSP COR CUR ADM DEV TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE GOV", CP="NOI DSP COR DEVa TAIa OUR BUS UNI" policyref="http://www.mybloglog.com/w3c/p3p.xml"WprivateXIdentityTgzip_text/html; charset=utf-8_Tue, 20 Nov 2007 20:37:15 GMTUclose_TBX=a2i4g913k6hbr&b=3&s=p4; expires=Tue, 02-Jun-2037 20:00:00 GMT; path=/; domain=.mybloglog.com, mbl_user=1; expires=Mon, 20-Nov-2006 20:37:15 GMT; path=/; domain=.mybloglog.com, mbl_pass=1; expires=Mon, 20-Nov-2006 20:37:15 GMT; path=/; domain=.mybloglog.com, mbl_rem=1; expires=Mon, 20-Nov-2006 20:37:15 GMT; path=/; domain=.mybloglog.comÒ./\]£]^2_NSMutableDictionary\NSDictionaryšÒ./ab£bc2_NSHTTPURLResponse]NSURLResponse     ) 2 7 : P R d ƒ ‰ ¤ « ® ± µ ¹ ¼ ¿ Â Å È Ë Î Ñ Ó Õ × Ù Û İ ß á ã å ç é ğ ø
+øı#,.5=HJSUWY[]_aclnprtvxz|€¢µÂÇÒİ7W]µº¾Ôáäéí             d              Oš
+		if(typeof(mbl_jsserv_loaded) == 'undefined'){
+		  document.write('<scr'+'ipt language="javascript" src="http://track3.mybloglog.com/js/jsserv.php?mblID=2007011117224679"><\/scr'+'ipt>');
+		}
+   var mbl_pub_str = '';var mbl_rr_bubble = true; var mbl_rr_rdy = false;
+function mbl_element(id){
+ if(document.getElementById != null){
+  return document.getElementById(id);
+ }
+ if(document.all != null){
+  return document.all[id];
+ }
+ if(document.layers != null){
+  return document.layers[id];
+ }
+ return null;
+}
+function mbl2_osover(obj){
+  var id = obj.id;
+  var td1 = 'tdd1' + id; td1 = mbl_element(td1);
+  var td2 = 'tdd2' + id; td2 = mbl_element(td2);
+
+  if(td1 && td2){
+    td1.style.backgroundColor = '#eeeeee';
+    td2.style.backgroundColor = '#eeeeee';
+  }
+}
+function mbl2_osout(obj){
+  var id = obj.id;
+  var td1 = 'tdd1' + id; td1 = mbl_element(td1);
+  var td2 = 'tdd2' + id; td2 = mbl_element(td2);
+
+  if(td1 && td2){
+    td1.style.backgroundColor = '#E3E3E3';
+    td2.style.backgroundColor = '#E3E3E3';
+  }
+}
+function gU(i) {
+ if(!mbl_rr_bubble){return;}
+ if(i==1) {
+  top.location.href='http://www.mybloglog.com/buzz/yjoin/?ref_id=2007011117224679&ref=w';
+ } else if(i==2) {
+  top.location.href='http://www.mybloglog.com/buzz/community/DustinBachrachBlog/';
+ } else if(i==4) {
+  top.location.href='http://www.mybloglog.com/buzz/';
+ } else if(i==5) {
+  top.location.href='http://www.mybloglog.com/buzz/yjoin/?ref_id=2007011117224679&ref=w';
+ } else {
+  top.location.href='http://www.mybloglog.com/buzz/members/'+i+'/';
+ }
+}
+function mbl2_imo(w, id, o, no) {
+  mbl_rr_rdy = false;
+  var img = mbl_element(id);
+  if(!img){return;}
+  if(w=='s') {
+    if(!no) { img.style.display = ''; }
+    if(o.id == id) {
+      mbl_rr_rdy = true;
+    }
+  } else {
+    if(!no) { img.style.display = 'none'; }
+  }  
+}
+function mbl2_ioc(sid, mid, w) {
+  if(!mbl_rr_rdy){mbl_rr_bubble=true; return true;}
+  mbl_rr_bubble = false;
+  top.location.href = 'http://www.mybloglog.com/buzz/opt_hide.php?rr_sid='+sid+'&rr_mid='+mid+'&rr_w='+w+'&ref='+escape(top.location.href);
+}
+mbl_pub_str += "<style type='text/css'>";
+mbl_pub_str += ".widget_mybloglog { width:165px; }";
+mbl_pub_str += "table#MBL_COMM { line-height:12px; border:1px solid #FFFFFF;width:165px; font-family: Verdana, Arial, Sans-Serif;font-style:normal;font-weight:normal; background-color:#E3E3E3;}";
+mbl_pub_str += "table#MBL_COMM th.mbl_h { font-size:14px;background-color:#FFFFFF;color:#ffffff;font-weight:bold;text-align:left;padding:2px 2px; text-align:left;}";
+mbl_pub_str += "table#MBL_COMM td.mbl_join_img { cursor:pointer;cursor:hand;width:26px;padding:2px 2px;margin:0;background-color:#fff;}";
+mbl_pub_str += "table#MBL_COMM td.mbl_join { cursor:pointer;cursor:hand;text-align:left;color:#005A94;background-color:#fff;font-size:11px;border-bottom:0;padding:2px 2px; margin:0;}";
+mbl_pub_str += "table#MBL_COMM td.mbl_join a { display:block;width:105px;overflow:hidden;font-weight:normal;border:0;}";
+mbl_pub_str += "table#MBL_COMM td.mbl_join a:hover { border:0;}";
+mbl_pub_str += "table#MBL_COMM td.mbl_img { cursor:pointer;cursor:hand;width:26px;padding:2px 2px;margin:0;background-color:#E3E3E3;border-top:0;}";
+mbl_pub_str += "table#MBL_COMM td.mbl_mem { cursor:pointer;cursor:hand;text-align:left;font-weight:bold;font-size:11px;background-color:#E3E3E3;color:#005A94;border-bottom:0;border-left:0;border-right:0;padding:2px 2px; margin:0;border-top:0;}";
+mbl_pub_str += "table#MBL_COMM td.mbl_mem a { display:block;width:105px;overflow:hidden;border:0; }";
+mbl_pub_str += "table#MBL_COMM td.mbl_mem a:hover { border:0; }";
+mbl_pub_str += "table#MBL_COMM td.mbl_fo_hidden {cursor:hand;cursor:pointer;text-align:center;font-size:10px;background-color:#005A94;color:#ffffff;padding:2px 2px; }";
+mbl_pub_str += "table#MBL_COMM a { color:#005A94;text-decoration:none;border:0;background:none }";
+mbl_pub_str += "table#MBL_COMM a:hover { color:#005A94;text-decoration:none;border:0; }";
+mbl_pub_str += "table#MBL_COMM a:visited { color:#005A94;text-decoration:none;border:0; }";
+mbl_pub_str += "table#MBL_COMM a:visited:hover { color:#005A94;text-decoration:none;border:0; }";
+mbl_pub_str += "table#MBL_COMM td.mbl_fo_hidden a { color:#ffffff; }";
+mbl_pub_str += "table#MBL_COMM td.mbl_fo_hidden a:hover,table#MBL_COMM td.mbl_fo_hidden a:visited:hover { color:#ffffff;text-decoration:none;border:0; }";
+mbl_pub_str += "table#MBL_COMM img {width:24px;height:24px;border:1px solid #000;z-index:999;padding:0px;float:left;position:relative}";
+mbl_pub_str += "</style>";
+mbl_pub_str += "<table cellspacing='0' cellpadding='3' id='MBL_COMM'>";
+mbl_pub_str += "<tr id='tr0'><td class='mbl_join_img' onclick='gU(1);'><img src='http://s3.amazonaws.com/co_img/no_pict.gif' /></td><td colspan='4' class='mbl_join' onclick='gU(1);'><strong>You!</strong><br><a href='http://www.mybloglog.com/buzz/yjoin/?ref_id=2007011117224679&ref=w' style='width:auto;' target='_top'>Join My Community</a></td></tr>";
+mbl_pub_str += "<tr id='tr1' >";
+mbl_pub_str += "<td id='tdd11' class='mbl_img' onclick='gU(\"JasonStone\");'><img src='http://F3.yahoofs.com/coreid/472d2616i1134zul1sp1/wo8jj_sydKuUb09DmPquYeA-/1/tn48.png?ciAMAiHBX0FksbFQ' alt='Jason S' title='Jason S' /></td>";
+mbl_pub_str += "<td id='tdd12' class='mbl_img' onclick='gU(\"snowdog\");'><img src='http://s3.amazonaws.com/buzz_img/2007042510125356_avatar.jpg' alt='snowdog' title='snowdog' /></td>";
+mbl_pub_str += "<td id='tdd13' class='mbl_img' onclick='gU(\"computerjoe\");'><img src='http://s3.amazonaws.com/buzz_img/2006022613444810_avatar.jpg' alt='computerjoe' title='computerjoe' /></td>";
+mbl_pub_str += "<td id='tdd14' class='mbl_img' onclick='gU(\"zerotothe5th\");'><img src='http://s3.amazonaws.com/buzz_img/2007060614314841_avatar.jpg' alt='zerotothe5th' title='zerotothe5th' /></td>";
+mbl_pub_str += "<td id='tdd15' class='mbl_img' onclick='gU(\"Valery\");'><img src='http://s3.amazonaws.com/buzz_img/2006042215375568_avatar.jpg' alt='Valery' title='Valery' /></td>";
+mbl_pub_str += "</tr>";
+mbl_pub_str += "<tr id='tr6' >";
+mbl_pub_str += "<td id='tdd16' class='mbl_img' onclick='gU(\"geeknewsdotnet\");'><img src='http://F3.yahoofs.com/coreid/4706dbf8i17a3zul3sp1/kM1ybh0.d6LnePkrA1iNKf_f/1/tn48.jpg?ciAMAiHBYpQ5QFcZ' alt='Andy' title='Andy' /></td>";
+mbl_pub_str += "<td id='tdd17' class='mbl_img' onclick='gU(\"kineticstatic\");'><img src='http://s3.amazonaws.com/buzz_img/2007082016060480_avatar.jpg' alt='kineticstatic' title='kineticstatic' /></td>";
+mbl_pub_str += "<td id='tdd18' class='mbl_img' onclick='gU(\"nasph\");'><img src='http://F3.yahoofs.com/coreid/46f95428i2684zul1sp1/7WxyTYQ_erVHff82sYA1JDl./1/tn48.jpg?ciAMAiHBeRKzg6wN' alt='nasph' title='nasph' /></td>";
+mbl_pub_str += "<td id='tdd19' class='mbl_img' onclick='gU(\"mohdismail\");'><img src='http://F3.yahoofs.com/coreid/4737d565i1d8azul2sp1/79b6bqU0erXmpvzCa0O1ciij/2/tn48.jpg?ciAMAiHBh9j1w.qr' alt='mohdismail' title='mohdismail' /></td>";
+mbl_pub_str += "<td id='tdd110' class='mbl_img' onclick='gU(\"4exp\");'><img src='http://s3.amazonaws.com/buzz_img/2007042410095642_avatar.jpg' alt='4exp' title='4exp' /></td>";
+mbl_pub_str += "</tr>";
+mbl_pub_str += "<tr><td colspan='5' class='mbl_fo_hidden' onclick='gU(2);'><a href='http://www.mybloglog.com/buzz/community/DustinBachrachBlog/' target='_top'>View Reader Community</a></td></tr>";
+mbl_pub_str += "<tr><td colspan='5' class='mbl_fo_hidden' onclick='gU(5);'><a href='http://www.mybloglog.com/buzz/yjoin/?ref_id=2007011117224679&ref=w' target='_top'>Join this Community</a></td></tr>";
+mbl_pub_str += "<tr><td colspan='5' class='mbl_fo_hidden' onclick='gU(3);'><a href='http://www.mybloglog.com/' target='_top'>(provided by MyBlogLog)</a></td></tr>";
+mbl_pub_str += "</table>";document.write(mbl_pub_str);
+<!-- img1.mbl.sp1.yahoo.com compressed/chunked Tue Nov 20 12:37:15 PST 2007 -->
+ÔPQER_*http://s3.amazonaws.com/co_img/no_pict.gifO)bplist00Ô	
+X$versionT$topY$archiverX$objects † Ñ_WebResourceResponse€_NSKeyedArchiver¯&,-345KLMNOPQRSTUVWXYZ[_`U$nullİ !"#$%V$classR$3R$8S$10S$11R$5R$6R$4R$7R$2R$9R$0R$1€€€ €€€€€ Ó'()$+WNS.base[NS.relative€€ €_*http://s3.amazonaws.com/co_img/no_pict.gifÒ./01X$classesZ$classname¢12UNSURLXNSObject#A©ä[.ŠµÈÓ6789BWNS.keysZNS.objects€¨:;<=>?@A€	€
+€€€€€€¨CDEFGHIJ€€€€€€€€_X-Amz-Request-Id\Content-TypeVServer^Content-LengthTDateTEtagZX-Amz-Id-2]Last-Modified_F605B8855EEF9D01Yimage/gifXAmazonS3T1285_Mon, 19 Nov 2007 17:55:57 GMT_""c2693ad223348c538e487fa62fd0eb39"_@SQx86wHDdEsDGb91fCLuPunVvf12hM+JDDm5Pe2Fw2xmQ8u7AZcCuktS8P1FQQZ+_Wed, 06 Sep 2006 17:17:59 GMTÒ./\]£]^2_NSMutableDictionary\NSDictionaryÒ./ab£bc2_NSHTTPURLResponse]NSURLResponse     ) 2 7 : P R d ƒ ‰ ¤ « ® ± µ ¹ ¼ ¿ Â Å È Ë Î Ñ Ó Õ × Ù Û İ ß á ã å ç é ğ ø
+7<EPSYbkmt|‡‰’”–˜šœ ¢«­¯±³µ·¹»ÎÛâñöû'1:?_„Ççìğ3             d              AOGIF89a0 0 Õ  ***:::ddd|||ŞŞŞğğğƒƒƒ222”””âââ‹‹‹%%%UUUÙÙÙ½½½]]](((¢¢¢ÕÕÕ444æææNNN±±±ÁÁÁnnnjjj¬¬¬íííBBBFFFìììqqq´´´ÇÇÇJJJ666wwwùùù---...øøø///,,,÷÷÷000öööúúú111ûûûõõõüüüôôôıııóóóÿÿÿòòòşşşÄÄÄšššÉÉÉĞĞĞ¦¦¦èèè!ù     ,    0 0  ÿ@“pH,šRÈ$’ÆÊ	c4£tJ*•¯BŠV˜™d×dul§¡Ë&Dp¹Xğ8œL—Å^1‚¤ ô
+	Z384v,tc,2,3+ '**''
+<72x1ŠU)9)+ 0*-+(˜ 28Œ£U62-$(- *0'±* $^152ºf)7 « -Æ+'-²™=&/oÒf.
+Ü-ÃÇ­ óÊ /&4)èa# “(,·  ŠÉŒE€ãEQ£¦a +¥m–P³¤‚B6^$52†‹P$¸‚qPU¦—/UD… EºÜœLÇE†ÿm+‚Âh¦°I%RDÓõ‚§“6RX g°jÑ˜Ã(`A¢¢;"s°paÂƒ+UÜŒ]ı¶1Ê}$Q:Bùa
+(P$ó¶V#Ñru%šGŸVÌ|·ö I¤À©«\¥2d @ÈÒ`²Æc9àZÙM"wLbu ß¾«°¨AvÔM?¥@€Fëa*4f‰â„&jHsAØ…Œ:¸ûì¸1_LœÕh†‹6nğÁ…«°ÂB_¤±xñœ†‹›>:è•Yií
+ 0ÔWtÄ0ßl[PSóÕ˜%dxµIãÅ>øÀƒyéÕÿØˆPC·Á¥È|øUƒ960p‰
++µ T…RÊ‘DØ)˜cÀ0Ğ	å­¥‚nÌ‚Sàû DXóÙ ÀPî·V mˆd‰EÔà)Ì0ÃôÍ÷Ä4Ì ÁßhyáõĞHFtµ"™Kjg‚2œ„ƒ<€;i@–})N¢	‰<sƒI`Äp¦€pÌ 6¦À1@!ƒR˜rRSnp`|oğT2Q²ÀƒÄP 5˜T¡IŒUfSúÜP ;tL2a²V2ÔÀ‚dÁ'E[|ò…’ğ T	7²ôw• $°d
+€‘ÿ¤Ì±0Á
+€`A $¬ğ˜cÉ`²€ZWÅh"Ì …rRC”ĞÁ;*t¨W;ÜXq•t ÈĞf43pà¬³x°B Ä4Üá%w8\&ïçÀ?à ÃßĞÃ¨ Ê'·ñƒóÄØYo€ ˆsşD°˜A)7×ƒ'Ø;%ÛÀ ,;¤€ƒ 2ê´ÓÖ'KP™¨ò%Ä twQ’^ÊÇ4uP|-É*TpBÃÔ­rÜp÷5_ö:ã	pÁ7”\MI&şóŒÇ4üR=D¥A8•WõçP[^¹oœ{øè¨÷K¶+@¼_q_Ç.ûß»Ò"0ÙeÓ­ûî¼÷Ş»œ•ƒÃ²+ïÿâñÈ'¯<òVoõA  ;ÔTUV_fhttp://F3.yahoofs.com/coreid/472d2616i1134zul1sp1/wo8jj_sydKuUb09DmPquYeA-/1/tn48.png?ciAMAiHBX0FksbFQO=bplist00Ô	
+X$versionT$topY$archiverX$objects † Ñ_WebResourceResponse€_NSKeyedArchiver¯&,-345IJKLMNOPQRSTUVW[\U$nullİ !"#$%V$classR$3R$8S$10S$11R$5R$6R$4R$7R$2R$9R$0R$1€€€ €€€€€ Ó'()$+WNS.base[NS.relative€€ €_fhttp://f3.yahoofs.com/coreid/472d2616i1134zul1sp1/wo8jj_sydKuUb09DmPquYeA-/1/tn48.png?ciAMAiHBX0FksbFQÒ./01X$classesZ$classname¢12UNSURLXNSObject#A©æúï1ÈÓ6789AWNS.keysZNS.objects€§:;<=>?@€	€
+€€€€€§BCDEFGH€€€€€€€WX-CacheWExpiresSVia\Content-Type^Content-Length_Proxy-Connection]Last-Modified_#MISS from accel01.datak-telecom.net_Tue, 02 Jun 2037 20:00:00 GMT_@1.0 accel01.datak-telecom.net (squid/3.0.RC1+PatchSets-20071001)Yimage/pngT3922Zkeep-alive_Sun, 04 Nov 2007 02:14:43 GMTÒ./XY£YZ2_NSMutableDictionary\NSDictionaryRÒ./]^£^_2_NSHTTPURLResponse]NSURLResponse     ) 2 7 : P R d  ‡ ¢ © ¬ ¯ ³ · º ½ À Ã Æ É Ì Ï Ñ Ó Õ × Ù Û İ ß á ã å ç î öqvŠ“œ¥§®¶ÁÃËÍÏÑÓÕ×Ùáãåçéëíï÷ÿ2@f†ÉÓØã"/27;O             `              ]OR‰PNG
+
+   IHDR   0   0   Wù‡  IDATh…š[¬eYU†¿1ç\kï}Î©[Ÿºt7—n°¡›6iQ	(ÆKDcˆb|òÁhŒ‰‰OFŞ|Ñ~áIMäA‰11„/!("¢B	1@€*º»(ªºêô©sÛ×u™cø0çºìÓ¸’]{µ×\k\ÿñ1KöfSCC 8÷-" ‚z„À¬,Ø›ÌÊ
+ÄyÖjœnZ–u¶Äb‹Ëi#b†€¥W`†b¶õ7î·Ñõî ˜sia–·_'
+‰€sà=êêZ)Y¸“r¿;C‹	5B[Uèz…¬—Èf4ùAfà4?×ÀÄÒu±N\¥3c#B‹¡€Â–†8w$Ã¼ éÛœÇ¼°¢$NwÑËûÔ×o`ûWáâep«%ÂÁ=Üñ!~¹Àj Fœ8Ëâ$¡±Óé5>PÕ¼SÜt)wœ`–•È $WH
+ Nx,/Ùúæâ„ å»¼O>ÃS?şc|äçßËûßô"Â×ù‹¾Æ¿ôzóÛHÛàcƒ8N’·MRÈĞyŞÏ5-Råjşı9<QEşl2áP3Ã$Il–=`Ò wHG.…ó˜&Øl»ú{ßûø÷ßş5®L'ıÊ·]ºÈ‡äI~÷‘+üÍßc'GPoÆ!Ù2¼(y!;A€‹f\vÔÀÓÀÛcä0„$WŸ#É&àDp.}$¿!9Açç°0Å¦`ÿ:ÏÿÒOo	ßÁ9şà½ï‚kb»{X1À¹ä‰š]z^‡—¼çúØvù¼4¶Ï†×Ùa]G¦Ó’;&£ÓËU3B Ÿ•(²ngw?zëãÜQzåê]^½=‡O6*Ü,<ŸŒßŠ-p¸å]<½BxûSO Êl2e:	¨	·îğòW(| /4"´]š¨a›5ß8xÈcO¾áuxùt‹S¤©	QÁ´‡¾Î»hÒ£3‚ Ÿ™|-Ş•ã–sç$î§FxìÆ>³éÓ†ÂM„½ã9»e`O`Z$ä9A8Aq‘jEqô
+øÿÌÏüÆ/3{ä"°J«ˆ‡üù§¾
+÷Ë9±®ñM‹EMŠ˜2®t§	£îyáıßcéÓÚ¹;Ó	;³Me®…½‰çñ™ç’Jï‘àñu‹k6ÈÆQ¾úC~åëŸcú“ÿ
+;SìtÎfŞRWí½šçşCùô5²<Ã6kbİ`1âÌ²7ÈµÌr$uÊHRŒ„ÊB
+Éa6pÖ”²()!pu§dïâ„)Šš1«ÀÊ@SNÖ¬xØ>ä£_8™ñfÆ±Bll³‚õ
+W­‘¦ÂbKŒSE­“¼×`täP²¡!ÈëÆ-Ü~å€ªªxìê#\Ü›R¯WÔó3®Ì<3ç¨«†ÚŒÒ"±Ü¥yô°®¨¾÷->yfÔ·ÑÍÁùÎ¿ˆµHl‘¶AbˆjÂp³B}<ô¡3€Œ!*¨$/lÇ=¹d*qó›ßÅîŞçÒŞ„‰%RÎJ&ÁĞëZ9‰Š¯æ¸ãWQ)ÑiÚ\ƒwèªlâ4¢T‘óéí£$fÀrÁ0_I·«æ<é¼aÒ+Ûq¤pm›VĞ¶A*G(=æ…6´p¶i¹·1¼o™(şîËœ®*ˆ:àŸjÒIìdÍ¡Ò}è‘3–ŸÑa|ÇúR+nO zÇe.ôì›¯q²X³n…PxÊ"à¬e#ÇuÅÑ¢âL=Gê¹^*­æ¬m1ëŠ‘ÁÚÿ;Šoë Ï¶Â¥S~P‚NôŞêı3»¬İR2=?<óÔ›8>]0_¬X×"‚S¨ª–vÓ²[Ï^
+®ÿyPq^£f9±rzu,x åRŒ0şõaÍ@èº”•‘:®ÔÕ¿N„7?~ı‹;¬+6›USëŠ¶õ®pV)÷—0‰-ûy`špgAúôĞs07„•õ¿W;GuJvÉ-tT¬;z=:x2AÄ\ŞãÂÄSï–Äv†Å-¦-ÚÖ¸ËOòâÚñ‰ú"/­æÄ
+¶d¸>¨0¨Ò712®¨£Í‡­dì†ÜmS—0-=%%³`ˆ„ˆ`ˆ(nrƒ§?ü~ñÊ>÷›çùË¿úX·}rmÛóÜ_ç¿Ïy¬µr‰†Œ·Ñ½£åfiÖñ^ğ¾Ä9ÃLË‚bZğğğŒ;·¢}øt©:´‡‚Ãût]u(5[Ö¦#bcÁéŸ5Â tn[â¦=õ7L„ g÷1çñ¾ Îñ\¸ôàwÿô7ùÇõUşë…ÏÕ3?¢·N6Íîî„é´àğáCxØ()^½«ÃöuëqşõrsXÄÆË	E1Á‹cq¸ä+_¾ÉßıpÎfGÉ6zmşrvvŠì•œ°&(–[ÇáÕ½Ş[©r>·•‘.±³õ5Cr *j‘¨JS;dSƒ_Ó¨0¿{Â¿UœT¹¤Ûö#Í†PÙÛ›ğSïyš;w98˜¿ÖÂãêµ-éyÕúŸÆ@4´ç)÷º ˜ó ‡¡XÊƒeÍ×.¸]EF1B'dR6<üÆõK<ùÄcÜ¾wˆéÈK£èè@' ë««Œ–ŒÉœÁ“ºFHÂ«ABÄ$.cY‘aY¯9^ÔÔQY+¬ãğO
+±U5ßúÎ‹|ÿÅÌ4Ûó|Lˆ3 ÏkÑ¥k5Ëà™yaWŒ™WCzçQwË
+˜ ‰`â‰ÑX­æ›(àsç$"´=ypïş	‡GsæóÍV8î‡Ğ ‹ôê(„Á…IÁ³×¸VÂ1.¸2{§5Ÿ~hÜ¬Éı…&›b@4cµ©Y®+æ•1oŒ:¥ş|è:/´mËrY¡Qjë9Üîa·û¥ƒÖ±*) v
+Ï${¡õÆàç…Ø)B4µ<òH¾‹1RmjZ…:êh˜Ä-¡;cuS^Ğ9nq‰¡ø!¤Éô¹bƒm pâp"LÄØe¢ÂÄ)¦‘³%Ô­QvM½ª8©L–«êÈñ²âpİ²X*Mk˜*Ş9>ô«Os²nøüg_ìáQ#hŒçìÊëœYÎ¹Q¾¶2“¡¸ÁÓƒ*‡ã¢ƒ™o)á¥ÚQ‘H—š ¬›ÈÂëbÊFWDMáåD8<]#Áu¯Ùz±u¼~+Lº³Q%Æ’ù·‰Cÿ—™p¸©ùòFxtê¹æ—Ö‘Æ„}o¼£0ŞXÀ…fĞÕÈz]qv2§Z¬hcì‘A5òŸ_x™€Êä$`R:Ä÷¦yŠéFÕxÛ_‰pN˜…”…Àû/D˜ÀËµç†Sn”ÆÌŒµÚÄ[Êfo´Y¬,#Gu‚*ç$Íp²•‡o™&óšN+ñ¢N ğNˆÚ	œû	%õq÷‚ã{)']™6Æ3SÇn!õ\óÊzÓÔ®š¨%0k"Ì75‹ZiÄÄ4ÕĞœ+¯ã£#‚š¡Ú«AHÁ®Z%Iç­8"B«Â/T*4¥BpÆ²5–ÎÌ­*NBÒ¨nŒåºaİDbÔ<QvCƒa£òÎX®mÓÆ.æé[bq²Íy†Y!xß?´FøA#¬#øÖXxëD(Šäıµ*3NUp•4BŒP7Ê|ÓRµŠªbš§iç
+À˜«ä  ²Np24Œ6rŞğ‘Üçñ£1*‡Ud]·bœªñr­ˆFfbl¢071¦çÌ±i"‹MË:&ÅÜXîlÀ-6:Rf\_%w^­Z¿Ğ,"#¿	¤½—@UĞˆb´æñâp»+…o/"ÏÌ„“Ö˜«Ñu s¬hT±j!æ±…Ù]ãĞq"Ä\ ¶OF£ìé'T”Îá3¥Hw)›h¨jjP8X«1xS	„û¬NÔPBŒŠ’ò  Va#˜§gÖ',ô$L¤ïº¶"ÄsAò¶”yIB³i4ìj#´±Ïƒ 46x1ªöÔA¼qfÂZFÓ}—„*F<Gdæ?1»Àƒ'áK­ncBÖ«‘7İ¶Ğd„4"*Ii1˜ˆqhá©qyç2Pë`°&*s*…IcDƒh‰]öÆI\ŒJl#M4ju|ÿ~ÍÏ~à
+ˆmï…®˜ıÿGBóË^aâ„BÓˆDE£bâ×m	"y‡Hœ E AX´ÆQc¨Âõö”’v3CoŠ£å€‚£ı'xÇSWyü}7yéÖw0Kí›'ÑÛFÂ”¬cxêèd£;ç˜ˆr³ä]}íÖQÊ¸\À²Mü§ğ¢ğÆDà1yÜ%Ün„»ÚVQ§8ƒÕò”ÿ~ş#||áˆwîô2YÎ‡ağ7Æò‘àİ5@b¤4(r1Ëˆ¦`jLD0µ>½Àåö¼1ÂQ{¢”Ş*W%²§Æ«±F¸Û¦ÚvB ºşV*	œ¾ú€æ¹ç˜½x‡ÅÍïõÒ¤0Ò„×cKwÕXº[S#ï4R¤a5´ôùã|ºİYB±Da¸RÀ®SÄ	%G÷<ë¯.kÖMäï¸V
+ÇMêYZ9ıûß±Ï¾²Ãí§>@yá*ïºqƒ/>8åùßû}êÿ}!m°oí^èÔS‹Lºdw.ñ™’
+Şí¨iJn'°_“ ´–Ö¬[ã¤RV­cÌó	˜¹XØ{ç{ø¹7_¹wÌ·.\ãSwøÄÇÿšæÛ_í%…Ğë0Ç´G)\JÄ.,<©ù6K•Ş¤ã°Fé…½"AåÒ„ªUæU3öK˜yÇqG([u%F$}×äòÛ°fÍşø£|şö+”ŸÿzpĞ[»ß/Ù2„ê¸7v8Yá’’x½vØšpS/ì–Â‘–N«ˆFåR!ìIqqw“P¨g ™¦'0ä>øn{ö?Ê7oı€}ã¬Ïæ0ŸçŞ–-øtNr¥M6H–GÒ&÷Ä§‹™‘úl±R`êüP[B³„2 Š%"šQkWo:ãIŞüËş˜…9I±×ö{W™ïçüğ?odğéb0ó)GÌŒÁ»DâÎï,zI3T3ëÃª›ÿhWol„q['I"	Œÿ«ä5ô‡¾dt    IEND®B`‚ÔXYZ[_<http://s3.amazonaws.com/buzz_img/2007042510125356_avatar.jpgO<bplist00Ô	
+X$versionT$topY$archiverX$objects † Ñ_WebResourceResponse€_NSKeyedArchiver¯&,-345KLMNOPQRSTUVWXYZ[_`U$nullİ !"#$%V$classR$3R$8S$10S$11R$5R$6R$4R$7R$2R$9R$0R$1€€€ €€€€€ Ó'()$+WNS.base[NS.relative€€ €_<http://s3.amazonaws.com/buzz_img/2007042510125356_avatar.jpgÒ./01X$classesZ$classname¢12UNSURLXNSObject#A©æú0À'ÈÓ6789BWNS.keysZNS.objects€¨:;<=>?@A€	€
+€€€€€€¨CDEFGHIJ€€€€€€€€_X-Amz-Request-Id\Content-TypeVServerTDate^Content-LengthTEtagZX-Amz-Id-2]Last-Modified_4F1725851C49E36FZimage/jpegXAmazonS3_Tue, 20 Nov 2007 20:37:23 GMTT1826_""e1552da7c675d00913ebf2ee624274e0"_@/ffaCtSHGKdymqNNMaM1hym7mCgTJXeWA0eTfre8qrZ/GyVQh3Ecg9SHpQ8zWBtO_Wed, 25 Apr 2007 17:20:50 GMTÒ./\]£]^2_NSMutableDictionary\NSDictionary"Ò./ab£bc2_NSHTTPURLResponse]NSURLResponse     ) 2 7 : P R d ƒ ‰ ¤ « ® ± µ ¹ ¼ ¿ Â Å È Ë Î Ñ Ó Õ × Ù Û İ ß á ã å ç é ğ ø
+INWbekt}†™›¤¦¨ª¬®°²´½¿ÁÃÅÇÉËÍàíôù&9DMmr—Úúÿ&).2F             d              TZimage/jpegO"ÿØÿà JFIF  d d  ÿÛ C ÿÛ CÿÀ  0 0 ÿÄ              	
+ÿÄ .       !1A"	B3a2Rq±ÿÄ              ÿÄ $           !1aqQ¡áñÿÚ   ? ^Ğ÷Cà³°V’µL„/óŸnP €L€¿Ø>HúóÔü>¿bm®u®–ÍéÇ“NâñÛ•â.µjé&ÄyÛEaüwïçª×~hi¤–µ¸êZ¹VuıÂÍ",5ãf™²«Ê?·åAØ1Û ÊÅzÈÓ–gl,º7ğAøÛÌÔ­ã¹Ú8„‘ÆDÁüX¾Ã Ü\î#U]…ôÖ\@óC,Š’U«`´ÆºrÏÏ×vùñĞUø¾àj)õ”¸–·wØIı—I*‘¿ Aß±ó±zV któñ˜ÚI%’Rxó oão'ãÉ|#ÇÀè<»­­µFÒulâqöìd²èõê²¬’V«ûxÖYlYhF;ş\ãEvAÜtj-[•Êß–ÆZøıÌ„ØµïsXçsçf‰(|(ğIüwß É¡®/P«pDÂº£)ahâù#“É-#¶ÀÇ¹%~şú	V¸–VõTK÷1¶b9ÒJå,Ç,„î©Áø²ò ~-Ãş^Hè÷c®iáó—Pê¢€^}áD³ìk÷5-ÂrÛ	A »cp< ß>ñ÷«Ó×u3˜-c¥1™L÷7´¦nÍ'§flD»†Giª­ŠÎÆN=Ø¸G!’’Íê=İì†KO1qõ¢³nîG7îÄE™Åh«W‰æpA·óĞ;¿J¥ßo{±†©¬»¿­©ç®Ë7Ei‡©ZµY$Q$1gfny¢ãÄÍ0ŠAÉDƒ~]Ë–ı/û#­r—¨^í<Z,Xµ&›!„y©Ã'¶“G6V¬Ïî†H€y´I= “ê‡ô}ÒÚO@Qîg§]¨oÇ;KGEjÛXììHÑ‰*™ìJWšµÈdB¶iÊ÷"«+Ä¡Ùƒl _§í#Ü}	ŸÊPÎàrx>RVE³fÂ^§m¢i9uØ˜%)¢‘wŒòÛ ~ZŸ³ªîÖ
+/\éü.V[IÅ¢ÈÑ¯m6‹{S¤œyíÊ_ÉFãàô®œôKégCèÚøôÑúG9JØ»#âp˜â÷Ú±^’A©)r]T1ñ_lrÛ œzfÃhÇé¹—”_—-ãñ‹Br&„S¹jWìîÒO,lÛÆì¡ŠĞ6è½)«£±›ÎÏ&Nj°eqY«Îz*îë DDÜr°±HÑH~e
+ùÛ ¤û«©ôgl»ÏjÛ4.…¢Ÿ²ÇOª¥h2y\ŒˆZÔô(ÊæİÌ†J`Z¼AZË;°1¿AÏş™îöŸ×™£Yc©Æıã­vH!zŒ–ëÚzHŠxHŸÜ
+ÉËï x˜r5ğ¹u¶¸^A'üxø?ùç ‡ú‰Ötôæ‡f+ò?µ_ê³-[*ÜãµH­í„p»Êºíº@= Ùƒî–2ÖÅ{¹J3Z†OëñEF;4à(Ù†QešI¤IcfGFßÉ~‚ ï/ê=¡;A1ìúTˆCƒ¥`ïF¼Ö{ö9¬TË¨ì, è¨oY½íõ[®#ÔÇÕ–¥Ãabö4î™«$É¦´í8ÁÚ<]&eCzpxİËXWÉ[“åÒ-ë±7(QÖ¸Œş Eot‚S!HŒ‰íWaÈ€ÜGş?ïd¶É&m²Iëo	[¨ÿ ReqµjÙ`C¾Ä«x±?`“õày]`ısiÌFKT&Yf¬^@‘îHTäí·Çş7Øı7ßï—s±¾¦RÎ*63Õ–ÌJÔqî­ûu”ãY91RÛlIû _‘Ê\ºï5›RY³jQ,óX&YægbK<¬Å"<¶Û|t.‡Ò¹Ê‘×.²Ë-•a³Œ…g1€|•F_üôÏnğpw£kvğ“	Dpûv±R¬Š€üÖ±+–ä>VE‡bFŞ7Ü_uÇ™ØLg;]N¶âvãyş8×dÓªŞR[{N6ûGÿÙÔ]^Z__<http://s3.amazonaws.com/buzz_img/2006022613444810_avatar.jpgO:bplist00Ô	
+X$versionT$topY$archiverX$objects † Ñ_WebResourceResponse€_NSKeyedArchiver¯&,-345KLMNOPQRSTUVWXYZ[_`U$nullİ !"#$%V$classR$3R$8S$10S$11R$5R$6R$4R$7R$2R$9R$0R$1€€€ €€€€€ Ó'()$+WNS.base[NS.relative€€ €_<http://s3.amazonaws.com/buzz_img/2006022613444810_avatar.jpgÒ./01X$classesZ$classname¢12UNSURLXNSObject#A©æúÏ›ÜÈÓ6789BWNS.keysZNS.objects€¨:;<=>?@A€	€
+€€€€€€¨CDEFGHIJ€€€€€€€€_X-Amz-Request-Id\Content-TypeVServerTDate^Content-LengthTEtagZX-Amz-Id-2]Last-Modified_43A65A7EDF3760C5Zimage/jpegXAmazonS3_Tue, 20 Nov 2007 20:37:23 GMTS170_""68d471a3b2b7aed81299484f1e538860"_@zmynhTZYFGURjC99fPqyZgn3zwHFgtVPfK2iu22zGndy6vmkuSBZbpDLDcJHvsyY_Fri, 18 May 2007 15:16:14 GMTÒ./\]£]^2_NSMutableDictionary\NSDictionaryªÒ./ab£bc2_NSHTTPURLResponse]NSURLResponse     ) 2 7 : P R d ƒ ‰ ¤ « ® ± µ ¹ ¼ ¿ Â Å È Ë Î Ñ Ó Õ × Ù Û İ ß á ã å ç é ğ ø
+INWbekt}†™›¤¦¨ª¬®°²´½¿ÁÃÅÇÉËÍàíôù&9DMmq–Ùùş%',0D             d              ROªÿØÿà JFIF  % %  ÿÛ C ÿÀ  0 0 ÿÄ                 
+ÿÄ                 ÿÚ   ? ¿€        ÿÙÔabZc_<http://s3.amazonaws.com/buzz_img/2007060614314841_avatar.jpgO<bplist00Ô	
+X$versionT$topY$archiverX$objects † Ñ_WebResourceResponse€_NSKeyedArchiver¯&,-345KLMNOPQRSTUVWXYZ[_`U$nullİ !"#$%V$classR$3R$8S$10S$11R$5R$6R$4R$7R$2R$9R$0R$1€€€ €€€€€ Ó'()$+WNS.base[NS.relative€€ €_<http://s3.amazonaws.com/buzz_img/2007060614314841_avatar.jpgÒ./01X$classesZ$classname¢12UNSURLXNSObject#A©æú…Ê°ÈÓ6789BWNS.keysZNS.objects€¨:;<=>?@A€	€
+€€€€€€¨CDEFGHIJ€€€€€€€€_X-Amz-Request-Id\Content-TypeVServerTDate^Content-LengthTEtagZX-Amz-Id-2]Last-Modified_A2FF749DCCFDF443Zimage/jpegXAmazonS3_Tue, 20 Nov 2007 20:37:25 GMTT9096_""67d0db5273f781575d3d962b71fbf1a6"_@WY+zG4iHw/2UnuPH7ixSF45IosY9RCLilNvpKad2Dcqx9GB768r7efevrYXs6FEu_Wed, 06 Jun 2007 21:35:02 GMTÒ./\]£]^2_NSMutableDictionary\NSDictionary#ˆÒ./ab£bc2_NSHTTPURLResponse]NSURLResponse     ) 2 7 : P R d ƒ ‰ ¤ « ® ± µ ¹ ¼ ¿ Â Å È Ë Î Ñ Ó Õ × Ù Û İ ß á ã å ç é ğ ø
+INWbekt}†™›¤¦¨ª¬®°²´½¿ÁÃÅÇÉËÍàíôù&9DMmr—Úúÿ&).2F             d              TO#ˆÿØÿà JFIF  H H  ÿâ(ICC_PROFILE   appl   mntrRGB XYZ Ö    0 acspAPPL                          öÖ     Ó-appl                                               rXYZ  ,   gXYZ  @   bXYZ  T   wtpt  h   chad  |   ,rTRC  ¨   gTRC  ¸   bTRC  È   vcgt  Ø  ndin  ì  >desc  ,   ddscm    .mmod  À   (cprt  è   -XYZ       [|  4Ç  ³XYZ       sÅ  ³D  ôXYZ       '”    ­~XYZ       óR    Ïsf32     B  Şÿÿó&  ’  ı‘ÿÿû¢ÿÿı£  Ü  Àlcurv       Í  curv       Í  curv       Í  vcgt             …¦1¹	F
+Ñ\ìoøƒš$«4·<Ã G!Æ#H$Ä&F'¿)9*°,(-š/0z1å3O4³67w8Ô:/;…<Ú>,?x@ÁB
+CPDEÎGHCI{J¯KâMN?OkP•Q¾RåTU0VSWuX–Y¶ZÖ[ó]^/_K`haƒbc¹dÒeìghi6jMkel{m‘n¥o¹pÌqŞrïsÿuvw'x2y;zC{J|O}Q~SS€QM‚Gƒ@„7…-† ‡ˆˆò‰ßŠË‹¶ŒŸ‡nS7‘‘ü’Ş“¾”•{–Y—5˜˜ì™Çš¡›zœS*ÙŸ¯ …¡Z¢.££Ö¤©¥|¦N§ §ò¨Ã©”ªc«3¬¬Ò­¡®o¯=°°Ø±¦²s³@´´Øµ¤¶p·;¸¸Ò¹ºg»2»ü¼Ç½‘¾Z¿#¿íÀ¶Á~ÂGÃÃ×ÄŸÅgÆ.ÆõÇ¼È‚ÉHÊÊÓË˜Ì]Í!ÍåÎ©ÏlĞ/ĞòÑµÒwÓ8ÓúÔ»Õ|Ö<Öı×¼Ø|Ù;ÙûÚºÛxÜ7Üöİ´Şsß2ßñà±áqâ2âóãµäxå=ææÉç’è\é'éõêÅë—ìlíCîî÷ïÖğ·ñ›ò‚ókôWõEö5÷(øùúûü üûıúşúÿÿ  [ólíiã
+WÕKÈ>·-©“óeÕ I!µ#$$%ø'`(Æ*++Š,é.F/0ó2F3—4ã6.7t8·9õ;2<l=¡>Ó@A0BZCD£EÅFãGÿIJ2KGL[MlN|OŒP™Q¦R±S½TÆUÎV×WßXæYîZô[ú]^_`abc"d'e,f2g6h:i?jCkFlImKnNoOpPqPrOsNtLuHvDw?x9y1z({|}}û~íŞ€Î½‚«ƒ—„ƒ…m†V‡?ˆ&‰‰òŠ×‹ºŒ€aB!‘ ‘Ş’¼“™”u•Q–,——à˜¹™’šj›BœœğÇŸs I¡¡ô¢É£¤r¥G¦¦ğ§Å¨™©nªB««ë¬À­”®h¯=°°æ±»²³e´:µµå¶º·¸f¹=ººê»À¼—½o¾G¿¿øÀÒÁ¬Â†ÃaÄ=ÅÅöÆÔÇ²È’ÉrÊSË5ÌÌüÍáÎÇÏ®Ğ–ÑÒiÓTÔ@Õ.Ö××ûØìÙßÚÒÛÆÜºİ°Ş¦ßœà“áŠâãxäoåfæ\çQèFé:ê,ëììüíèîÒïºğŸñƒòdóBôôùõÏö¤÷vøFùùàú©ûpü7üııÁşƒÿCÿÿ  ,?UmŠ¡¹	Ï
+ç-@Xm“¨»ÍŞïÿ(29 A!I"K#N$P%N&J'E(=)4*'+,	,ô-ß.Ç/­0‘1s2S304
+4ã5»67d8899Ö:¤;q<>==Ğ>™?a@)@ïAµB{CADDÊEFSGGÜH IdJ)JîK²LwM=NNÆOŒPSQQŞR¥SlT3TúUÁV‰WQXXáYªZr[;\\Í]–^`_*_ô`¾a‰bSccêd¶e‚fNggçh´ijOkkêl¸m†nTo"oñp¿qr[s)s÷tÅu“v`w-wùxÅy‘z]{'{ñ|»}…~Mİ€¤j‚0‚õƒº„~…B††Ç‡ŠˆK‰‰ÎŠ‹OŒŒÎNÍŒ‘L’’Ë“Š”J•
+•Ë–Œ—M˜˜Ğ™“šV››İœ¡g-ôŸ» ƒ¡L¢¢á£¬¤y¥G¦¦æ§·¨Š©^ª4««ä¬¿­œ®|¯_°C±+²³³ø´ïµë¶ì·ó¹º»0¼S½~¾²¿ñÁ:ÂÃìÅXÆÎÈUÉæËˆÍ9Î÷ĞÄÒ¢ÔÖ‹Ø—Ú³ÜÛßá]ã±æèêøí{ğòŸõ3÷Òú{ı2ÿÿ  ndin      6  —‘  X¸  UA  Œ  (W  ¨  P  T9 ğ£ µÂ ¨õ        
+   # / ; I Y i {  ¢ ¸ Ï ç 5Ro®Ïñ9_…­Ö ,X†µäH|±çW‘Ì	H‡ÈO”Ü$o»			X	©	ü
+Q
+¨[·vÙ=¤wãRÃ6«"›““›"«5ÂQásœ4Íh¤DæŠ0Ø !-!Ú"Š#;#ï$¥%]&&Ô'“(T))ß*©+u,D--ì.Ä/Ÿ0~1`2F3/456 6ø7ó8ò9õ:û<=>&?;@UArB’C·DßF
+G9HlI¢JÜLMYNOåQ/R}SÏU$V|WØY7Z™[ÿ]h^Õ`Da¸c.d§f$g¥i(j¯l8mÅoUpértuµwTx÷z|F}ñ Rƒ„À†|ˆ;‰ı‹Â‹W‘'’ú”Ñ–¬˜ŠškœQ: '¢¤¦¨ ª ¬®°²&´8¶N¸hº„¼£¾ÄÀçÃÅ0ÇVÉ{ËŸÍÁÏáÑıÔÖ-Ø>ÚJÜQŞTàRâJä>æ-èéşëàí¿ï›ñuóLõ öòøÈú›ükş9ÿÿ        & 2 @ O ` r … š ° Ç à ú2On°Ó÷Bj“½éCs£Õ=sªãY–ÕW›à'oºT¤ö	J	¡	ù
+S
+°pÓ9¡yèZÏF¿;º;¿EÍXåuš1Éd Ÿ?â‡-Ö€,ÚŠ<ğ ¥!\""Ñ#$M%%Ò&˜'_()(õ)Ä*•+h,>--ò.Ğ/±0•1|2e3R4B556+7$8 9 :#;)<3=@>P?d@{A•B³CÔDøF GKHzI¬JáLMVN•OØQRgS´UVWW­YZb[Á]#^‡_ïaYbÆd5e§gh’jk‡mn„pq‹st›v&w³yBzÓ|f}ü“+‚Æ„b† ‡ ‰@ŠâŒ†*Ï‘u“”Ã–k˜™½›f¸ a¢
+£³¥\§¨­ªV«ş­¥¯M°ô²›´Bµé·¹6ºİ¼„¾,¿ÔÁ}Ã'ÄÒÆÈ.ÉŞË‘ÍGÎÿĞ»Ò{Ô?Ö×ÕÙ¨Û‚İbßJá9ã0å/ç7éJëeíŠï¹ññô3ö~øÍû%ıˆÿÿ    	    0 B W o ‰ ¦ Å æ
+0Yƒ°ßEz³í*iªî4|Çe·e¿~âI³	!	’
+
+
+û{ÿ‡¤9Òp¸dÇ<ıÂ‹X)ıÖ±‘sYB- !""ú#ô$ğ%ğ&ò'ö(ı*+,#-4.H/_0x1”2²3Ó4õ67C8m9™:Ç;ø=+>`?—@ĞBCJDŠEÍGHYI£JïL?M‘NæP>Q™RøTZU¿W(X•Z[z\ò^o_ïatbıdŠfg±iKjèlŠn0oÙq‡s8tìv¤x^z{Ü}Ÿe,‚ö„Á†ˆ\Š,‹ıÏ¢‘u“H•–ñ˜ÅššœnA ¡æ£·¥‡§U©!ªë¬³®w°7±ô³­µa·¸¸º[»÷½¿À¢Â!Ã˜ÅÆpÇÑÉ*ÊzËÂÍÎ@ÏtĞ ÑÇÒéÔÕÖ'×0Ø5Ù5Ú0Û(Üİ
+İôŞÜß¿à¡á~âYã0ää×å¨æuçBè	èÒé–êZëëÜìœíXîîÏïˆğAğøñ¯òdóóÌô~õ1õàö÷A÷óø¥ùTúú³û`üüºıdşşµÿZÿÿ  desc       
+Color LCD                                                                               mluc          itIT      ĞfrFR   B   änbNO     &esES     8fiFI     JptPT     ZzhTW     rjaJP     €nlNL     deDE     ¤ruRU   $  ´koKR     ØenUS     äsvSE     ödaDK     zhCN     " L C D   c o l o r i É c r a n   à   c r i s t a u x   l i q u i d e s   c o u l e u r F a r g e - L C D L C D   c o l o r V ä r i - L C D L C D   c o l o r i d o_i‚rm²fv˜oy:Vh0«0é0ü   L C D K l e u r e n - L C D F a r b - L C D&25B=>9   -48A?;59Îì·ì   L C D C o l o r   L C D F ä r g - L C D L C D - f a r v e s k æ r m_i‚r   L C D  mmod        œ_    Àe€                text    Copyright Apple Computer, Inc., 2005    ÿÛ C ÿÛ CÿÀ  0 0 ÿÄ              	
+ÿÄ *       	
+ !1#AQÿÄ             	ÿÄ +      !"1A#2$3QÿÚ   ? x±ßœ–x„„Àyì±Äš0ï<±š
+UçB‚)l#y)m—Tâ“ßµµõÏ³²ô’+âÔ[…+ÿ "e@É2]@¤sÙş¯_ÑïĞ'°`ÙüE&ª~#?xÓÍN€ärÂµıGŸlGî@NOÕéy´ø“ÂÄµû¶ëôt÷M­¦fUõEÇ¦I‘7ƒ3ø|Z&Ğ©¤Y“’ÔYœ9lÃ(Mv­YñÂº4ÚYóK÷¥¨Ê’’€f£N¾»-Ñ> vzõ¢q|Fş_f|œnM;¹
+ÈJ9`º,ÌóÏ0M¬\¯ÔĞ²¯™'—¬s|dyóÁ¿Dİô|3Nö®çùÛ24ˆ ‡ì
+¥5vhÁ¤éù®«R¶ÏÅÒ©TX¼áŞÈÍ?(Ğ«>d‰³]’y¨„
+ªŞ^—fÙšq«e‹ëaU›NóÎ¦é›äe­ Ö•å´ÙI	äW»n=ur9øÄÓ\Öİº\bÊvÑ­79ÅjÌÊUYD¯¢"ˆ>&%úçı#§x¿ËşHñ†Yµüqùí#~cNÙsÍ8—¬xÌc³û!0qS–‰È£§5k4âUò€—$h±ãD…%\>*J8nâşèÁï?v{1¹,Ùõ{ÜTİWsÁ;{“‘Ñ›#Ê¼U%ÿ j‡!-,)òaÙğK<VSDìnÚßÄû7Ş»ø¬^ëOqq~Ûã´C‰¯6%Æp¿î[¨sòáuÖ[Ï™éCO—,İù ¶’Û¢<Õæ•ç+†½èK}ƒˆÕ0=>~dt·mœ•ƒ%&± ã6Zü:ä,‘Æ¡°”;GÔãƒ8²Û©Û=‰Ãó¾ğÁƒ:ÂœÏ/ÇÒW×S‚XkY>{Ó-îe†Òµø|ÂÎG—¬·òÔ½¯í_r,%^†ÃÈñ8Ä{ƒ.ÎôéÊ(_ä´®s«>¸¢í¤ÖÉç@Ëàôeq?as¨º{ÒĞk¬Ø“y‡£&¤s6G¬§¥ƒ 4[Oãµ±ãın²OŞñÜu–Fyl§ pş'ÙÌñº%É'}é.6‹’[¹®pôgZG48ÿ ãÍÕ~J;#äTg-àŞ¹ÿ Wç¯Ç¿İ-£İ\NîG+—æ—;óÓä&jbën:²*>!6Z9™QEeèN+´§öçn’¯u¡û[å\á´è¨n*®y…8Co%Ñ6©lõeïª¹Ô­_Œ[äK8£3U£2³3( ’UUIìjª§ü(zºöŒş+ÁÊ“TFáò£À/€rı‰@Ÿ.˜‚I#¯ëĞÑùƒÓİÊş*í”ªæyî¢v-[ÈuøX=éªûBÅÅÍTKzF»#[C%‰brDP±¯u¸YúHrÈE•fXn…rêŒôBş"±ª÷'
+Á»+×E”şÓïè8üz7âù>K„Ò›x}Ú¸Í“•³ÏV+¾}†ˆ¶{Í-2V°w• #É?~·Ì_¢b%<}Hô¤viwÕ!®æ{¡˜ä ŞnV oØCùX¯d|ïGä²Ú}§J_À—Ô„´ßZã¶eã2Íİ¿áW†i Af"sZG‰/W`¢Xƒ÷ê*#YúòËÉ™œŸñû1?E™õè³õÙÒAúØŞÚïkJúlŒ]€=0îìºn+z‡¡Z§£Cr¿XÍ;—:$3<Šå1‚SüIˆé¥IÓ$Xå?Ë¼§'îœü–ièÁîŞK„ÕÇÆ¥É[‰ÕÇC”ÏLºï¶Ù´g4æĞ •B—Êr|*ˆìV¾~(üq.ØÜ7;N!¸îOŞSÉ·›räå›¥ÿ \Úó²`^;À›œ‚mj8}Öb×ñ/Ä+ÀsÖº–¤¬¬Ù(ùnQœÍØ&¡ò×G2r>«×`™ü`'
+‚OlgÀÊ†ŒsƒW_çÚû¾§îGüWø»ƒ¯7Ã×İ>ôÖ¹†í¾ìÛmÜrqæ?To„¦œç&´®†	¿€BG×?êºşàüçùßŸö·cöo²ç¯âgÆW!İ^s²ñÍmR¬¿7R¡>jhğOŒGO+ğ{×‡ˆÉ¼`e¶ä‘éSå³Êë#ŸkaÅÖ¸É÷YâŞê;Õ$*ÌL+ó©zeNu¶uÊşz÷UJ;— e&ËÀàÍÅ Ï2Bä¬Öi!ğ“ROCÈ¦ô-íŸôøÙªu×ÁTU³oiT VÓ:Z²—Éÿ Ğ îß¿ÆŠß¦~®‹;~{¢DÀúMvKsm¨ÇFÈdĞŸÉëòqÿ nD¨ãŠPÊu=á6;ıéƒıRú9‚]Å-jzz;¯—ıˆf$×Ğ=ò@uß}wÔ<NGÃÅñø¨$´É‡.z	v%çNl'åû2ùTŸ²;cÑïÔcş§ßÿ `Vª3§`>ÁĞm›t]k/¿Q¬“8Jb`B*¬h*"r§‹Ïå…U‡ü+FºR[+âcÕÍĞ¯˜d`P1Rİƒúù}x“ıvC¾ûõ#délºe&)Jç´æÊÁ]Ñ•J¹úFı9)é¿Ç¦F^o²cT Ì¬±±BB+2³@ƒSƒhQyÚîf5u±ÜªÂGÁ×zD0B!ìöÊûşBÉîn%¸şkÛƒvDÒ_µù|´|;îfí5Ìÿ +ñ´µ…/HÛ*Wpˆ^´okkö¯&™¸¯våÑ‚‰ù²sü)”õLù¤üyH×ÿ _lÑXõ¡ZQæj	ô‘¾×şW¾^ğo.ï9¹%izÅ~İ1”´sÎÊæÁ¢Ú¦Óe‘‹q—«Ö†„h·ATŒAò…ãšùĞoÅYø¯vóü·º„£ƒ_4Q¹¯nJ0ÎÜN¯oßFÃªr¥Úã²¯;îr©¯8€š*OYû×Íø—ñp>Øæ­«İyaÁ«^Ã§\óîujÏ—:O'‘ÃĞ…¯6ŸJªKue ç–Ë›yz1Ê"ò(°ñÚE•)¬Ù—ÚŒ¯¦˜kÿ V,Ğ4C‘%TišUYØ¸öfa¢bÉªßC¾ƒ¹eK‚ˆX¥ïµQöĞû¯®¼å“?»4rÙò$­¯Š+¯H‘_äİµ"Õñ+M {’ëFúwä[ÑYO9ş;ôç×¼ç×¿ûïıÿ }ÿ ½ş¡z)ôƒÿ ¦#Ë_”3¯c{Ò:Á¬Ko•W-9Î(ôõ"£H£É¾KëN²tUÃp	”Í2d£  ãË—À•5n>Êô½*ßéúï…n³{wÃ¶õæMFd/Á› ú39®ú3%µÇsÌÛeãÚ³PÖÛi÷êÒĞZyÎH†g8!z^¦±{ßç¿ªÆÇğùDôÉ¢2û j^BôXUf	kêĞRnÑ®Ê[ã!Ä¤‚ u¶TÛJSJàÿ ãë[ËqÉÊá®6­ hfÉyô“Î‹Eu…oú•enÑÕŠ¸*zôìÓj«<ƒ•‚³Ï¾Uˆ`¬W¿*@n‰®½)ÿ ?|ßúûÒ¹·°¡<ÍñWWÀ‚Ğî`ÿ £ÔôZıj²Ã´-û®¹(©Òª’õÆM†El˜øàšêp9%´ëŞßöí^go¹xüó~o˜>?šÔáâ¼†Il®“fÏ’3ÒĞ>üŠNJŞh½z½÷½¹[ŒÅÇofÛÇñ4ZcÏ#°I"¹m²k;ÛáÎ;íÙÏ~L³n‚®§É´¯¼KG’¬Şı}§_o‘EØô!´,óD€"³.Ëöa¬Ô©‘‘©.½•·^ì<ÛU’àÉ3¬¹Æô^¾ÑißJ5&—­*&"¹Ô+¬¢‰pôÍB®4Ô@Õäk²IM®ˆå]´É«4.Á1eBô'¢¡|™fq/TÈLVà¥­—Ï¦†(Ù&BÃ•S)ÉåƒÎ6#†CZ›ˆxqdÛ-–Î.9©ßÅ|`äqJ³Omsus¯ùÁs˜¥>RòùzñFo‰Â‚i*7”¾ƒØMÿ ¾eMi¾f®…¼¥*Ra¾E_Š©ñdJEèá™U{ë¿«ããÏ<(ğ³±šm”TüÏŠÅ8Û]+ìáHÏàŸ;©á¼IIâÍ|…ı¥.7Õu
+J~ß·”^®ıhı%Väg×uĞ\»º*6ESÔw9Ğ¹iL1Š¯~_‡øİ˜ài#ªmÄq•/«mÄó©ë‘ñùgæ†‹æ½Ì0SAØí<AK İùõk:e»¥¾’w6øÍL‚©cEšı»'^Az õöúõQygpw|ÇhWyX¶a­2ØU^¡ú_şİÑcŸ‘¬èõ5áair«x¯ÎC-Å¶ÆëM¥¥'ª{Vq–­şTV'ÇÅ”2«Æª\)eª7`ãØ ôK7&ÙFˆGUÇ›PìW@~™ãÑT”Ø~ÇĞîù”ş,ÑÜ„3öÜDØç ¡¾‰ïïèÎ´gÜ÷û\ekKŠï>ß¯~Şÿ ¿ê#Kå›’¡‘AXv£¿×¢Ó}ŸúŸïûëèzzÚá+gÈÔFÃU„Á>n$ŒôĞ‡T@>ÜuâÄ/jÇéQ5ÚÎ£›{“:âÙ–^’ÿ ¢ÚOØp²yórš=“œ2<¿İåÅØéº96Zø¦ÔÍö§Õ$N)„,—…Iñ×—É¡^YO_ñÙ¿‘£NWØÓ’‡Ehf¸ğÑQ)ùãøaåVúş>=ø'-ôCKZÃ	šÓfÑšé:E<ÚU5M0])>íò0rÌóı˜z·ß25ı³çŸ2ÙÆí-b³]u-Úâ¦dÔLé« —%bÌR_l¸ÖÃTäs,« ’ó1üt‡¦—/a¤¦Xq²×uÏ›‘ÕÊ›ü“4|Ùghf³'ÅG‰§şlÖùo2lPgèÊñÉ™w'ùZßàÅ¸üZ%*Êµ;24ôB ê0Fc³IgI¡/eñK©whøØğŞ’·¸CÖ?0cÿ –÷Q=pèzŒ}|õ8ò™Jóbá	S(SoñÆ»÷uwsïEˆyÅs¼ï×üóéş?Ççûı/ïÒô6¶3¼jåÓRÉG9ê¦§i´ÈÙëf,™qjúÆ¥3g-ĞI}Ş IÙ°HYĞ¯ó°ñ	g¤ÆK#J˜Ç
+8Ëqü­räæ¾sXçœˆŸË×9LÙuè£8gZ”•IIâ„ìÍ¯-~N!!2ÈÒªW<çó5nĞaì|¥¢DšÁèÛ•ògŞL­‰yw`i’Ó—Y¡:JÆaÑg©€Ê~Ñ®®6sf–Kˆã<.‘ÏØ_P¿ª+rZ	›œQÔLlº¬|CÍ3¸ZàÕ«ùµº«tzbül¿Ü£±ã×]|Us|ÉİdNRsOÖWY’LòGóŸ]“şd-á¾§øòÔáÏ*º­@ßÍ““  d%¹	Wİ³T:ë¨Z”KWLĞÆ#ZêòZLtı{érµLkÌK>ºÍY^”j
+4‘ã
+2VË ÎÓTjÉˆSà–v =Mæxè_.RfqjK@«‰zùH¨oíhôRéúü…@,?¿I—î/…Ÿ‘½÷Û›DÏqy;1Ø©µmv8ºıú›\¦iäYtw$î6Óîo«ÍEğ´_ÛPÄºò;‹ùÏg~’åpáÓ«G¦×§Å©¯:8Ğ'ò!*Rt§L³Øx5	g$®+_ËÅ–PS^#sæ°®iÅ“Î¬ª* ”Z?ÁOğŒé? zÿÙÔefZg_<http://s3.amazonaws.com/buzz_img/2006042215375568_avatar.jpgO<bplist00Ô	
+X$versionT$topY$archiverX$objects † Ñ_WebResourceResponse€_NSKeyedArchiver¯&,-345KLMNOPQRSTUVWXYZ[_`U$nullİ !"#$%V$classR$3R$8S$10S$11R$5R$6R$4R$7R$2R$9R$0R$1€€€ €€€€€ Ó'()$+WNS.base[NS.relative€€ €_<http://s3.amazonaws.com/buzz_img/2006042215375568_avatar.jpgÒ./01X$classesZ$classname¢12UNSURLXNSObject#A©æúY_«ÈÓ6789BWNS.keysZNS.objects€¨:;<=>?@A€	€
+€€€€€€¨CDEFGHIJ€€€€€€€€_X-Amz-Request-Id\Content-TypeVServerTDate^Content-LengthTEtagZX-Amz-Id-2]Last-Modified_11B514EEBC9E877FZimage/jpegXAmazonS3_Tue, 20 Nov 2007 20:37:27 GMTT3753_""c2694663f348030473af259726d87815"_@tVkRQnC9zl5uBjIiSpges97Bmy6tFxPc6dZYl2wEXoR0lxL7SkDeUGDxjganlETW_Tue, 15 Aug 2006 07:26:08 GMTÒ./\]£]^2_NSMutableDictionary\NSDictionary©Ò./ab£bc2_NSHTTPURLResponse]NSURLResponse     ) 2 7 : P R d ƒ ‰ ¤ « ® ± µ ¹ ¼ ¿ Â Å È Ë Î Ñ Ó Õ × Ù Û İ ß á ã å ç é ğ ø
+INWbekt}†™›¤¦¨ª¬®°²´½¿ÁÃÅÇÉËÍàíôù&9DMmr—Úúÿ&).2F             d              TO©ÿØÿà JFIF  d d  ÿÛ C ÿÛ CÿÀ  0 0 ÿÄ              	
+ÿÄ /       !1	"A$#2aqQÁÿÄ             ÿÄ 6     ! 1A"Qaq‘#2B¡R±ğSbrÁáñÿÚ   ? _˜ı}å,cóÒ\Æ ²K{½…ãà|ü/ßo>Qwİ:õ‘RÈ	@­Êû‹;§ÛÛ(îŠ4¿§ş¯¯Ëíÿ ¾+ØZ½{M óÚB×ÇŒî0eÄKïdoÄ1c	ˆâ\—'Ñ…¹ıÚß‡m#QWËpI5¢ÿ ›è
+»?×`šW‘“Anà¤mı™÷ö¾:œ;Öme½…
+Åki«Ì9
+ìªÅèã nW/zlyßÚäk}Éˆç9œ«AÌy–.…äÈg“C¢é…u«k•]]ïÛ‚ŞIáÌşm*Å$M Ö£,Ê½7 éT:ö®/l£Ò—¨¬y#LÄèlá7™˜¼É¬2qj¼ˆÈ¶Ñc¶C›·Ì†óW*1ª½TCâ®Y+„c$Z}	ÿ *sôÛ½œäşsˆÁx,’!bT${}h€O½lhhøìÚˆò+-$G_]tñ4¨go‡€à"#„QşZäÛŠ£š®cšõºÅªñ27­,¤Ö{o}»Õğ&&FÒCÑ“¨:vØĞ¢IŞ¶Ï{§rÍ&]õ4dƒiÊ±öwÙ4HBMşwùü/úEN¬±¦Ç XP¿—¶ÿ n›qW‘·VN ’oÜõùŸë°úXXòéÓ­éCª¡½Ïì¼osÀUMı¸7DGr~üvü'¶^¬%ÊX¡g±! ıöÜ‚ÀôööŒ˜òM E½öĞÜí¾Ã{ÿ y4zvO›ªİÚ³‹C©e ÁIVŒ1<‘LÖ(ãÈj6-|…F!B#½D7õó9ˆ(ÒGë4–C©TÕé$]õw@aÁg/ä’bÊ\3Å EuYQ¢%\ZŸÌ ²0Ü2j±ß}¤=µÇÙ]g{KC©Ø B:;‹$ÓĞh :0UÒUü
+T*1ÅfÜœ¾|ï>9ƒã‰Y™dàö:I;_okáááNU•ˆƒ!ã¯ )T\©4†aü§†ae¥T‡Çß`‘Y‘•£+ŠÒ5Š¼‘Z×=àsQÖ*ª'lÿ øQÖFælhîşÄ¹Şúı/n#ÌºëySR°@º«µU’:ì>|gßê‘¤€À±÷ë6 h±ŸQ:²¿ ˆ$ÎªqÒ0ä*7Ï~ºKØáøUì©Äàá£<ÌI$Ãœ$õÄÃs‘Š+_òØHûÖü+ÿ ¹<2bkTÉÑ%
+¤,‘6ÌW¡-×ş­Â›ÆrAe•–Dã=£4G*¹»®şwñå>?õÑó‚¬Fö?¯=:{pVt÷ù¾üúáWZãˆ×ØO€µ“òü]†z8Ò[İg¬Ñïk3B3|N{|¢ìîyã r¼‡[ÌX%	½×¡jM]°öö¿ğƒaGâ®Hs¶(æ˜M:ËJ£"?DÑc%† Ö$‚(ìû=A`¸†m—é)#£†(‹òuÄFW³`TÅQH¥¹Èã3àJ¹–Ù¦®{Ğ!ŸïŠ!Gr¸ê,i²1ÖY"m£HõYc­ïSéc§Íı¾`PÚN4=LniÌ£Ndí”Ã6yÅÆ!†ª<H’µD
+eÊè*ï‚ïö¥t1‰E$;¶0l§‘|i!Æ¸µ­FŠa«¸Ê÷£\ä’5Ü.xÚ÷#Ç<|dGP]ïÌzĞ îT÷»ß¯~$N™!9ld…õÃyÆRèAûéSÜèÖÖ8£ğÜ£U’’õ~+‡,®¼¨©¼´Ë°Ù…$£Dc«l."Å¹d™˜{^²aîolXhpë'œ¾È¸‡â!’ Idêb ­Â¯j®ÿ «·¹DÒ\t›92#š• ä†ˆ)bäùp¼DËtÕfÁÛ„£õVÕ¬_!Ò}ZÅê!º8ñ{‡ã/™"Ş¢:Î·…k&Š-<‰´”8­x$#£GyDy'`€a½äå™0O‹™,N±d¬h!t@%÷ÿ .¾DmÀ?â'<ÃÍÅËåÑ•IğHóC7”å¤	¡V¶îE5ÔiÛ„K¡…yğøèäW'"'ßávbyùÿ ßñÓ4h™ôboçµöş¸BcúĞ•«ï}ÿ Øûßˆßæ§¦!Òíòzáq£bÍ¸ÎMÕÜD6©‘vù&ª*n—<Úxñ°rå,¬/Zˆ ÚšR:oĞ…ÕĞ}Ê —+˜bG>cOëÑ4°bÇä»’w¡óã^ÓòéyÍk)3dÖàÔTÓçÈå0¦@–bòŠŠù*YO+{¥RZÕG‘ı½úBX’dP5äÈêô€´Hë{]İlN”\édÉŒeK­’d²¦+kdì@G¸ {ğĞ°sÒ\aåİ4GJÔ÷ÑLEBUjıò\ç Ûè¨ä1vÎE]¹qëÉ‘ C$ëª5~UµØûı/‚‘™•@¸ŠFUòæĞ­§a¼du
+ªªï×²÷+dË§ı&msfJ:´qXG²C=\;iÑ_ãQ¡Lä‡&9$HbÄIfÅê¦E3“5FŠ+[‚U‰Ù[M‚ºŞçøà¥39{‚æFEiË"Æò6òJg•Oª8Ê…Ø–6(æ7ëAeEû'ËiÛ-”YÆi}sˆ¾kÂ	ò«à%Ü©ÑäÊH¡—x#¬$)Vcc„l–ˆ‹­kx!šV›‹8Ñ"ªês ºt;ûxÏ_‹"%ÅÁæ1¸Ñ•3]‰h£òYÈ5JÄÔ›$8Rº©˜ *ÅFC­|Ñ?ut¥Dù*o³×íùÿ çÏE¹ØòjgP
+‘T.Á£}¿ùÚøKâd¦ÈÆ†÷t7ï¶ÿ ~ûmÁè¯R4ÿ Fõº¯6ÔèSkÖº%Õb:Já“ÊP ¯L£yíâÆ„1‘
+Ùñ¢”ÓaÇœf”‘âîGÌ9§(lnQ$I–²Ç#Å&ßZšHMü©û°UıÄñßÁŞ!Àåädóh¥|fDY¢ ü} ä4{y©ê´½¬55Æ¶²]&‘¨úCj–ÙÔdV©_[cVuóE**¦ŒbÎŠ8v1ÉØznù€‘Z¨²_K"*„yßLŒ)Ÿ>	`–9â $-ÑË){$S~¤ô›ãF¿ÂåÇFÑÌ¯C<l­ŞQÄé³w@êtÖÛÌÆ=Faxyñû¥ıÖH–_[³ú{Ûäñ¤8ŸibîP¼­U4yšW…›=Òç…ò‰E:à—Òä¿öíşŸ]§'6
+Ñ¦O¡±Ñ+¢ÛiÜn:İÿ U}O­¥Ænñd¾ÂîA]šÂtáá—Ò*¤ãˆÑÆœb:Ra9â”¬t?´ŠNH¼\_±~/HñŠcH<ÄUŠEVI š “^äûüø5Áç(ü§&xß	ÿ &]“…3ÄDdO¢p+u²Æëê1óë›VWÔÆ¡ÑàrÎÀô’¶S÷GÍ³±xeä2B5rÿ ,€ğBW*<ÁÊí‹Ü57ü3„9>™e|©µ¾”XÍèQBõ T¢ºïÓ)ø·˜Éâ¸±0VI0¹x•¿yvšV>u:‚«jØŞİ6á|X:ª4I#`Ø×@şMpÈåc¸«¹ïıÈ‰º¢yM¼¦Şz2WGt:»m¹¡ıïÿ ÀdBŒT£.“¤Ø;¤×öùpbÑJ!a„ñåZáñQ½íbî…ÃU¶Èñ®ÎÛîV»šuxí¹Rº÷ÜC Ü¸=èıx¤u˜›Ğ6*W½ƒ`Øíí¸«¾ŸÓoê!{é'\:•czpÍgóÉ©ÚÒXÌÓ‹¹jÑ®ˆÂä«Ù_½q¨{ò ÿ S€$¾‚7Mñ¯„bñ3eb›B±äa_7ó12%ZË’ÙŒR^“DëÁ¾-—Ãù	‹šNU+i«YÅ’À‡"(Áü¸—}h*—Sü;ÏTØ~å85¦¨CÈé ãÓ¨[|L²¾\i¸åş?*+f@³ÀıÄèÄã?òÌ`V´ÍàˆÎXspó†ˆ¬‚F…±œ’WÒêÊÇTn­z•‰#­Ñ‡·0—?æI"Id\•'L±ª‚®ŒºVDk4@ ãŒŠj·©İGÔ,Şã	Ò¥Äñ’H—HÆcnkÔ‰ÜÙ4’Êä÷#à…BÄà5TyZ¤W?)ÆÆrsÓÍ˜(Q(GP)@ÓÔowµp¥ÿ Œdåe.&¾D%–ğÑöXı|®Ğj=.ÄeÚdQ*öÎ#¤l½ˆ¼ˆÎJÖ"î®Eóıê«ºîª½snÙ’¤ÈUeÓÑHîFÃ·¶ÿ ^¬ÎKÈp¹d23–i¦Ñ!ˆ³«a@ƒ¿ó~Ávz„-UCArM¸š;ÍP°owvÉZ›ğ***ş?*›tMÉIb‚F˜0AL:Ûl}]MÑFÔ;õáiâŸ‡Š|¨aÄ©r_Òj¨ş›Z­t7×Ûn?ÿÙÔijZk_fhttp://F3.yahoofs.com/coreid/4706dbf8i17a3zul3sp1/kM1ybh0.d6LnePkrA1iNKf_f/1/tn48.jpg?ciAMAiHBYpQ5QFcZOébplist00Ô	
+X$versionT$topY$archiverX$objects † Ñ_WebResourceResponse€_NSKeyedArchiver¯&,-345MNOPQRSTUVWXYZ[\]^_cdU$nullİ !"#$%V$classR$3R$8S$10S$11R$5R$6R$4R$7R$2R$9R$0R$1€€€ €€€€€ Ó'()$+WNS.base[NS.relative€€ €_fhttp://f3.yahoofs.com/coreid/4706dbf8i17a3zul3sp1/kM1ybh0.d6LnePkrA1iNKf_f/1/tn48.jpg?ciAMAiHBYpQ5QFcZÒ./01X$classesZ$classname¢12UNSURLXNSObject#A©æúœZ£ÈÓ6789CWNS.keysZNS.objects€©:;<=>?@AB€	€
+€€€€€€€©DEFGHIJKL€€€€€€€€€WX-CacheWExpiresSAgeSViaWWarning\Content-Type^Content-Length_Proxy-Connection]Last-Modified_"HIT from accel01.datak-telecom.net_Tue, 02 Jun 2037 20:00:00 GMTV131458_@1.0 accel01.datak-telecom.net (squid/3.0.RC1+PatchSets-20071001)_v113 accel01.datak-telecom.net (squid/3.0.RC1+PatchSets-20071001) This cache hit is still fresh and more than 1 day oldZimage/jpegT1305Zkeep-alive_Sat, 06 Oct 2007 01:25:07 GMTÒ./`a£ab2_NSMutableDictionary\NSDictionaryÒ./ef£fg2_NSHTTPURLResponse]NSURLResponse     ) 2 7 : P R d … ‹ ¦ ­ ° ³ · » ¾ Á Ä Ç Ê Í Ğ Ó Õ × Ù Û İ ß á ã å ç é ë ò ú
+uzƒ‘— ©«²ºÅÇÑÓÕ×ÙÛİßáãíïñóõ÷ùûıÿ,;N\¡¨ëdotŸ¤¨¾ËÎÓ×ë             h              ùOÿØÿà JFIF      ÿş >CREATOR: gd-jpeg v1.0 (using IJG JPEG v62), default quality
+ÿÛ C 		
+ $.' ",#(7),01444'9=82<.342ÿÛ C			2!!22222222222222222222222222222222222222222222222222ÿÀ  0 0" ÿÄ           	
+ÿÄ µ   } !1AQa"q2‘¡#B±ÁRÑğ$3br‚	
+%&'()*456789:CDEFGHIJSTUVWXYZcdefghijstuvwxyzƒ„…†‡ˆ‰Š’“”•–—˜™š¢£¤¥¦§¨©ª²³´µ¶·¸¹ºÂÃÄÅÆÇÈÉÊÒÓÔÕÖ×ØÙÚáâãäåæçèéêñòóôõö÷øùúÿÄ        	
+ÿÄ µ  w !1AQaq"2B‘¡±Á	#3RğbrÑ
+$4á%ñ&'()*56789:CDEFGHIJSTUVWXYZcdefghijstuvwxyz‚ƒ„…†‡ˆ‰Š’“”•–—˜™š¢£¤¥¦§¨©ª²³´µ¶·¸¹ºÂÃÄÅÆÇÈÉÊÒÓÔÕÖ×ØÙÚâãäåæçèéêòóôõö÷øùúÿÚ   ? ÷Y¡â†hÖHÜmdaG¡®^úÎóJŠßI³¾ZßÎ!‹qËÛ¦8Vî6©<Œ×YYÚ¾šÚŒ0˜fò.­åA)]ÁX0GpA ıj ÃĞ¼Ao<V2iÖìšD³IgûÅ!ÄªN9;•°Fzæ´õë‰Ş[-.ÖVŠ[ÙySï$j2Ä{ôWûÌš†·yoökËÑE8#sd’HÉÀâ­êÖ7SÜÙjyˆÜÚ–ÂLHY†ÈÎ ç¨‹u-¾Ÿdot-U¥[[•·–ØÏæ£9`¬­œ°n}{VŞ‰¤:)g¹O¨Ü÷3ãïÊ¾Š:T4ï¿ÛÚúú;Hs1¸¶k„2‘1Øà»~ºZ *)n!ƒËó¥HüÇ››˜ôŞ¥®sÅM}……­À¶¼’àIÌ»‚²rxõÛœP#WW°®‘ucæy~rŞp~”iÑêQÆãQÚSÆÏ"&@¾Xæ°cğ}Ä9³‡XºM.C¾Xƒ5¤Û‚D™ÈüÄzıjæ•ªiÚ…¤£ÄK¨İ8µP!y8m¤à2à¶ï|c  êŠ­co=­ªÅqw%Ü€œË"ª“éÂ€*Í ËjÓ½î³5‡Ÿ¬Ög¸²™øİ#—R‡A Œy5Ô×”øÕd›Æ×¤ˆôûK{×#³$Œôf?…Gro¼Fëå®k½<×»Ìcßr~œTzBXÅ¨ù—œ7Ú½ÀuŞ¬0ª„nDQ 3ßÖ¹ôñv£$W‚B‚MBm*0¸$´úàlcé“Qh^
+¼±ñdÓ«<öÒR2&.€J®qùš ôj(¢ÿÙÔmnZo_<http://s3.amazonaws.com/buzz_img/2007082016060480_avatar.jpgO<bplist00Ô	
+X$versionT$topY$archiverX$objects † Ñ_WebResourceResponse€_NSKeyedArchiver¯&,-345KLMNOPQRSTUVWXYZ[_`U$nullİ !"#$%V$classR$3R$8S$10S$11R$5R$6R$4R$7R$2R$9R$0R$1€€€ €€€€€ Ó'()$+WNS.base[NS.relative€€ €_<http://s3.amazonaws.com/buzz_img/2007082016060480_avatar.jpgÒ./01X$classesZ$classname¢12UNSURLXNSObject#A©æú!è£ÈÓ6789BWNS.keysZNS.objects€¨:;<=>?@A€	€
+€€€€€€¨CDEFGHIJ€€€€€€€€_X-Amz-Request-Id\Content-TypeVServerTDate^Content-LengthTEtagZX-Amz-Id-2]Last-Modified_325E72ED9968A90FZimage/jpegXAmazonS3_Tue, 20 Nov 2007 20:37:23 GMTT7514_""0cba4ea1a8d0e1198dc802b3b027ec4d"_@Ptrgcsft7+bhBswa7QzyHrpLFj2/YeKztlWd0Gnpo9PVw+PpHt2fOqVx6DFvFb2I_Mon, 20 Aug 2007 23:09:00 GMTÒ./\]£]^2_NSMutableDictionary\NSDictionaryZÒ./ab£bc2_NSHTTPURLResponse]NSURLResponse     ) 2 7 : P R d ƒ ‰ ¤ « ® ± µ ¹ ¼ ¿ Â Å È Ë Î Ñ Ó Õ × Ù Û İ ß á ã å ç é ğ ø
+INWbekt}†™›¤¦¨ª¬®°²´½¿ÁÃÅÇÉËÍàíôù&9DMmr—Úúÿ&).2F             d              TOZÿØÿà JFIF  H H  ÿâøICC_PROFILE   èappl   mntrRGB XYZ Ö    , acspAPPL                          öÖ     Ó-applĞ!ÄÃÈ²òáö‰°YÜëå                               rXYZ  ,   gXYZ  @   bXYZ  T   wtpt  h   chad  |   ,rTRC  ¨   gTRC  ¸   bTRC  È   vcgt  Ø  ndin  ì  >desc  ,   ddscm    şmmod     (cprt  ¸   -XYZ       d÷  :  ÚXYZ       j!  ­µ  !XYZ       '¾  a  °*XYZ       óR    Ïsf32     B  Şÿÿó&  ’  ı‘ÿÿû¢ÿÿı£  Ü  Àlcurv       Í  curv       Í  curv       Í  vcgt             /Nh}™°Â	Ø
+ëò
+!-:ALTW^cipstux{€ „!„"‡#Š$%•&›' (¨)¯*¸+Ç,Õ-á.ö0
+1"233U4{5 6Ê7ø9):a;›<İ>?i@·BC]D³FGrHÑJ/KLñNLO®QRlSÊUVlW¾YZ_[¨\ô^C_Š`ÍbcOd’eÏg
+hAiuj®kámnDowp¬qÚst0u_vŒw¼xèz{>|p}Ÿ~ÇÜ€âå‚ìƒğ„ò…ö†ıˆ‰Š‹Œ(3;A‘H’Q“V”Z•^–c—i˜k™kši›iœjhaŸZ S¡K¢@£1¤)¥'¦%§"¨ ©ª«¬­®¯¯ş°ø±ó²í³å´ÛµÑ¶Ì·Ã¸¹¹±º¬»©¼¡½–¾¿ŠÀ„ÁÂzÃrÄnÅnÆlÇaÈCÉÉâÊ²ËÌJÍÍæÎ´Ï„ĞRÑÑíÒÀÓ‘Ô_Õ-ÕúÖË×—ØaÙ-ÙùÚÆÛÜVİİäŞ­ßrà6àùáºâ{ã:ãöä¶å|æAççÉèŒéNêêÓë—ìXííØî˜ïXğğÕñ‘òNóóÉô„õAõÿö¾÷zø5øğù­úkû)ûæü¢ı`şşÚÿqÿÿ  		ı
+ùïäÙÍÁ±¢”…wk]OC96,/.6> E!?"8#-$,%,&*'0(,)0*6+C,J-X.i/y0‰12¶3Ï4î6748S9z:§;×=>5?q@­AèC+DkE¯FøHEI‹JØL1M|NÑPQgR¶TUMV’WÜY)Zp[²\÷^8_}`¿aıc;dve·fóh.ijjªkêm&n\o˜pÖrsTt‘uÊwxLyzÅ{ã|ë}ï~õù€úşƒ„…†‡ˆ$‰0Š:‹BŒIOX\`‘d’j“o”p•r–o—n˜p™mšf›`œXPEŸ6 -¡-¢,£)¤)¥(¦&§$¨#©$ª#«¬­®¯°±²³´µ¶·¸¹º»¼ ½'¾.¿5À9ÁBÂNÃZÄ[ÅGÆ ÆòÇÉÈœÉmÊAËËíÌÅÍ™ÎmÏCĞĞöÑÍÒ¢ÓwÔNÕ"ÕõÖÉ×œØoÙAÚÚİÛ¬Ü|İHŞŞÛß¢àjá.áğâ¸ãähå?ææíçÄè™énêEëëêì¼íî]ï.ïûğÇñ’ò^ó)óòô»õ†öP÷÷Üø¢ùiú0úøû¼ü€ıEşşÏÿmÿÿ  ÷ğôïííí	Ş
+ÛÔË½®Ÿ‹wdL0óÑ«„\0×¥uEİ ¥!m":##Ö$©%~&U',((ç)Ç*¨+,t-[.B/.01	1÷2å3Ñ4À5°67‰8v9a:L;<< ==ğ>Õ?µ@“AvBiCWDFE8F&GHHöIéJÙKÈL¶M¦N˜O‰PxQgRVSLT;U,VWXYYôZé[â\Ú]Ô^Í_Ã`¾a½bºc²d£e‰frg_hHi/jkkõlämÑn¾o®p¢q–rˆsxthu^vNw>x/y!z{{ó|à}Î~¾«€”‚fƒO„4…††÷‡íˆã‰ÚŠĞ‹ÇŒº¯¨œ‹‘’p“d”U•F–4—$˜™™ôšå›ØœÍ¾¬Ÿ “¡…¢|£o¤a¥W¦Q§I¨;©"ª ªÜ«¼¬˜­r®O¯.°°î±Í²©³‹´oµS¶5··÷¸Ü¹½º»~¼a½C¾%¿¿ãÀÃÁ¦Â„ÃaÄ=ÅÅöÆĞÇ¥È‹ÉœÊÁËâÌÿÎÏ9ĞZÑ|ÒœÓÈÔíÖ×OØ‹ÙÌÛÜ`İ¹ßàáôãåæ§èPêëÖí®ï–ñ‘óõ±÷æú ü`ş~ÿÿ  ndin      6  ˜u  Xá  R¥  ı  (  ¨  P  T9 Â «… B            - ? T l † £ Ä å
+2\ˆ¸éUÊH‹Ñd±ÿO£ùPªaÀ!ƒè	M	±
+
+„
+ìWÂ2uâO½+˜sáP½+˜uåSÁ0 …ùlàYÏGÀ<¶6º>ÂHĞXårÿ Œ!!³"I"á#{$$±%P%ò&—'>'ã(Œ)9)æ*•+D+ó,¦-^..Ğ/‰0E1 1½23B44Â5…6L788î9×:Â;³<¥=”>…?w@jAcB]CSDHEBF?G@H@I@JGKPLZMeNpOƒP—Q±RÉSáUV'WMXwY¢Z×\]:^c_”`Âaóc'd^e—fÍhiGj‰kÍmnVo pïrAs‹tßv4w‰xÜz-{‡|è~D€û‚Vƒ¹…†~‡Ú‰?ŠµŒ\Õ‘™“b•#–ê˜®š~œMŸá¡¶£‘¥d§H©.«¬û®î°ç²ä´Ş¶è¸õ»½#¿NÁoÃÅ ÇºÉŞÌÎ0ĞXÒÔÈ×ÙCÛ‹İÜà&â|äÕç*é}ëãîJğ©óõs÷äúFü¼ÿÿ      
+  $ 6 L e  ¡ Ã é>mŸÕH†Æ	O—á+zÇhºiÇ)‰ëP´		‡	ñ
+Z
+È5¢ƒögÚOÁ5ª#š‡şvòiá[ÖNÊFÁ=¸7·3®1¯1¸>ÃKÕ_î| 	 ˜!*!À"U"ì#†$$¹%V%ö&—';'Û(€)')Ï*x+ +È,s-!-Ô.„/3/ä0—1H1ı2¶3n4$4Ø56M77ö8â9Ë:¶;§<š=‰>z?l@_AWBQCHD=E7F4G4H6I5J=KFLPMZNfOyPŒQ¦R¿S×T÷VWBXmY˜ZÌ\]0^W_‡`´aâcdHe~f±gæi#jakŸlŞno_p¥qîs2tyuÄwxVyœzå|6}†~Ò€l‚¹„…a†®‡ú‰MŠ²ŒIı¨‘^“”Ì–ƒ˜7™õ›¶nŸ( è¢°¤w¦@¨©ç«¼­•¯v±b³Kµ6·1¹.»4½=¿XÁdÃAÅ1ÇÉÊıÌøÎîĞéÒôÔü×ÙÛ4İWß{á¢ãÓæè4êkì´î÷ñ=óõÒø)úrüÔÿÿ        & 9 O h „ ¥ Ç íCs¦ŞU—Ş&tÆwÕ8 
+{íhâ`Ş	]	Ş
+b
+åiğwÿ‰¢/¿Qå}®Mí‘7ÜŒ<ì¤b$ÕHÀ~B  Ç!"[#(#õ$Ã%–&k'C((ñ)Ì*§+,\->."//å0É1­2—34f5N6<71879=:@;I<W=a>k?v@ƒA•B§C³DÂEÕFëHIJ5KTLsM’N´OÛQR4S_TUÉWXAYZÇ\]L^~_¸`îb)cdd¦eèg&hliºklTm¡nôpKq¦rÿtYu¹wxwyÒ{4|Ÿ~h€Ğ‚4ƒŸ…†v‡Û‰GŠÁŒV÷‘‘3’İ”–"—Å™k›œÁc ¡¹£j¥¦È¨€ª6«ì­¥¯d±)²î´­¶y¸Kº»ò½Î¿·ÁyÂèÄNÅ¼Ç0ÈªÊË“ÍÎyÏóÑYÒÎÔ8ÕŸ× ØYÙ°ÛÜUİŞŞà$á\âã»äØåõçè+é@êNëRìOíMîJï?ğ2ñ ò
+òïóÑô®õŒöi÷BøøŞù¬úzûIüüİışÃÿÿ  desc       
+Color LCD                                                                               mluc          itIT      ÄfrFR   B   ØnbNO     esES     ,fiFI     >ptPT     NzhTW     fjaJP     tnlNL     ‚deDE     ˜koKR     ¨enUS     ´svSE     ÆdaDK     ÖzhCN     ò L C D   c o l o r i É c r a n   à   c r i s t a u x   l i q u i d e s   c o u l e u r F a r g e - L C D L C D   c o l o r V ä r i - L C D L C D   c o l o r i d o_i‚rm²fv˜oy:Vh0«0é0ü   L C D K l e u r e n - L C D F a r b - L C DÎì·ì   L C D C o l o r   L C D F ä r g - L C D L C D - f a r v e s k æ r m_i‚r   L C D  mmod        œ`    ¿ø{€                text    Copyright Apple Computer, Inc., 2005    ÿÛ C ÿÛ CÿÀ  0 0" ÿÄ             
+	ÿÄ *      	
+ #1!"&ÿÄ            ÿÄ "        !" #ÿÚ   ? °ÿ ’ï•x§¶Ú‡©†.ˆV»³Ñ.¢¡ê}ŸÌ­,ÿ ·Û}7]"º½¹ÁÃÚ•‚á@÷Ğ­áßX9ùyùDó¡ÜÜé|µó·“pz=men²`Š(ÏzBÕ…#÷²Á!–s~*,ÂabãL–îÒ
+¡š¶,mÒ×?ÏG¸ü±æŸw®EÙî‰÷éã“Y)|Ë˜†Àü[X³±kºÅW9°˜C‰¬WêŒàŞÁ¾V{4#LQnÉ€\§@pr—š‚ù°B6×Wò×]öŞ$"3f:vyÄrn	™Œ9¢Ø¨W[\‡6#yğçŒê3:æˆÔk
+N=Ì|ˆ…äfb¡–ÿ å^ZS0*ù¶Âš¬7¥‘É¦"BÉò>Îd=A”´ÌCÜÏPrnKÏMë}%F)¶ÒWÍi¾ìi,¦42Ó\ï¤ŸòNiQÉ<›ëŸÆ6„Ï¾ßvŸM#ãïã‡ÈËÀô7mµ×6·Å„HÛõ»&¨\í\¥ÊL‘)?@Z˜‘Â@·•ƒ •fN°s°—ããáü~Y?°ùvıYŠuàî¨N(÷rÅ ÔX˜N´c'“îıuäØ#UÓg\C§Ü>gß]~Üÿ ˆSØî>ç¯Po:y5]^’ÓEÃ¶œCuWl#c¶Ş…O°_¹ï5U
+ÁôÙŒï,^¯”I7DrÂ®LÎ|Ç‘Š6Jµ·ÚßM*®´Ş¶²u¬2ıåQ[U—Òï]5Ö+…¢W½ƒü_Äêeÿ ãoççdZä<Ó[|³nåL«µ3síSÂN&g"½^ÈäZiÚ»wMT±YùÑrÂè4ËşˆŸê‡Šî>·¶z»ÂV~ƒÌ=mgré+ôVÀ*­s·½W¾áHÃ<±ØÅ2KdF‹«JÃ§$©/Qq(«BG?¡Z­øŠğšGÄ;ªÿ XˆøÁœIu@¹Ù`Dê!‡i	£¦!n…G,ÚO¾ßi2Œ&IÀÑgªm—5şªÑgL@-m²Nœ¾Õr©%æ róÇ¶nrÀßœ **úëY_Óé¹R)Üoí¤’2æÛOØ×]ÇãXx©¾?àüiĞ.+=#•òÊŠ~I²-\¡²7BQS–ªûLåû0Ò›n®İ3µbëÍd~±iÆìØ¹•Zİ§)§z]u¨‘Ó°ÉeuÇ®Œá`P"Éì|Ç‘ş†3×ó&7æºx8µÚ•qÙ«Çt¶Ul­ëdÑ¬‹÷şõ¤ª”]±(*ó+i©®/rg…ŸÈag<®Ğ4†Êû|ówB "’ä>Z–›¤S[Yv±Ü­•:×M\á€„Ğí.¬1	JÂËÖ+Êe:ØÆ}NkÕèyO*iYâ<k¶ßÔ†mÒøª¬jJN½5 ¢æÜ£—²±ˆ½åB‡Xµ^”W…ãv %ÿ )íü¨hW>Çâ{ÿ gæu
+İ‹”S,œbğÿ ª¯èî˜	e®':j™«W¤‚Ÿé]ŞbH]ÙÜ²n·kQB°ŠÊ™H6«„Û+Ü*1×HôPÁ!3œãMt|óI¾ÛHQÅI9§O¶Ä<›íŒjĞunª€gšQfdÇ¹&ªÉ$[^KÔtë‰Ê¼ÌKßôQBÕAÀ:æ‹ß°¿+æSùÜ*›‘)Ö¬¸9–ÅÍ_Æ>°àâ®j~ÎÂÆ¸Jwİ¾Ğ2Ø©‚Ô}õÓm¾»•3¼mŒg]¤Ïşšã?Y3>¹Çİ|÷åGä?Ó‹æô\vu¿0ØYCô,Å7‰c#â%ï˜×X×˜<9Óm³®˜ü›ıúCâßãçê?føò§é®6²¡eyl=éšQmÖÍ©Fæœ½Œ`W¬5“MVBg2³`PŞ¬4¸eRP”¹ıÙ5ÿ 3Oİş½xaÕÖ7N¯§\·¿8gNLæÂ£«×¬°ÖP4ÕÂŒ>ğ»n 1b]³ˆëòM·Û°æQo<«×†¥Êˆ´LúÖGè¨‹_4“¬2a„(‘‹}ø°|¦=Á*¨îWÅøøYÅä·²¢À¯SFVŞ¥&
+œÚõ¨üõÅzß¨$Õqt•k©˜hš‰aê?ô‰}­òÃäjßu³Ù-?î? êökûÃ!ÿ S¼²CMı‹Ù+™a‘pæpëU‰+S&"M—©,¢ãé`Œ"§ÑİJÂÕú+q­v~W\ójõ+€¼ëî¿,"ChJRéŒN‰mB3ÿ ¡(«#ö)k¨,ĞÖ"„ù\³\‰Ù(ü—SCòwæKİ–w™Îok-Õ5Š‰(mW~Åz¯MbĞ8§İRË%‰úqDƒ¢˜ÙÂ`gÅ> )bû70"³åÿ B?`n–Şµgå–k‚äTrß×‘ò²¾4¿“zı.ªÖ4¨VÇÛ:¦lÆV6f®İ1ìW(Ò•«
+ÒÌº(/Ì	 R*xgå…ÄW	)[°\ö2†–1&®UÜº9ºú¦øòM«BÅ“}­M9¶•iÍ›/&¹—%¬®×µ°d_¬&FÓêa¿”ğ·ĞêÕùûŒUy·DTT½Öª“|/Y2¾"{_=ÒXdÖV ,«Êe¥– ´~
+!§»¬’$ÅŸµcÍÃÎçéƒÔœÿ G=“™S«“Mw×dé[?Ñ k?üÓÂàŠ…”(HÖ?Ó'rp`ûG‹‡ù»ôê>ñë»·[a$°ë¼ÜTÕ:Ê•«O=å÷ lÇ9dT$Ì4pª¯òÚş`À¼4¥ÁöÇû¹hs¶zó„^½ğÇg:D¢ùúÕæÌ^Ó<ÿ æ™ìg‹|²XìÙ÷Uúc¿ô_Y~ÈÕG%-ãævPD<BM<zî»Q×Œj[uÊ_²|b]óY¬ÉÂ£ô0J™ë¯PCÓş}Œê\<×FµôâTèB¢½ĞåQyÙ¾Â\}Î%Ò†³©èT…{2Y ÜÃ76'x²»ÄÚ°>u¿qw¡Éş¹ëÍ”×Øç}»êSúÔ†ôû³©¶0Üçò¶sË+ËfÛí=ıJN®7OóOôÖ1¼0W§qÔ'²Û…\avQ,²¸n˜-Ì‘KEû1Î“K™eD>Uj¨W_,uGõ›=Rï¢ù…PáLM-µõV°¡é!è,³ş´L7­Š~úO.ÄL\å.#Ì¿†,{ù“ã¾rôöŠüëéN€‹Í|j¿ÍX<m×`"nƒz:üS˜+\'—Ô—-a¢¹³a§@éQ1VŞxŒ¯R—Õ’ÌiN§ğFÕ®¨LHÙ¬S=2`»ƒ?vWÑŒC?Ô÷ê
+""!ƒ1"*½w÷m+JÊ×áªwÆ[,P©^©´>ks[5¥Jì‰M&³h0ˆàÿ âÓ–õ:³|WÛØ×X	Ígõ-!ìrd€ÂÚ:r:·g´®Îšmÿ 6‚ówìán@ä‹9?« ÚìdZ}Åªàİ&5izj@,C˜YãÎ4ÛI„&-¢“\ãlgLë$çéõÆuÆ3Œı>˜ú}ñ»çªïawám
+«ŒƒV:Ÿzjz¹£k›‹Ê÷›ù×½ÙÎ¯«ñUµÕéÖ‹&ò6ˆkŠBÉFÃ3Ô{Ôûq¬_fºãÆŸnºãLcé¦ºëŒÖ1ÿ ŒkŒÖ1Œcü•AV/ØÙmõ(j:ó$kK5Î{™9×10Pr>„ ¦ï0V^VOÍÇ´æ²½­m[CŸu]£K$ uÅÂÊtÊÊ[	ua±
+`JÿÙÔqrZs_fhttp://F3.yahoofs.com/coreid/46f95428i2684zul1sp1/7WxyTYQ_erVHff82sYA1JDl./1/tn48.jpg?ciAMAiHBeRKzg6wNOébplist00Ô	
+X$versionT$topY$archiverX$objects † Ñ_WebResourceResponse€_NSKeyedArchiver¯&,-345MNOPQRSTUVWXYZ[\]^_cdU$nullİ !"#$%V$classR$3R$8S$10S$11R$5R$6R$4R$7R$2R$9R$0R$1€€€ €€€€€ Ó'()$+WNS.base[NS.relative€€ €_fhttp://f3.yahoofs.com/coreid/46f95428i2684zul1sp1/7WxyTYQ_erVHff82sYA1JDl./1/tn48.jpg?ciAMAiHBeRKzg6wNÒ./01X$classesZ$classname¢12UNSURLXNSObject#A©æú©.bÈÓ6789CWNS.keysZNS.objects€©:;<=>?@AB€	€
+€€€€€€€©DEFGHIJKL€€€€€€€€€WX-CacheWExpiresSAgeSViaWWarning\Content-Type^Content-Length_Proxy-Connection]Last-Modified_"HIT from accel01.datak-telecom.net_Tue, 02 Jun 2037 20:00:00 GMTV605085_@1.0 accel01.datak-telecom.net (squid/3.0.RC1+PatchSets-20071001)_v113 accel01.datak-telecom.net (squid/3.0.RC1+PatchSets-20071001) This cache hit is still fresh and more than 1 day oldZimage/jpegT1427Zkeep-alive_Tue, 25 Sep 2007 18:39:08 GMTÒ./`a£ab2_NSMutableDictionary\NSDictionary“Ò./ef£fg2_NSHTTPURLResponse]NSURLResponse     ) 2 7 : P R d … ‹ ¦ ­ ° ³ · » ¾ Á Ä Ç Ê Í Ğ Ó Õ × Ù Û İ ß á ã å ç é ë ò ú
+uzƒ‘— ©«²ºÅÇÑÓÕ×ÙÛİßáãíïñóõ÷ùûıÿ,;N\¡¨ëdotŸ¤¨¾ËÎÓ×ë             h              ùO“ÿØÿà JFIF      ÿş >CREATOR: gd-jpeg v1.0 (using IJG JPEG v62), default quality
+ÿÛ C 		
+ $.' ",#(7),01444'9=82<.342ÿÛ C			2!!22222222222222222222222222222222222222222222222222ÿÀ  0 0" ÿÄ           	
+ÿÄ µ   } !1AQa"q2‘¡#B±ÁRÑğ$3br‚	
+%&'()*456789:CDEFGHIJSTUVWXYZcdefghijstuvwxyzƒ„…†‡ˆ‰Š’“”•–—˜™š¢£¤¥¦§¨©ª²³´µ¶·¸¹ºÂÃÄÅÆÇÈÉÊÒÓÔÕÖ×ØÙÚáâãäåæçèéêñòóôõö÷øùúÿÄ        	
+ÿÄ µ  w !1AQaq"2B‘¡±Á	#3RğbrÑ
+$4á%ñ&'()*56789:CDEFGHIJSTUVWXYZcdefghijstuvwxyz‚ƒ„…†‡ˆ‰Š’“”•–—˜™š¢£¤¥¦§¨©ª²³´µ¶·¸¹ºÂÃÄÅÆÇÈÉÊÒÓÔÕÖ×ØÙÚâãäåæçèéêòóôõö÷øùúÿÚ   ? nŸ¿öu±kh3å/ü³^xÕhÅo³ş=mÿ ïÒÿ …Acm8Òí%*|£€r=ZDÆr ô¯•šiêp¹Íirí Ïır_ğ¤Ú³mğÿ \×ü+oJÑîïæYm0‹«4ÊÜc¹Æ~•³™©jŞ–Cî^æ˜ƒ3.p0{c+ÒÃ`}­>{Øê¥EÎÎG  ·&Ú×%ÿ 
+Î×ÒÔx{S	m?d—F3÷µmêpI§^5£Dñ2’Û“€I#Ÿ•bkÀÿ Â=©¤²Kÿ  å•'J²ƒ{3
+œĞŸ-Í= ¨µeW*`]»[í­Tµµt\]~âHÎ3õşU‹a¦ÎÔäó
+`g‚ºİGY&k›÷T]ô&4ëÔTì˜sJ¤¬ÖÅ»‹Ëoh3OOÏ'8=:â¨h>)ÛpYÁ¸FĞNóœş5â{ôyÙİ^689ä\¹¼´rÖ±ƒÑ´\¦Aê8¯¢-4 º”Œ,zoˆä¶½ÒÖsùà†Æp{f¸o´_ğŒjªqÿ Scë°ÕÛv{­4¤nvDBõ }k'Ä‘á½Sq9[I¿ô¯1³ÄÅú~g}'¡¡¥ÍŸ™æü”ÜÊ9¬øšî{ëx“L•í£†=›d·Â«iúö€šM moKY)¹MÜ`ƒ·§^)Òkš	a·[Òˆ÷½?Î¹)WùàZŒãª<ÛWƒÄêí–Y—?yşµ&«áÏi:~›~.­'kÔİåBÄ´\½ùşußK¬h^VÄÖ´’	ÉÍäüUeÁs¢Ã<Ònée o#Àö×t1ókŞ¦ª¤íªàiõ]2o>õVE‘v4g¾õ³â™ƒxWW)”g1Çv>CĞõª°ë$lYuÍ0.xm#õ¨<E¯iÕ56YœÊŠ—q’Ä¡9'Ú¹j×yEIi~ÆMÔ“ÕÿÙÔuvZw_fhttp://F3.yahoofs.com/coreid/4737d565i1d8azul2sp1/79b6bqU0erXmpvzCa0O1ciij/2/tn48.jpg?ciAMAiHBh9j1w.qrOWbplist00Ô	
+X$versionT$topY$archiverX$objects † Ñ_WebResourceResponse€_NSKeyedArchiver¯&,-345KLMNOPQRSTUVWXYZ[_`U$nullİ !"#$%V$classR$3R$8S$10S$11R$5R$6R$4R$7R$2R$9R$0R$1€€€ €€€€€ Ó'()$+WNS.base[NS.relative€€ €_fhttp://f3.yahoofs.com/coreid/4737d565i1d8azul2sp1/79b6bqU0erXmpvzCa0O1ciij/2/tn48.jpg?ciAMAiHBh9j1w.qrÒ./01X$classesZ$classname¢12UNSURLXNSObject#A©æúİA1ÈÓ6789BWNS.keysZNS.objects€¨:;<=>?@A€	€
+€€€€€€¨CDEFGHIJ€€€€€€€€WX-CacheWExpiresSAgeSVia\Content-Type^Content-Length_Proxy-Connection]Last-Modified_"HIT from accel01.datak-telecom.net_Tue, 02 Jun 2037 20:00:00 GMTU33821_@1.0 accel01.datak-telecom.net (squid/3.0.RC1+PatchSets-20071001)Zimage/jpegT6435Zkeep-alive_Mon, 12 Nov 2007 05:06:04 GMTÒ./\]£]^2_NSMutableDictionary\NSDictionary#Ò./ab£bc2_NSHTTPURLResponse]NSURLResponse     ) 2 7 : P R d ƒ ‰ ¤ « ® ± µ ¹ ¼ ¿ Â Å È Ë Î Ñ Ó Õ × Ù Û İ ß á ã å ç é ğ ø
+sxŒ•§©°¸ÃÅÎĞÒÔÖØÚÜŞçéëíïñóõ÷ÿ+>Lq‘—Úåêõ4ADIMa             d              oO#ÿØÿà JFIF  H H  ÿáZExif  II*         V       \   1    t   2            è2i‡    ¤       Canon Canon EOS 350D DIGITAL  Adobe Photoshop CS2 Windows 2007:11:11 17:28:13  š‚    â  ‚    ê  "ˆ     Ôä'ˆ    d Wf     0221    ò        ‘     ’
+      ’    "  ’
+    *  ’     Ğ†	’     µæ
+’    2  †’   :        0100      ’œ     ô       M  ¢    B  ¢    J  ¢     ¸¤      ùõ¤      é¯¤      ?O¤      MO          -   
+   2007:11:09 16:28:35 2007:11:09 16:28:35        W           "                                                                                                                                                                                                                                                                               ¼4 j   (# F  ÿâXICC_PROFILE   HLino  mntrRGB XYZ Î  	  1  acspMSFT    IEC sRGB              öÖ     Ó-HP                                                 cprt  P   3desc  „   lwtpt  ğ   bkpt     rXYZ     gXYZ  ,   bXYZ  @   dmnd  T   pdmdd  Ä   ˆvued  L   †view  Ô   $lumi  ø   meas     $tech  0   rTRC  <  gTRC  <  bTRC  <  text    Copyright (c) 1998 Hewlett-Packard Company  desc       sRGB IEC61966-2.1           sRGB IEC61966-2.1                                                  XYZ       óQ    ÌXYZ                 XYZ       o¢  8õ  XYZ       b™  ·…  ÚXYZ       $   „  ¶Ïdesc       IEC http://www.iec.ch           IEC http://www.iec.ch                                              desc       .IEC 61966-2.1 Default RGB colour space - sRGB           .IEC 61966-2.1 Default RGB colour space - sRGB                      desc       ,Reference Viewing Condition in IEC61966-2.1           ,Reference Viewing Condition in IEC61966-2.1                          view     ¤ş _. Ï íÌ  \   XYZ      L	V P   Wçmeas                            sig     CRT curv           
+     # ( - 2 7 ; @ E J O T Y ^ c h m r w |  † ‹  • š Ÿ ¤ © ® ² · ¼ Á Æ Ë Ğ Õ Û à å ë ğ ö û%+28>ELRY`gnu|ƒ‹’š¡©±¹ÁÉÑÙáéòú&/8AKT]gqz„˜¢¬¶ÁËÕàëõ !-8COZfr~Š–¢®ºÇÓàìù -;HUcq~Œš¨¶ÄÓáğş+:IXgw†–¦µÅÕåö'7HYj{Œ¯ÀÑãõ+=Oat†™¬¿Òåø2FZn‚–ª¾Òçû		%	:	O	d	y		¤	º	Ï	å	û
+
+'
+=
+T
+j
+
+˜
+®
+Å
+Ü
+ó"9Qi€˜°Èáù*C\u§ÀÙó&@Zt©ÃŞø.Id›¶Òî	%A^z–³Ïì	&Ca~›¹×õ1OmŒªÉè&Ed„£Ãã#Ccƒ¤Åå'Ij‹­Îğ4Vx›½à&Il²ÖúAe‰®Ò÷@eŠ¯Õú Ek‘·İ*QwÅì;cŠ²Ú*R{£ÌõGp™Ãì@j”¾é>i”¿ê  A l ˜ Ä ğ!!H!u!¡!Î!û"'"U"‚"¯"İ#
+#8#f#”#Â#ğ$$M$|$«$Ú%	%8%h%—%Ç%÷&'&W&‡&·&è''I'z'«'Ü((?(q(¢(Ô))8)k))Ğ**5*h*›*Ï++6+i++Ñ,,9,n,¢,×--A-v-«-á..L.‚.·.î/$/Z/‘/Ç/ş050l0¤0Û11J1‚1º1ò2*2c2›2Ô33F33¸3ñ4+4e44Ø55M5‡5Â5ı676r6®6é7$7`7œ7×88P8Œ8È99B99¼9ù:6:t:²:ï;-;k;ª;è<'<e<¤<ã="=a=¡=à> >`> >à?!?a?¢?â@#@d@¦@çA)AjA¬AîB0BrBµB÷C:C}CÀDDGDŠDÎEEUEšEŞF"FgF«FğG5G{GÀHHKH‘H×IIcI©IğJ7J}JÄKKSKšKâL*LrLºMMJM“MÜN%NnN·O OIO“OİP'PqP»QQPQ›QæR1R|RÇSS_SªSöTBTTÛU(UuUÂVV\V©V÷WDW’WàX/X}XËYYiY¸ZZVZ¦Zõ[E[•[å\5\†\Ö]']x]É^^l^½__a_³``W`ª`üaOa¢aõbIbœbğcCc—cëd@d”dée=e’eçf=f’fèg=g“géh?h–hìiCišiñjHjŸj÷kOk§kÿlWl¯mm`m¹nnknÄooxoÑp+p†pàq:q•qğrKr¦ss]s¸ttptÌu(u…uáv>v›vøwVw³xxnxÌy*y‰yçzFz¥{{c{Â|!||á}A}¡~~b~Â#„å€G€¨
+kÍ‚0‚’‚ôƒWƒº„„€„ã…G…«††r†×‡;‡ŸˆˆiˆÎ‰3‰™‰şŠdŠÊ‹0‹–‹üŒcŒÊ1˜ÿfÎ6nÖ‘?‘¨’’z’ã“M“¶” ”Š”ô•_•É–4–Ÿ—
+—u—à˜L˜¸™$™™üšhšÕ›B›¯œœ‰œ÷dÒ@®ŸŸ‹Ÿú i Ø¡G¡¶¢&¢–££v£æ¤V¤Ç¥8¥©¦¦‹¦ı§n§à¨R¨Ä©7©©ªª««u«é¬\¬Ğ­D­¸®-®¡¯¯‹° °u°ê±`±Ö²K²Â³8³®´%´œµµŠ¶¶y¶ğ·h·à¸Y¸Ñ¹J¹Âº;ºµ».»§¼!¼›½½¾
+¾„¾ÿ¿z¿õÀpÀìÁgÁãÂ_ÂÛÃXÃÔÄQÄÎÅKÅÈÆFÆÃÇAÇ¿È=È¼É:É¹Ê8Ê·Ë6Ë¶Ì5ÌµÍ5ÍµÎ6Î¶Ï7Ï¸Ğ9ĞºÑ<Ñ¾Ò?ÒÁÓDÓÆÔIÔËÕNÕÑÖUÖØ×\×àØdØèÙlÙñÚvÚûÛ€ÜÜŠİİ–ŞŞ¢ß)ß¯à6à½áDáÌâSâÛãcãëäsäüå„ææ–çç©è2è¼éFéĞê[êåëpëûì†ííœî(î´ï@ïÌğXğåñrñÿòŒóó§ô4ôÂõPõŞömöû÷Šøø¨ù8ùÇúWúçûwüü˜ı)ıºşKşÜÿmÿÿÿÛ C ÿÛ CÿÀ  0 0" ÿÄ             
+	ÿÄ 4 	      !"	#1A2±3CQRacr‘ÑÿÄ               ÿÄ *       ! 1A"q23Q¡ÿÚ   ? &+è÷3ø³ÈÜˆ»ú¿ëÿ ]@æe—ºEÛ>©åXĞßûÓ"÷S ‘Íû/*Vc>Ê€,$Y­UENPS}š«±ıAnà×µ^ÅFøÑU6cıñÛüÊŸŸäP·³e–Ø!”jèÄĞ£ãˆ®Œáæ˜ĞË,Qî321ònÎkUŞöß¥œñ<pÊànxÃ0¿…×üéƒ‡43åã@µ4ˆ„?fv=%í^ŸãXü©U1åÆµ»yU”‚¨ùÉq®2DEşá„r¢³“Îiäö¨½g¿Aés{Hğ ô¶'z² qÔÎ)šŠ›/•Èœ‘Éş«ÖVi]DKhv¾	%¹Y.[
+	ÇóLö½Å!ï“c‚sÊUøµÖûr¢u®@Ôü÷FõlLk ÅóVÌ¥<[k1Ù
+ÏàÛÖÕ¾kBT‰†e0Éó„…ÙÉ«ĞÌ'ÏÎr±òÌs2î`üY€ AQb¬{l©­Fªš^™†ØyzzÏ>/¶ĞAd-eHsµ‹mfô[nõ¹›Fôs!ÑmyªÂr©àä­ã*¢M{TS<ñ&µVF?¯3QÈÓ£D„Œ©ä÷ôçô¸W![.ÊTÛåÿ ›ô§úw­ru7¸‰ÙlÍ5³ƒŸg³1JŒ†
+ÚI¦.4÷O¢e“Š~ÔVU1Ë"kcıËˆ@ŒVrpÎÙµîLë5…iì¬¨¥Áºˆ‘,a[Ò!ØÆ‘UTJ†ÛÑÂ"®ÄŠÔ™ÿ tï©dAÚY†~,dE‘*í!eÈş¢RTò§ãp±¼?‚@.ÛÊáiÉÜ±Å‘KªI°DÖÇ•XínC}Õ€v"ÇŠ}Ô¯¯ïfxcÏO1MXÕ‰€W$yĞ(ªğÌjWø«,2kFØ…®ı9Tnˆ»ªoñZ“îë‰¬=Å6ÓµÆqİ%ÑÜ¶®P1Úÿ Kxô‰b;¿ Ì&×¯t’€wÙÆ†ˆ^"ˆò™h€fj¢ÎV¹dİQw÷·¿çı:âH¾ÑÅ¼®‹ù œ­†Wÿ ´¨Dßõü7*{N­y4ø%‰â  ¢Aä=øÿ UGŸÇQŞ6¥“‘J…s
+ÂÁ û÷ÇŸ<#‘Ñ‹_e÷.‹"·ZÄ‰mƒÕòVŒ…QÆæ/$jr•²#ÇgzM‘:‰²Lı—!F¶D—U« qxÜI-Ådˆ‡cUG5QÕÙír9¼\î"¥‘XÛ|˜ë p_I+ñR™NÎrµ?´h_,İ>.S*îcšÙaÙoÙ¹²eÊ`‰Èï,•cZˆÕM·]ÓšoïùíúõŒ•ò4İFH0k)5Œ‚9±¹½{Í×¾#¦|Pbkš,9Z¦ì’F•H"¶‘Ùİ\7Æ6ßäDˆM‘S™i´»’Ø”¸he>!cÈ~K!c?®w„ˆäAK‹+U8>Ñ7Dİ®yô·›“d8N©ÆºT\j£>|tÒê		²‘ #Èjg&Aá¬ å½ƒ3ÀÊæ£ˆ‰åTWv”Ô ¿ZûKRZX¥YŠA³\Ù'…ømh8ïwSÊ£DsÚÂ)ˆúKë¨‚ÒéTp!«°ŠÜ/!ÄòDG«³LW8ÇĞ’n¦•åw’ìYİkS¿‚0CG"!òOß®é¨ÇÖRL=åäÇi÷)9Q°•CËJV>,…ß tŞı8›L‡TÓ¤ÇËİ	ŒHËÊÑ³)5¶5-MVÀU›¿™™ÌO*oågÍ©·ñ±¿ÆŠïH¿ß×´D]ı~V!¥xgÙÿ o·6ó­rˆ:ÕI¬›†C´µë92…•~YÖùëÒ#%%•¡œ®dt Xã³c„xv'7.’hñ‘¢ƒe™h¯scFßekx+¶”uDø‰şJÔ÷ÑSAYI†Ö%U0ĞaW!dÈz5dN?äãÊ{[òÿ µ6kéˆ‰ÕA®êé-F•O¹JÛù¯r¯Á[Ç™Ûµ»vMVQ>Ta4ÀT³0åö°m±›ev»r6–QÏDõáÖdHñ¡Gh#1îÙ şo+İíîs•\÷¯·«•Îöª½o²»&É/¦d6÷ÚM‹Ô×cU9E˜-ñî•&0:ğÍ°9cN¡@–;' Äl™Ñ%’íŠINXŒõ[7,
+C€V¶u‘›Ä§(pœ…sŞ÷B£xÑQ="¹Qyl½½«ıdu—·Œ{;§ÈpÌKVíò-8nŸP[åé(P…^`AŠPæ•µ…
+åP›eoŒĞä‘$ªWbûw64Ïüòœ‚Ì~Ê…NçŸ“o°x'›®÷†§ƒ#1>±à¢«Â—vÆhŠ=Õä}”qVüïI­{~ÕFöûÈsCê%®?5Jªr§¹‹dÕ`Z³!Ä/œğ¹UŞ·:ñóğcx}û”Ç$QQày5“Aa·”rÏ)¾²Şt+IOB¦È2J‹H=§yØÕÙü˜ZÅÜÖ_¯—¸mÎg[‹WÛb@³¤­&/]:¦1Ù—rm¢U²¸ö²#Ç‡]ÕéD€\ï¿+ã‘Qè{vm¬óñŠ8#YI‚Y‘£ÊˆP™À$Kz¿¨2c•®ø|nO[.ìDıvèh8úÖ˜zŠîÆÕ1[#oX4$pÑÈC¡"ƒ°E‚O°µF‚˜°Ûl˜yx7€h+sáÒÕ¹º&×_ÿÙÔyzZ{_<http://s3.amazonaws.com/buzz_img/2007042410095642_avatar.jpgO<bplist00Ô	
+X$versionT$topY$archiverX$objects † Ñ_WebResourceResponse€_NSKeyedArchiver¯&,-345KLMNOPQRSTUVWXYZ[_`U$nullİ !"#$%V$classR$3R$8S$10S$11R$5R$6R$4R$7R$2R$9R$0R$1€€€ €€€€€ Ó'()$+WNS.base[NS.relative€€ €_<http://s3.amazonaws.com/buzz_img/2007042410095642_avatar.jpgÒ./01X$classesZ$classname¢12UNSURLXNSObject#A©æúlnÈÓ6789BWNS.keysZNS.objects€¨:;<=>?@A€	€
+€€€€€€¨CDEFGHIJ€€€€€€€€_X-Amz-Request-Id\Content-TypeVServerTDate^Content-LengthTEtagZX-Amz-Id-2]Last-Modified_900BC150C5358829Zimage/jpegXAmazonS3_Tue, 20 Nov 2007 20:37:22 GMTT2787_""b553406a8fc295fada8c3df6311574cc"_@TbgJDCwvZPzHGdF2lnCqhIeTF+jdIva8ZMAstRnIiIiDb1QmHcG5Rwx7ool2l0Q1_Mon, 17 Sep 2007 07:16:09 GMTÒ./\]£]^2_NSMutableDictionary\NSDictionary
+ãÒ./ab£bc2_NSHTTPURLResponse]NSURLResponse     ) 2 7 : P R d ƒ ‰ ¤ « ® ± µ ¹ ¼ ¿ Â Å È Ë Î Ñ Ó Õ × Ù Û İ ß á ã å ç é ğ ø
+INWbekt}†™›¤¦¨ª¬®°²´½¿ÁÃÅÇÉËÍàíôù&9DMmr—Úúÿ&).2F             d              TO
+ãÿØÿà JFIF  ` `  ÿÛ C ÿÛ CÿÀ  0 0" ÿÄ              	
+ ÿÄ /       	!Q"#A1BSaq‘ğÿÄ              ÿÄ '        !"#21ÿÚ   ? £eT)vE«®Ó'Ï|80aÇc‹"dÙox‘cˆç²$bŠ®s¾¿Ãí¿s£Xÿ 8qÄıpxÕÒv–ÄÊò­•³îÂ1c­#R@ˆp3²%f69í®HìwÂùâ“!Éïw‚§(ª± l.Re±G"ƒ¸ôÂaKK"Ş™¢£ZÕDDl¯ÀÒ²Ù¡o¹X‘«Ñè¾ş°3mmÃm`rÈ´½Ç¸ëGeb×9å—?&Ì¥ÆlÃ=·¾U„èÎUUEs”ˆ‰ß‹~G·rßxn5gÊ2©ZÒ¹«#3Õ—ÒÊ&ŠNbz…U›u}ö$Ç¯®‰SÜ;‰ĞÍğÿ ùEÊßŸ‘kUÊÎÄQsR†Òë•‰‰í×ÙRÚ—×G®eÿ ,‰c¥ë¾—¯ßûyÏµ‡§7±ş!ò5¾C?–¼×xÖÆÙ7i<ñ±¼Zã$¦L»…XŠ°,"Š™®fr5ÓEfF•¥k¥äi‡zm`·ÌvŞ.GÊÒÂÖ9ÍV%Ep’£`˜†Ã¸‰£¸®ŠçÇ•g”TÉ5Ì‚ÊxMqƒF½Ä.<ÁÄå´_}HNí\/vÕ!ƒmÁ¬Ä]ö˜ŒóU¤°l²F$¹ë³,rÿ <ƒöªÒ_éN}7k‘È*ä¨)“—c,£ÖôÁ¨j¦ºàú5³¹égÒTEE_j+Uß]µzwôŠ¬EUD_íß]¯öO"« •Óæ+DEèäï¦9Î¿²~ßñå¶j¸{Á£I¯xÃA*0§qÏ: !¶íd$¯²Ì3Ì¦#ª“V@ËÕ=Å¦G“=ÁdH,<j
+Úƒ¤w°è¯ONéÄË]­¼ñœÆŞÖ¸×³rĞÚØQGáTm‰[c°¤#•l.€œ’ U²ÁÎŠ±c«Š’Opù»~wâ•FÌjRÛ ê‰e¿ÀtLm/°µªÀŒúÿ ªa¡#1şª“2‚˜ïs?Å^|eQÙ|oR­ö*‘YVĞúæË5L 
+QmgŸ³$Ë1Ô¬ˆ1„|›¾Ğü<ÕÚûRäVÚşâÎ³zíÌ¶#áº~O™ZÅVL‘$R‹Áa£j‰~9V3½Owjcr¯Aæ'ÕßMÊ1YÕsG‡CÅí¤,rVä0552å9h`afŠ$ç,œCkÜN›îEEğ)à_=ù™°yÆ½3qO“€ÏÉ1ŒZucøóXLF¢"’EzËezKkÁt„*¯æW«¾ü:µG!óMÉë5;ÊòoÉázVêÆumBÅ„Q§àAÙ ‘,‘0²Ÿ„q%Äb1Í‘ª©â×’~şÉä;Òı¾°Èá¿X_ÍÙì>M2tM±}u@@z¬+-± 0äâñg!â¸?¢—&#ÛòÁšJÏ]R±Ç¶eÂ½Š)2»œg3ìÓ¸Å‘rC×¨Fü Ñø¯$ôv;{!Ş\¨Ûv9~å›Q,sak}_U%±°~y s„\’Â®0eoU­‰,áÖ½ÃDÖ=²Ìº§ç5¥d97¤Ñµù%d«,¸QòlV%Óñ¨d!”oÏ íÈmAµczÃï/O{\&nÀ«ÌA?å_(öKZæ›"Œßáü>äœ—"ÙÙ<â•RÍ©ÔWC’ô ¾ç:CU¢1}=ñ‡q¨ØrêğUíŞIkıÁ´¶å$¶³òøålz3Ñk,RwJª$ŞêDgtö¤±¹ZDw†iÛãŠñm¬üb^ÖöçhÚ²~7+eı;/ e›Q…š‚‰€–×Á™Ï±	—›ÌíyÂ®îğşÜÄÊ©­›F¹±‹¥kVnUÏË´sÒÏ^ûôÃUë™&lËH@GÔTï¦	2ŒïœZV‚]å¼Š«‡/deUÏ›!`ZŞc÷V±îì¢«”R,!È“%cË+^PüäF¹=ëãMâfÜ¶Ûş­ªÚ—“ÈüWYkí…×*‘COŠâ×5´pÄUøÄ3<Éçë¤4£˜®íÊ«àYèÍƒËg:ò"¬U$­k¯v‘nDEŠMLv0ıÎéò>JïoJïµëµóuÆ(sîñG››¯lcöx.×ä–g3KkÑ,+Ù0&ÜØZe÷àº3«™Q\)£_€ÎŒ2DçÎÕŸµÉ¹UO«:<;q¼Ä„+óLò-+yà˜èçğSH9¦#ş´+ûHŒüÈñkö¸÷âûWÎÿ èÙ|÷˜òÍËL&ş§æ­të5¥264\`•öÇ™HÄ”|Oœ~ßÙ¶†¸5ùñâfXcä‘™/ÉÖ2LÚóV•Ò ¡¥{$Ÿ
+üøËìkíDó?GÈ-«‹oò'È¿µ	—ÜfÉy0w7§kAş‚B¬’ÙGHB	ñŸñ?İ×~‘zıH;ÿ T_¿ó§×ûy0ÿ ïúò‘œ¬ËÍ·fÖ}gºİ8Í´m\¾ŒI—Õd~Êí¬™	^Ì¿í?#7ííãVÍ£Ÿ­v½Z:LÚ¤¥3ñÅ]X„]IAà¸ƒï¸€ºÿ ß„Ÿ.yu¾*y+k±í,7ğÍ¥Éå)#UŒ(W—âJÈÔˆœ/«fÆ+E#\ç¹Ë6qk•9ˆùõ©¹·òÉ™İÖÆ…7È¬Á¢Óäà~5%­Ñ€…W[hÒ4 0q¢€(Ö5°ÎÓ´^ÑU½»´^•=©îG5SíÕo¹®jöDTûDğüGÖ}º*Ì¥Wìc?ŠÊF{@†+ª`bA@Sî =DóßÂò|ÊèìgiYÚÓĞ
+¼†¯$}k7ÕÛÑ®ÅIXtLa
+“.ËÓ¡ï¯–ÒZ‡&âO!}Söè¥TWcºë.Ö™é×ôS!æ¥³Ëª%ÕI Ö4µ‡0˜Ç=£0~2µQ½Ü”åîôä¶=‘o<ŞÃ5•G^êêmª¦œ$`İ(‘j 2r İ6bÒ¬j9èÄkRÏ<r¨ä$ı1òhìı}üg´°ãºÚÎxiÃ¬[p»1,æ61a°¬	€²”ÅyÊŠî¼.Û\eù|jéXfGqŒÚš¢kljÉ>œéKëç±­d¸ ÕBvµ¨Ft½"ıx“ñ,R½È¹…pÌ·Ê°­gc&ÚWùéfçV¢Vë¹Ë.-¸]6eê-ö_d#UŸgG;‰xö5¨ğS_Wví¸P£³ İA£qÛ"sMf±DœuÀ—ı{DÿÙÕ}~€_Zhttp://www.twitter.com/statuses/user_timeline/642113.json?callback=twitterCallback&count=1Obplist00Ô	
+X$versionT$topY$archiverX$objects † Ñ_WebResourceResponse€_NSKeyedArchiver¯$&,-345STUVWXYZ[\]^_`abcdefghijkopU$nullİ !"#$%V$classR$3R$8S$10S$11R$5R$6R$4R$7R$2R$9R$0R$1€#€€" €€€€€ Ó'()$+WNS.base[NS.relative€€ €_Zhttp://www.twitter.com/statuses/user_timeline/642113.json?callback=twitterCallback&count=1Ò./01X$classesZ$classname¢12UNSURLXNSObject#A©æúçqÈÓ6789FWNS.keysZNS.objects€!¬:;<=>?@ABCDE€	€
+€€€€€€€€€€¬GHIJKLMNOPQR€€€€€€€€€€€€ ]Cache-ControlVStatusYX-RuntimeSViaWExpiresVServer\Content-TypeTDate^Content-LengthTEtagZSet-CookieZConnection_0private, max-age=0, must-revalidate, max-age=300V200 OKW0.02729_1.1 tenebrae.twitter.com_Tue, 20 Nov 2007 20:42:33 GMTRhi_application/json; charset=utf-8_Tue, 20 Nov 2007 20:37:33 GMTS416_""f0f4202d32bac669bd167d6bb3432ea6"_N_twitter_session=dd339b2631d1e095e91acce2cc940f99; domain=.twitter.com; path=/UcloseÒ./lm£mn2_NSMutableDictionary\NSDictionary Ò./qr£rs2_NSHTTPURLResponse]NSURLResponse     ) 2 7 : P R d ‹ ‘ ¬ ³ ¶ ¹ ½ Á Ä Ç Ê Í Ğ Ó Ö Ù Û İ ß á ã å ç é ë í ï ñ ø ot}ˆ‹‘š£¥¬´¿ÁÎĞÒÔÖØÚÜŞàâäæóõ÷ùûıÿ	 *.6=JO^cny¬³»Ööù;?dµ»ÀÄÚçêïó             t              _application/jsonO twitterCallback([{"user":{"screen_name":"dbachrach","name":"Dustin","profile_image_url":"http:\/\/s3.amazonaws.com\/twitter_production\/profile_images\/19181842\/mypic_normal.jpg","description":"","location":"Texas","url":"http:\/\/www.dbachrach.com","id":642113,"protected":false},"text":"Back in SA for the weekend.","truncated":false,"created_at":"Fri Nov 02 20:25:52 +0000 2007","source":"web","id":384093652}]);¡‚Òƒ‡Õ	„…†_Ÿhttp://pagead2.googlesyndication.com/pagead/ads?client=ca-pub-9697276323018893&dt=1195591011504&format=468x60_as&output=html&correlator=1195591011503&channel=4933754116&url=http%3A%2F%2Fdbachrach.com%2Fblog%2F2005%2F11%2F28%2Fprogram-global-hotkeys-in-cocoa-easily%2F&color_bg=FFFFFF&color_text=000000&color_link=0066CC&color_url=7F7F7F&color_border=FFFFFF&ad_type=text&ref=http%3A%2F%2Fwww.google.com%2Fsearch%3Fclient%3Dsafari%26rls%3Dfa-ir%26q%3Dos%2Bx%2Bhotkey%2Bcocoa%26ie%3DUTF-8%26oe%3DUTF-8&cc=22&ga_vid=392320608.1195591012&ga_sid=1195591012&ga_hid=957662366&flash=9&u_h=900&u_w=1440&u_ah=830&u_aw=1440&u_cd=24&u_tz=210&u_his=1&u_java=true&u_nplug=10&u_nmime=164Oà<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"><html><head><style>a:link,a:visited,a:hover,a:active{color:#0066cc;cursor:pointer;}body,table,div,ul,li{font-size:10px;margin:0px;padding:0px}body{background-color:transparent;font-family:verdana,arial,sans-serif;height:100%}#aus{height:60px;width:468px}#ads{left:0px;position:absolute;top:0px;width:468px}#ads ul{list-style:none;}#ads ul li{cursor:pointer;float:left;height:42px;overflow:hidden;width:234px}.ad{margin:0px 2px}.adt{font-size:11px;font-weight:bold;line-height:14px;}.adb{color:#000000;display:block;font-size:10px;line-height:13px;}.adu{color:#7f7f7f;font-size:10px;line-height:12px;overflow:hidden;white-space:nowrap}.adus{cursor:pointer;}#abgi{left:388px;position:absolute;top:43px}#aubg{background-color:#ffffff;border:0px solid #ffffff;height:60px;width:468px}</style><script>function ss(w,id) {window.status = w;a = document.getElementById(id);if (a) {bi = a.href.indexOf("&nm="); if (bi < 1) {a.href += "&nm=1";return true;}c = a.href.substring(0, bi+4); d = a.href.substring(bi+4, a.href.length);ei = d.indexOf("&");if (ei < 0) {f = d;r = '';} else {f = d.substring(0, ei);r = d.substring(ei, d.length); }var g = parseInt(f);  g++;a.href= c+g+r; }return true;}function st(a) {return true;}function cs(){window.status='';} function jcc(a) {pha=document.getElementById(a); nc=pha.href.indexOf('&jca='); if(nc>=1) return; jca=(1051)+String('yeHhyTn').charCodeAt(5); if (a=='aw0') {jca+=(1559);} else if (a=='aw1') {jca+=(-1019);} else {jca=0;} phb=pha.href+'&jca='+jca; pha.href=phb;} function ha(a){  pha=document.getElementById(a); nhi=pha.href.indexOf("&nh=");if(nhi < 1) {phb=pha.href+"&nh=1";} pha.href=phb; jcc(a); }function ca(a) {  pha=document.getElementById(a); nci=pha.href.indexOf("&nc=");if(nci < 1) {phb=pha.href+"&nc=1";} pha.href=phb; jcc(a); top.location.href=document.getElementById(a).href;}function ga(o,e) {if (document.getElementById) {a=o.id.substring(1);p = "";r = "";g = e.target;if (g) {t = g.id;f = g.parentNode;if (f) {p = f.id;h = f.parentNode;if (h)r = h.id;}} else {h = e.srcElement;f = h.parentNode;if (f)p = f.id;t = h.id;}if (t==a || p==a || r==a)return true;pha=document.getElementById(a); nbi=pha.href.indexOf("&nb=");if(nbi < 1) {phb=pha.href+"&nb=1";} pha.href=phb; jcc(a); top.location.href=document.getElementById(a).href;}}</script></head><body marginwidth="0" marginheight="0"><div id="aus"><div id="aubg"></div><div id="ads"><ul><li id="taw0" onclick="ga(this,event)" onfocus="ss('','aw0')" onmousedown="st(this.id.substr(1))" onmouseover="ss('','aw0')"><div class="ad"><a class="adt" href="/pagead/iclk?sa=l&amp;ai=B3RAXZ0VDR5DVAqW8SdLV9ZcKl8LuD-f83cwCwI23AZC_BRABGAEgtLyfBSgCOABQrO_Qv_z_____AWDtiu-D1A-qAQo0OTMzNzU0MTE2sgENZGJhY2hyYWNoLmNvbboBCTQ2OHg2MF9hc8gBAdoBTGh0dHA6Ly9kYmFjaHJhY2guY29tL2Jsb2cvMjAwNS8xMS8yOC9wcm9ncmFtLWdsb2JhbC1ob3RrZXlzLWluLWNvY29hLWVhc2lseS-pAlUdy6IEQsE-qAMByAMH6AO4AugDH-gD3wXoA9sF9QMIAIAA&amp;num=1&amp;adurl=http://www.plsys.co.uk/schedule.htm&amp;client=ca-pub-9697276323018893&amp;nm=0" id="aw0" onclick="ha('aw0')" onfocus="ss('','aw0')" onmousedown="st('aw0')" onmouseover="return ss('','aw0')" target="_top"><span>Mac Cocoa and WebObjects</span></a><div class="adb">UK Developer Training near London. 5-day courses, Authorised trainers. </div><div class="adu"><span class="adus" id="uaw0">www.plsys.co.uk/schedule.htm</span></div></div></li><li id="taw1" onclick="ga(this,event)" onfocus="ss('','aw1')" onmousedown="st(this.id.substr(1))" onmouseover="ss('','aw1')"><div class="ad"><a class="adt" href="/pagead/iclk?sa=l&amp;ai=BgfuaZ0VDR5DVAqW8SdLV9ZcKqrL8B8aurdQBwI23AdD3BxACGAIgtLyfBSgCOABQwvbSoAZg7Yrvg9QPqgEKNDkzMzc1NDExNrIBDWRiYWNocmFjaC5jb226AQk0Njh4NjBfYXPIAQHaAUxodHRwOi8vZGJhY2hyYWNoLmNvbS9ibG9nLzIwMDUvMTEvMjgvcHJvZ3JhbS1nbG9iYWwtaG90a2V5cy1pbi1jb2NvYS1lYXNpbHkvqAMByAMH6AO4AugDH-gD3wXoA9sF9QMIAIAA&amp;num=2&amp;adurl=http://www.chocolatealchemy.com&amp;client=ca-pub-9697276323018893&amp;nm=0" id="aw1" onclick="ha('aw1')" onfocus="ss('','aw1')" onmousedown="st('aw1')" onmouseover="return ss('','aw1')" target="_top"><span>Raw Cocoa Beans and Nibs</span></a><div class="adb">Organic and Fair Trade Available Make your own Chocolate at home </div><div class="adu"><span class="adus" id="uaw1">www.ChocolateAlchemy.com</span></div></div></li></ul></div><div id="abgi"><a href="http://pagead2.googlesyndication.com/pagead/pageclick?type=5&amp;redir_url=http%3A//services.google.com/feedback/abg%3Furl%3Dhttp%3A//dbachrach.com/blog/2005/11/28/program-global-hotkeys-in-cocoa-easily/%26hl%3Den%26client%3Dca-pub-9697276323018893%26adU%3Dwww.plsys.co.uk/schedule.htm%26adT%3DMac%2BCocoa%2Band%2BWebObjects%26adU%3Dwww.ChocolateAlchemy.com%26adT%3DRaw%2BCocoa%2BBeans%2Band%2BNibs%26done%3D1%26gl%3DIR%26oasu%3Dtrue" target="_blank"><img alt="Ads by Google" border="0" height="16" src="http://pagead2.googlesyndication.com/pagead/abglogo/abg-en-100c-000000.png" width="78"></a></div></div></body></html>_google_ads_frame¡ˆÔ‰Š‹_Jhttp://pagead2.googlesyndication.com/pagead/abglogo/abg-en-100c-000000.pngO|bplist00Ô	
+X$versionT$topY$archiverX$objects † Ñ_WebResourceResponse€_NSKeyedArchiver¯&,-345KLMNOPQRSTUVWXYZ[_`U$nullİ !"#$%V$classR$3R$8S$10S$11R$5R$6R$4R$7R$2R$9R$0R$1€€€ €€€€€ Ó'()$+WNS.base[NS.relative€€ €_Jhttp://pagead2.googlesyndication.com/pagead/abglogo/abg-en-100c-000000.pngÒ./01X$classesZ$classname¢12UNSURLXNSObject#A©ææÃŸOµÈÓ6789BWNS.keysZNS.objects€¨:;<=>?@A€	€
+€€€€€€¨CDEFGHIJ€€€€€€€€SP3p]Cache-ControlWExpires\Content-TypeVServer^Content-LengthTDate]Last-Modified_lpolicyref="http://www.googleadservices.com/pagead/p3p.xml", CP="NOI DEV PSA PSD IVA PVD OTP OUR OTR IND OTC"_)public, max-age=86400, x-gzip-ok="public"_Wed, 21 Nov 2007 19:56:16 GMTYimage/pngTcafeT1006_Tue, 20 Nov 2007 19:56:16 GMT_Thu, 03 May 2007 20:40:03 GMTÒ./\]£]^2_NSMutableDictionary\NSDictionaryîÒ./ab£bc2_NSHTTPURLResponse]NSURLResponse     ) 2 7 : P R d ƒ ‰ ¤ « ® ± µ ¹ ¼ ¿ Â Å È Ë Î Ñ Ó Õ × Ù Û İ ß á ã å ç é ğ ø
+W\epsy‚‹”œ§©²´¶¸º¼¾ÀÂËÍÏÑÓÕ×ÙÛßíõ	+šÆæğõú:?CYfinr†             d              ”Oî‰PNG
+
+   IHDR   N      ¸.Iš   gAMA  ¯È7Šé   tEXtSoftware Adobe ImageReadyqÉe<  €IDATXÃå˜QHTA†¿Ğ”Br|IAğéJ=ú°Å–¾F HRáKAV 	…ATJQEE$¢`•½HEİB±kCÈ‚àöòß8wwod¶ĞÀ°wæœ;sæ›sÎÌ]‚  j†RlÊmgı¥(­À §2jå!¸rà&0t=Àk`VíÒ¿`˜Ïª‘gàê€9 %ÂÔN¬õsÌáÍÙÊs`*®rHæ{1Ç‰£ç‚+QˆœË îeX®™¢ÊÕXãV\7e,©ğÉUâê¹Æ4k~/Î{@Ğ<ÆµĞF£V ôweOĞ`äÅÀSyW :¬¦÷Ò+îÀàPiíñeÀ¸cçÁh2@Â¾dp¡N"Â›€ç€ë‘ñe1˜#À1 Võ¶¼X	i3Bùy-ŞÔO@›ÆkÓÜ­jO«ífîà«ƒÀùE;Dø› Òzö#¼+)yZr_ÓfÇ{^Ü-ÍQÜYå ZÓW¡÷¯]ÀG¾
+ø&ùEé–Ù<ğ@íò¸"éıÊµk°Ñó=ó<lhw©í™öâ.¸@°°&g4tÀÔ{m vË{šw´ĞõŞK¾ƒ«Ô‘*ìº$?`dS&¿~¸é½nğ¢°I›8ÔNÈ["rW»d@»à|ÓÜ¤ñ:?"ÇÕÈKæ€uæıªT*¤R©Ğ¶CÆcÜ|øL9ïªäÛù0pYäŸƒ
+ùQ3ïŒÀÊ¦W
+ïE¥I²%mrZ—ãqI«Áñ.×ãÎÃĞm Ğ!ıQ`£cS½d-‚ ë•Û¤W|&€Àvà´6e‡	Ï#æp¨r¼oVÏ×%ïğğàYÇ†®oÂÒwò™oêx†ç›\ˆñÔ_ 3ñ{†i]„ÛäeıZx£ô·(/¾PÒŸtn›^“À;yÍˆ4pF6	È
+Í½ \1M .aN¾Lwº„Ññœ{U2Ë=.ê>×nAf¹éS+ÌkõöĞÈv‹ùuR¥MÔa1 0#Q!ilZ-ËZze\ÃR|µüA)Pë6}µÀÙWIÏõÀ®N€ö;ıûÔ_k”|ùV]Fp…æOƒf…à.à!p"ö(ÿ!¸ğ˜åÛ	]|ë~g€Ÿ¨ƒXbßá    IEND®B`‚      !  3  I  T  c    —  ©  À    –( –) –F –O –e –¤ š… š ¼d ¼o ¼² ¼¸ Á¢ á á áp åd ån í' í0 í| ñk ö  ö öE úñ û8®8¹93=e=€>“>œ>ÔC1R.R7R‡Vz[[[l__nónüoEs2‹‹&‹tf¡Ù¡â¢)¦ƒ¦¨<¨E¨jªé®­®¸¯¦¶¡Õ?ÕHÕuÙ¢Ş«Ş´ßã^ò´ò½òü÷<÷Gşmşvşµó ©è(+´+½+ü0<>é>ò?[DHIeInI­MíkKkTk½pªvAvJv³{”5”>”}˜½£¤£¯¤©-©@ªäªæªëªö­™Á}ÁÁ’Á›ÁèÆh             Œ             ÊZ

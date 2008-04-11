@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'QSmile2' target in the 'QSmile2' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
